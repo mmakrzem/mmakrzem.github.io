@@ -1,0 +1,92 @@
+<style>
+#statsTable {
+  width: 250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr);
+  place-items: center;
+  font-size: 1.2em;
+}
+#statsTable .header,
+#statsGraph .title {
+  background-color: lightgray;
+  font-weight: bold;
+}
+#statsTable > div {
+  width: 100%;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+#numPlayed,
+#percentWon,
+#totalScore {
+  border-bottom: 1px solid lightgray;
+  font-size: 1.3em;
+}
+#numPlayed {
+  border-left: 1px solid lightgray;
+}
+#totalScore {
+  border-right: 1px solid lightgray;
+}
+
+#statsGraph {
+  width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  padding-top: 1em;
+  font-size: 1.2em;
+}
+#statsGraph .title {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: center;
+}
+#statsGraph > div {
+  padding: 3px;
+}
+#statsGraph .header {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  width: 26px;
+  align-items: center;
+  padding: 2px;
+}
+#statsGraph .bar {
+  box-sizing: border-box;
+  background-color: #469b46;
+  margin: 2px;
+  padding-left: 8px;
+  color: white;
+  font-size: 0.8em;
+  width: 25px;
+}
+#statsGraph #lost {
+  background-color: #b43e3e;
+}
+</style>
+
+<div id="statsTable">
+  <div class="header">Played</div>
+  <div class="header">Won</div>
+  <div class="header">Score</div>
+
+  <div id="numPlayed"></div>
+  <div id="percentWon"></div>
+  <div id="totalScore"></div>
+</div>
+
+<div id="statsGraph">
+  <div class="title"># Guesses to Win</div>
+  <div class="header">1</div><div class="bar" id="guess1">0</div>
+  <div class="header">2</div><div class="bar" id="guess2">0</div>
+  <div class="header">3</div><div class="bar" id="guess3">0</div>
+  <div class="header">4</div><div class="bar" id="guess4">0</div>
+  <div class="header">5</div><div class="bar" id="guess5">0</div>
+  <div class="header">X</div><div class="bar" id="lost">0</div>
+</div>
