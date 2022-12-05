@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 
 
-<html lang="en" dir="ltr" class="maxSize astro-CBFHFYGC">
+<html lang="en" dir="ltr" class="maxSize astro-GWSUWYKX">
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
 <title>Page Not Found</title>
 <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/css/base.css">
-   
-<link rel="stylesheet" href="/assets/asset.1f3260fd.css"></link>
+  
+  <script src="https://www.youtube.com/iframe_api"></script> 
+<link rel="stylesheet" href="/assets/asset.c4208dbc.css"></link>
 </head>
 <body class="maxSize globalDefaultStyles">
-  <div id="header" class="astro-CBFHFYGC">
-    <img class="logo astro-CBFHFYGC" src="/images/logo.png" alt="Logo">
-    <a href="/" class=" astro-CBFHFYGC"><img class="createStones astro-CBFHFYGC" src="/images/createStones.png" alt="Create Stones"></a>
+  <div id="header" class="astro-GWSUWYKX">
+    <img class="logo astro-GWSUWYKX" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-GWSUWYKX"><img class="createStones astro-GWSUWYKX" src="/images/createStones.png" alt="Create Stones"></a>
       
 
 <div class="breadCrumbs astro-LZC32ZAU">
   
 </div>
   </div>
-  <div id="content" class="astro-CBFHFYGC">
+  <div id="content" class="astro-GWSUWYKX">
     <div class="content astro-Z5BX3CII">
     <h1 class="astro-Z5BX3CII">404: Path Not Found</h1>
     <p class="astro-Z5BX3CII">Uh Oh! Could not find the<br class="astro-Z5BX3CII">page you were looking for</p>
@@ -29,10 +30,58 @@
   </div>
   </div>
 
-  <div id="footer" class="astro-CBFHFYGC">
-    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-CBFHFYGC"><img src="/images/email.svg" alt="email" class="astro-CBFHFYGC"></a>
-    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-CBFHFYGC"><img src="/images/twitter.svg" alt="Twitter" class="astro-CBFHFYGC"></a>
-    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-CBFHFYGC"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-CBFHFYGC"></a>
-    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-CBFHFYGC"><img src="/images/youTube.svg" alt="youtube" class="astro-CBFHFYGC"></a>
+  <div id="footer" class="astro-GWSUWYKX">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-GWSUWYKX"><img src="/images/email.svg" alt="email" class="astro-GWSUWYKX"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-GWSUWYKX"><img src="/images/twitter.svg" alt="Twitter" class="astro-GWSUWYKX"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-GWSUWYKX"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-GWSUWYKX"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-GWSUWYKX"><img src="/images/youTube.svg" alt="youtube" class="astro-GWSUWYKX"></a>
   </div>
-</body></html> 
+
+  <div id="youTubePlayer" class="astro-GWSUWYKX">
+    <div class="closer astro-GWSUWYKX">X</div>
+    <div class="playerWindow astro-GWSUWYKX">
+      <div id="player" class="astro-GWSUWYKX"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
+    const closerEl = youTubePlayerEl.querySelector( '.closer' );
+
+    let player;
+
+    closerEl.addEventListener( 'click', () => {
+      player && player.stopVideo();
+      youTubePlayerEl.style.display = 'none';
+    } );
+
+    function playYouTubeVideo( videoId ) {
+      youTubePlayerEl.style.display = 'block';
+
+      if( player === undefined ) {
+        const playerEl = youTubePlayerEl.querySelector( '#player' );
+        const playerWidth = window.getComputedStyle( playerEl ).width;
+        let width = Number.parseInt( playerWidth );
+        if( width === undefined || width < 400 ) {
+          width = 400;
+        }
+
+        player = new YT.Player( 'player', {
+          width,
+          height: width * 0.6,
+          videoId,
+          playerVars: {
+            'playsinline': 1,
+          },
+          events: {
+            'onReady': () => player.playVideo()
+          }
+        } );
+      } else {
+        player.loadVideoById( videoId, 0 );
+      }
+    }
+
+  </script>
+</body>
+</html> 
