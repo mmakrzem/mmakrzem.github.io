@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" dir="ltr" class="maxSize astro-GWSUWYKX">
+<html lang="en" dir="ltr" class="maxSize astro-74TE7IYS">
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
@@ -10,97 +10,174 @@
 <link rel="stylesheet" type="text/css" href="/css/base.css">
   
   <script src="https://www.youtube.com/iframe_api"></script> 
-<link rel="stylesheet" href="/assets/asset.319db5b6.css"></link>
-</head>
-<body class="maxSize globalDefaultStyles">
-  <div id="header" class="astro-GWSUWYKX">
-    <img class="logo astro-GWSUWYKX" src="/images/logo.png" alt="Logo">
-    <a href="/" class=" astro-GWSUWYKX"><img class="createStones astro-GWSUWYKX" src="/images/createStones.png" alt="Create Stones"></a>
+<link rel="stylesheet" href="/assets/index.4a58f878.css" />
+<link rel="stylesheet" href="/assets/index.45f44d07.css" />
+<link rel="stylesheet" href="/assets/math.241e3208.css" /></head>
+<body class="maxSize globalDefaultStyles astro-74TE7IYS">
+  <div id="header" class="astro-74TE7IYS">
+    <img class="logo astro-74TE7IYS" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-74TE7IYS"><img class="createStones astro-74TE7IYS" src="/images/createStones.png" alt="Create Stones"></a>
       
 
-<div class="breadCrumbs astro-LZC32ZAU">
-  <img src="/images/rock.png" alt="rock" class="rock astro-LZC32ZAU"><a href="/marekKnows" class="astro-LZC32ZAU">marekKnows</a>
+<div class="breadCrumbs astro-XG6CCH5A">
+  <img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows" class="astro-XG6CCH5A">marekKnows</a><img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows/openGl" class="astro-XG6CCH5A">openGl</a>
 </div>
   </div>
-  <div id="content" class="astro-GWSUWYKX">
-      
+  <div id="content" class="astro-74TE7IYS">
+    <div class="navBar astro-AYHEVNF7">
+    <img class="logo astro-AYHEVNF7" src="/images/marekKnows/logoHead.png" alt="MarekKnows Logo">
+    <div class="navSubMenu astro-AYHEVNF7" data-current="">
+      <ul class="astro-AYHEVNF7">
+        <li class="astro-AYHEVNF7">MarekKnows
+          <ul class="astro-AYHEVNF7">
+            <li class="astro-AYHEVNF7"><a data-url="#" class="astro-AYHEVNF7">Welcome</a></li>
+            <li class="astro-AYHEVNF7"><a data-url="#faq" class="astro-AYHEVNF7">FAQ</a></li>
+            <!-- <li><a data-url="#about">About</a></li> -->
+          </ul>
+        </li>  
+        <!-- <li>Engine Series
+          <ul>
+            <li><a data-url="gameDev">OpenGL Game Engine</a></li>
+            <li><a data-url="physics">Physics Engine</a></li>
+            <li><a data-url="shader">Shader Engine</a></li>
+          </ul>
+        </li>  
+        <li>Game Series
+          <ul>
+            <li><a data-url="ghost">Ghost Toast</a></li>
+            <li><a data-url="zing">Zing</a></li>
+          </ul>  
+        </li>   -->
+        <li class="astro-AYHEVNF7">General Information
+          <ul class="astro-AYHEVNF7">
+            <!-- <li><a data-url="cpp">General C++</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="math" class="astro-AYHEVNF7">Mathematics</a></li>
+            <!-- <li><a data-url="network">Network Programming</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="openGl" class="astro-AYHEVNF7">OpenGL Tips & Tricks</a></li>
+          </ul>
+        </li>  
+        <li class="astro-AYHEVNF7">Art & Sound Pipeline
+          <ul class="astro-AYHEVNF7">
+            <!-- <li><a data-url="audio">3D Audio Engine</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="trueSpace" class="astro-AYHEVNF7">Caligari trueSpace</a></li>
+          </ul>
+        </li>  
+        <li class="last astro-AYHEVNF7">Other
+          <ul class="astro-AYHEVNF7">
+            <li class="astro-AYHEVNF7"><a data-url="puzzles" class="astro-AYHEVNF7">Puzzles</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div><script>
+    //populate nav links
+    const navSubMenuEl = document.querySelector( '.navSubMenu' );
+    const current = navSubMenuEl.getAttribute( 'data-current' );
+    const hash = window.location.hash;
 
-<div class="header astro-I6QUYNAY">
-  <img src="/images/marekKnows/openGl.png" alt="OpenGL Tips &#38; Tricks" class="astro-I6QUYNAY">
-  <h1 class="astro-I6QUYNAY">OpenGL Tips &amp; Tricks</h1>
-  <p class="astro-I6QUYNAY">This VMK series uses the <a href="/marekKnows/gameEng">3D OpenGL Game Engine</a> to present different tips and tricks that you can use when creating your own computer games.</p>
+    document.querySelectorAll( '.navSubMenu a[data-url]' ).forEach( aEl => {
+      const url = aEl.getAttribute( 'data-url' );
+      let isCurrent = false;
+      if( current === 'marekKnows' ) { //marekKnows root index
+        switch( url ) {
+          case '#': {
+            isCurrent = hash.length === 0 || hash === '#';
+            break;
+          }
+          case '#faq':
+          case '#about': {
+            isCurrent = url === hash;
+            break;
+          }
+        }
+      } else {
+        isCurrent = url === current;
+      }
+      const href = "/marekKnows" + ( url.startsWith( '#' ) ? '' : '/' ) + url;
+      if( !isCurrent ) {
+        aEl.href = href; //set a.href to the correct target
+      } else {
+        const text = aEl.textContent;
+        aEl.parentElement.innerHTML = text; //remove the a element
+      }
+    } );
+  </script>  
+
+<div class="header astro-ZKEDGFK2">
+  <img src="/images/marekKnows/openGl.png" alt="OpenGL Tips &#38; Tricks" class="astro-ZKEDGFK2">
+  <h1 class="astro-ZKEDGFK2">OpenGL Tips &amp; Tricks</h1>
+  <p class="astro-ZKEDGFK2">This VMK series uses the <a href="/marekKnows/gameEng">3D OpenGL Game Engine</a> to present different tips and tricks that you can use when creating your own computer games.</p>
 </div>
-<div class="section astro-I6QUYNAY">
+<div class="section astro-ZKEDGFK2">
   
 
-<div id="openGl0" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">0: Introduction</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/openGl/openGl_0.jpg" alt="Introduction" title="Introduction"><div class="text astro-ABSLUDGG">A brief description of what is to come in this VMK series.</div>
+<div id="openGl0" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">0: Introduction</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/openGl/openGl_0.jpg" alt="Introduction" title="Introduction"><div class="text astro-YV6VUWXJ">A brief description of what is to come in this VMK series.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('kDCJo8Y9jaw')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 0: Introduction" title="VMK 0: Introduction"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('kDCJo8Y9jaw')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 0: Introduction" title="VMK 0: Introduction"></a>
     
   </div>
 </div>
 
-<div id="openGl1ab" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">1ab: Sprites</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/openGl/openGl_1ab.jpg" alt="Sprites" title="Sprites"><div class="text astro-ABSLUDGG">I show how to setup the game engine and how to prepare the texture image which I'll be using to render snowflake sprites.  Then I present a way to randomly generate and move the snowflakes so that it appears as if it is snowing.</div>
+<div id="openGl1ab" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">1ab: Sprites</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/openGl/openGl_1ab.jpg" alt="Sprites" title="Sprites"><div class="text astro-YV6VUWXJ">I show how to setup the game engine and how to prepare the texture image which I'll be using to render snowflake sprites.  Then I present a way to randomly generate and move the snowflakes so that it appears as if it is snowing.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('GKl4n3YNqnM')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 1ab: Sprites" title="VMK 1ab: Sprites"></a>
-    <a href="/download/openGl/OpenGL-VMK001AB-Sprites.rar" class="astro-ABSLUDGG"><img class="download astro-ABSLUDGG" src="/images/marekKnows/download.png" alt="Download VMK 1ab Resources" title="Download VMK 1ab Resources"></a>
-  </div>
-</div>
-
-<div id="openGl1cd" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">1cd: Car Sprite Control</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/openGl/openGl_1cd.jpg" alt="Car Sprite Control" title="Car Sprite Control"><div class="text astro-ABSLUDGG">I demonstrate how to create a sprite class that can be used to both control and render sprite objects to the screen.  Then I demonstrate how to create a sprite class that can be used to both control and render sprite objects to the screen.</div>
-  </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('yeeZfk6wmIs')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 1cd: Car Sprite Control" title="VMK 1cd: Car Sprite Control"></a>
-    <a href="/download/openGl/OpenGL-VMK001CD-CarSpriteControl.rar" class="astro-ABSLUDGG"><img class="download astro-ABSLUDGG" src="/images/marekKnows/download.png" alt="Download VMK 1cd Resources" title="Download VMK 1cd Resources"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('GKl4n3YNqnM')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 1ab: Sprites" title="VMK 1ab: Sprites"></a>
+    <a href="/download/openGl/OpenGL-VMK001AB-Sprites.rar" class="astro-YV6VUWXJ"><img class="download astro-YV6VUWXJ" src="/images/marekKnows/download.png" alt="Download VMK 1ab Resources" title="Download VMK 1ab Resources"></a>
   </div>
 </div>
 
-<div id="openGl1ef" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">1ef: Animated Sprites</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/openGl/openGl_1ef.jpg" alt="Animated Sprites" title="Animated Sprites"><div class="text astro-ABSLUDGG">I demonstrate how to animate a police car sprite. Using the space bar you'll be able to turn the car's lights on or make them flash.  Then I demonstrate how to animate a running man sprite. All the animation parameters are explained so that you can make him run faster or slower.</div>
+<div id="openGl1cd" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">1cd: Car Sprite Control</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/openGl/openGl_1cd.jpg" alt="Car Sprite Control" title="Car Sprite Control"><div class="text astro-YV6VUWXJ">I demonstrate how to create a sprite class that can be used to both control and render sprite objects to the screen.  Then I demonstrate how to create a sprite class that can be used to both control and render sprite objects to the screen.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('EKtCcVi3JRg')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 1ef: Animated Sprites" title="VMK 1ef: Animated Sprites"></a>
-    <a href="/download/openGl/OpenGL-VMK001EF-AnimatedSprites.rar" class="astro-ABSLUDGG"><img class="download astro-ABSLUDGG" src="/images/marekKnows/download.png" alt="Download VMK 1ef Resources" title="Download VMK 1ef Resources"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('yeeZfk6wmIs')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 1cd: Car Sprite Control" title="VMK 1cd: Car Sprite Control"></a>
+    <a href="/download/openGl/OpenGL-VMK001CD-CarSpriteControl.rar" class="astro-YV6VUWXJ"><img class="download astro-YV6VUWXJ" src="/images/marekKnows/download.png" alt="Download VMK 1cd Resources" title="Download VMK 1cd Resources"></a>
+  </div>
+</div>
+
+<div id="openGl1ef" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">1ef: Animated Sprites</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/openGl/openGl_1ef.jpg" alt="Animated Sprites" title="Animated Sprites"><div class="text astro-YV6VUWXJ">I demonstrate how to animate a police car sprite. Using the space bar you'll be able to turn the car's lights on or make them flash.  Then I demonstrate how to animate a running man sprite. All the animation parameters are explained so that you can make him run faster or slower.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('EKtCcVi3JRg')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 1ef: Animated Sprites" title="VMK 1ef: Animated Sprites"></a>
+    <a href="/download/openGl/OpenGL-VMK001EF-AnimatedSprites.rar" class="astro-YV6VUWXJ"><img class="download astro-YV6VUWXJ" src="/images/marekKnows/download.png" alt="Download VMK 1ef Resources" title="Download VMK 1ef Resources"></a>
   </div>
 </div>
 
-<div id="openGl2" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">2: PNG Textures</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/openGl/openGl_2.jpg" alt="PNG Textures" title="PNG Textures"><div class="text astro-ABSLUDGG">The code written in C++ VMK 24 PNG Loader is carried forward into this VMK where the texture manager is expanded to include the ability to use PNG texture files in the game engine.</div>
+<div id="openGl2" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">2: PNG Textures</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/openGl/openGl_2.jpg" alt="PNG Textures" title="PNG Textures"><div class="text astro-YV6VUWXJ">The code written in C++ VMK 24 PNG Loader is carried forward into this VMK where the texture manager is expanded to include the ability to use PNG texture files in the game engine.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('i7x9hfn7_-Q')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 2: PNG Textures" title="VMK 2: PNG Textures"></a>
-    <a href="/download/openGl/OpenGL-VMK002-PngTextures.rar" class="astro-ABSLUDGG"><img class="download astro-ABSLUDGG" src="/images/marekKnows/download.png" alt="Download VMK 2 Resources" title="Download VMK 2 Resources"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('i7x9hfn7_-Q')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 2: PNG Textures" title="VMK 2: PNG Textures"></a>
+    <a href="/download/openGl/OpenGL-VMK002-PngTextures.rar" class="astro-YV6VUWXJ"><img class="download astro-YV6VUWXJ" src="/images/marekKnows/download.png" alt="Download VMK 2 Resources" title="Download VMK 2 Resources"></a>
   </div>
 </div>
 </div>
-
   </div>
 
-  <div id="footer" class="astro-GWSUWYKX">
-    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-GWSUWYKX"><img src="/images/email.svg" alt="email" class="astro-GWSUWYKX"></a>
-    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-GWSUWYKX"><img src="/images/twitter.svg" alt="Twitter" class="astro-GWSUWYKX"></a>
-    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-GWSUWYKX"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-GWSUWYKX"></a>
-    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-GWSUWYKX"><img src="/images/youTube.svg" alt="youtube" class="astro-GWSUWYKX"></a>
+  <div id="footer" class="astro-74TE7IYS">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-74TE7IYS"><img src="/images/email.svg" alt="email" class="astro-74TE7IYS"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-74TE7IYS"><img src="/images/twitter.svg" alt="Twitter" class="astro-74TE7IYS"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-74TE7IYS"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-74TE7IYS"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-74TE7IYS"><img src="/images/youTube.svg" alt="youtube" class="astro-74TE7IYS"></a>
   </div>
 
-  <div id="youTubePlayer" class="astro-GWSUWYKX">
-    <div class="closer astro-GWSUWYKX">X</div>
-    <div class="playerWindow astro-GWSUWYKX">
-      <div id="player" class="astro-GWSUWYKX"></div>
+  <div id="youTubePlayer" class="astro-74TE7IYS">
+    <div class="closer astro-74TE7IYS">X</div>
+    <div class="playerWindow astro-74TE7IYS">
+      <div id="player" class="astro-74TE7IYS"></div>
     </div>
   </div>
 
-  <script type="text/javascript">
+  <script>
     const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
     const closerEl = youTubePlayerEl.querySelector( '.closer' );
 

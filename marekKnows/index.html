@@ -1,5 +1,204 @@
 <!DOCTYPE html>
 
-<script type="text/javascript">
-  window.location = '/#marekKnows';
-</script>  
+
+
+
+
+<html lang="en" dir="ltr" class="maxSize astro-74TE7IYS">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
+<title>Create Stones</title>
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+  
+  <script src="https://www.youtube.com/iframe_api"></script> 
+<link rel="stylesheet" href="/assets/index.4a58f878.css" />
+<link rel="stylesheet" href="/assets/index.45f44d07.css" />
+<link rel="stylesheet" href="/assets/index.47c04aef.css" /></head>
+<body class="maxSize globalDefaultStyles astro-74TE7IYS">
+  <div id="header" class="astro-74TE7IYS">
+    <img class="logo astro-74TE7IYS" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-74TE7IYS"><img class="createStones astro-74TE7IYS" src="/images/createStones.png" alt="Create Stones"></a>
+      
+
+<div class="breadCrumbs astro-XG6CCH5A">
+  <img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows" class="astro-XG6CCH5A">marekKnows</a>
+</div>
+  </div>
+  <div id="content" class="astro-74TE7IYS">
+    <div class="navBar astro-AYHEVNF7">
+    <img class="logo astro-AYHEVNF7" src="/images/marekKnows/logoHead.png" alt="MarekKnows Logo">
+    <div class="navSubMenu astro-AYHEVNF7" data-current="">
+      <ul class="astro-AYHEVNF7">
+        <li class="astro-AYHEVNF7">MarekKnows
+          <ul class="astro-AYHEVNF7">
+            <li class="astro-AYHEVNF7"><a data-url="#" class="astro-AYHEVNF7">Welcome</a></li>
+            <li class="astro-AYHEVNF7"><a data-url="#faq" class="astro-AYHEVNF7">FAQ</a></li>
+            <!-- <li><a data-url="#about">About</a></li> -->
+          </ul>
+        </li>  
+        <!-- <li>Engine Series
+          <ul>
+            <li><a data-url="gameDev">OpenGL Game Engine</a></li>
+            <li><a data-url="physics">Physics Engine</a></li>
+            <li><a data-url="shader">Shader Engine</a></li>
+          </ul>
+        </li>  
+        <li>Game Series
+          <ul>
+            <li><a data-url="ghost">Ghost Toast</a></li>
+            <li><a data-url="zing">Zing</a></li>
+          </ul>  
+        </li>   -->
+        <li class="astro-AYHEVNF7">General Information
+          <ul class="astro-AYHEVNF7">
+            <!-- <li><a data-url="cpp">General C++</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="math" class="astro-AYHEVNF7">Mathematics</a></li>
+            <!-- <li><a data-url="network">Network Programming</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="openGl" class="astro-AYHEVNF7">OpenGL Tips & Tricks</a></li>
+          </ul>
+        </li>  
+        <li class="astro-AYHEVNF7">Art & Sound Pipeline
+          <ul class="astro-AYHEVNF7">
+            <!-- <li><a data-url="audio">3D Audio Engine</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="trueSpace" class="astro-AYHEVNF7">Caligari trueSpace</a></li>
+          </ul>
+        </li>  
+        <li class="last astro-AYHEVNF7">Other
+          <ul class="astro-AYHEVNF7">
+            <li class="astro-AYHEVNF7"><a data-url="puzzles" class="astro-AYHEVNF7">Puzzles</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div><script>
+    //populate nav links
+    const navSubMenuEl = document.querySelector( '.navSubMenu' );
+    const current = navSubMenuEl.getAttribute( 'data-current' );
+    const hash = window.location.hash;
+
+    document.querySelectorAll( '.navSubMenu a[data-url]' ).forEach( aEl => {
+      const url = aEl.getAttribute( 'data-url' );
+      let isCurrent = false;
+      if( current === 'marekKnows' ) { //marekKnows root index
+        switch( url ) {
+          case '#': {
+            isCurrent = hash.length === 0 || hash === '#';
+            break;
+          }
+          case '#faq':
+          case '#about': {
+            isCurrent = url === hash;
+            break;
+          }
+        }
+      } else {
+        isCurrent = url === current;
+      }
+      const href = "/marekKnows" + ( url.startsWith( '#' ) ? '' : '/' ) + url;
+      if( !isCurrent ) {
+        aEl.href = href; //set a.href to the correct target
+      } else {
+        const text = aEl.textContent;
+        aEl.parentElement.innerHTML = text; //remove the a element
+      }
+    } );
+  </script><div class="stack astro-WTRE5QK2">
+    <div class="info intro astro-WTRE5QK2">Do you want to create your own games? Watch video tutorials that cover every step along the way, from creating the art resources to programming the game logic. Learn to program in OpenGL using C++, create 3D models and sprites, and learn the skills needed to build your own game engine. The tutorials are easy to follow and educational for all, including creative designers, instructors, students and hobbyists.</div>
+    
+    <div id="faq" class="info astro-WTRE5QK2">
+      <div class="title astro-WTRE5QK2">
+        <h2 class="astro-WTRE5QK2">Frequently Asked Questions (FAQ)</h2>
+        <span class="titleCap astro-WTRE5QK2">&nbsp;</span>
+      </div>
+      <div class="content astro-WTRE5QK2">
+        <dl class="astro-WTRE5QK2">
+          <dt class="first astro-WTRE5QK2">What happened to the original www.marek-knows.com website?</dt>
+            <dd class="astro-WTRE5QK2">I started marek-knows back in 2005 and kept the site going for over 10 years.  Then my personal life got too busy so I had to shut down the website.  I've decided to archive the videos that I created so you can now find them on this site instead.</dd>
+
+          <dt class="astro-WTRE5QK2">What is a VMK?</dt>
+            <dd class="astro-WTRE5QK2">Visual Module of Knowledge (VMK) is another name for a video tutorial on a specific topic.  Originally VMK's were compressed rar files containing the video tutorial and any additional resources you may need to complete the tutorial.  Today, each video is streamed and some videos are accompanied by a separate rar file containing the additional resources.</dd>
+
+          <dt class="astro-WTRE5QK2">When will the next VMK be uploaded?</dt>
+            <dd class="astro-WTRE5QK2">Converting the old VMKs to the new YouTube format is time consuming. I try to upload about a dozen or so per week.</dd>
+
+          <dt class="astro-WTRE5QK2">In which order should I watch the VMK?</dt>
+            <dd class="astro-WTRE5QK2">To see the recommended viewing order of all the video tutorials <a href="/images/marekKnows/viewingOrder.svg" class="astro-WTRE5QK2">open the VMK viewing chart</a>. The chart illustrates the following things:
+               <ol class="astro-WTRE5QK2">
+                  <li class="astro-WTRE5QK2">Title bar shows each of the VMK sections available on the website</li>
+                  <!-- <li>White lines connect boxes between different VMK sections.  In the image on the right this illustrates that you should watch all the video tutorials in the General C++ series numbered from 1 to 13 before watching the first OpenGL Game Engine VMK.</li> -->
+                  <li class="astro-WTRE5QK2">Boxes illustrate a video tutorial topic.  Each box can represent one or more VMK.</li>
+                  <li class="astro-WTRE5QK2">Dark brown lines indicate the relationship of VMK within a specific section.  You should watch video tutorials listed in order from top to the bottom.</li>
+               </ol>
+            </dd>
+            
+            <dt class="astro-WTRE5QK2">How do I open RAR files?</dt>
+              <dd class="astro-WTRE5QK2">To open an <b class="astro-WTRE5QK2">RAR</b> file, use the <a href="https://www.rarlab.com/" target="external" class="astro-WTRE5QK2">WinRAR software</a>.</dd>
+           
+            <dt class="astro-WTRE5QK2">I found a bug in one of the VMK, how do I report it?</dt>
+              <dd class="astro-WTRE5QK2"><img src="/images/marekKnows/help.png" alt="help" class="astro-WTRE5QK2">Open the video and click the YouTube button found in the bottom right corner of the video to watch the video on youtube.com.  Read through the youtube video comments to see if there is a solution to the problem already posted by someone else.  If you have found a new bug, post a new comment.</dd>
+            
+         </dl>
+      </div>
+    </div>
+    <br class="astro-WTRE5QK2"><br class="astro-WTRE5QK2">
+    <!-- <div id="about" class="info">TODO: About</div> -->
+  </div>
+  </div>
+
+  <div id="footer" class="astro-74TE7IYS">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-74TE7IYS"><img src="/images/email.svg" alt="email" class="astro-74TE7IYS"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-74TE7IYS"><img src="/images/twitter.svg" alt="Twitter" class="astro-74TE7IYS"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-74TE7IYS"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-74TE7IYS"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-74TE7IYS"><img src="/images/youTube.svg" alt="youtube" class="astro-74TE7IYS"></a>
+  </div>
+
+  <div id="youTubePlayer" class="astro-74TE7IYS">
+    <div class="closer astro-74TE7IYS">X</div>
+    <div class="playerWindow astro-74TE7IYS">
+      <div id="player" class="astro-74TE7IYS"></div>
+    </div>
+  </div>
+
+  <script>
+    const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
+    const closerEl = youTubePlayerEl.querySelector( '.closer' );
+
+    let player;
+
+    closerEl.addEventListener( 'click', () => {
+      player && player.stopVideo();
+      youTubePlayerEl.style.display = 'none';
+    } );
+
+    function playYouTubeVideo( videoId ) {
+      youTubePlayerEl.style.display = 'block';
+
+      if( player === undefined ) {
+        const playerEl = youTubePlayerEl.querySelector( '#player' );
+        const playerWidth = window.getComputedStyle( playerEl ).width;
+        let width = Number.parseInt( playerWidth );
+        if( width === undefined || width < 400 ) {
+          width = 400;
+        }
+
+        player = new YT.Player( 'player', {
+          width,
+          height: width * 0.6,
+          videoId,
+          playerVars: {
+            'playsinline': 1,
+          },
+          events: {
+            'onReady': () => player.playVideo()
+          }
+        } );
+      } else {
+        player.loadVideoById( videoId, 0 );
+      }
+    }
+
+  </script>
+</body>
+</html>

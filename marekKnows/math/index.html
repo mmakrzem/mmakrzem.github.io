@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" dir="ltr" class="maxSize astro-GWSUWYKX">
+<html lang="en" dir="ltr" class="maxSize astro-74TE7IYS">
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
@@ -10,147 +10,224 @@
 <link rel="stylesheet" type="text/css" href="/css/base.css">
   
   <script src="https://www.youtube.com/iframe_api"></script> 
-<link rel="stylesheet" href="/assets/asset.319db5b6.css"></link>
-</head>
-<body class="maxSize globalDefaultStyles">
-  <div id="header" class="astro-GWSUWYKX">
-    <img class="logo astro-GWSUWYKX" src="/images/logo.png" alt="Logo">
-    <a href="/" class=" astro-GWSUWYKX"><img class="createStones astro-GWSUWYKX" src="/images/createStones.png" alt="Create Stones"></a>
+<link rel="stylesheet" href="/assets/index.4a58f878.css" />
+<link rel="stylesheet" href="/assets/index.45f44d07.css" />
+<link rel="stylesheet" href="/assets/math.241e3208.css" /></head>
+<body class="maxSize globalDefaultStyles astro-74TE7IYS">
+  <div id="header" class="astro-74TE7IYS">
+    <img class="logo astro-74TE7IYS" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-74TE7IYS"><img class="createStones astro-74TE7IYS" src="/images/createStones.png" alt="Create Stones"></a>
       
 
-<div class="breadCrumbs astro-LZC32ZAU">
-  <img src="/images/rock.png" alt="rock" class="rock astro-LZC32ZAU"><a href="/marekKnows" class="astro-LZC32ZAU">marekKnows</a>
+<div class="breadCrumbs astro-XG6CCH5A">
+  <img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows" class="astro-XG6CCH5A">marekKnows</a><img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows/math" class="astro-XG6CCH5A">math</a>
 </div>
   </div>
-  <div id="content" class="astro-GWSUWYKX">
-      
+  <div id="content" class="astro-74TE7IYS">
+    <div class="navBar astro-AYHEVNF7">
+    <img class="logo astro-AYHEVNF7" src="/images/marekKnows/logoHead.png" alt="MarekKnows Logo">
+    <div class="navSubMenu astro-AYHEVNF7" data-current="">
+      <ul class="astro-AYHEVNF7">
+        <li class="astro-AYHEVNF7">MarekKnows
+          <ul class="astro-AYHEVNF7">
+            <li class="astro-AYHEVNF7"><a data-url="#" class="astro-AYHEVNF7">Welcome</a></li>
+            <li class="astro-AYHEVNF7"><a data-url="#faq" class="astro-AYHEVNF7">FAQ</a></li>
+            <!-- <li><a data-url="#about">About</a></li> -->
+          </ul>
+        </li>  
+        <!-- <li>Engine Series
+          <ul>
+            <li><a data-url="gameDev">OpenGL Game Engine</a></li>
+            <li><a data-url="physics">Physics Engine</a></li>
+            <li><a data-url="shader">Shader Engine</a></li>
+          </ul>
+        </li>  
+        <li>Game Series
+          <ul>
+            <li><a data-url="ghost">Ghost Toast</a></li>
+            <li><a data-url="zing">Zing</a></li>
+          </ul>  
+        </li>   -->
+        <li class="astro-AYHEVNF7">General Information
+          <ul class="astro-AYHEVNF7">
+            <!-- <li><a data-url="cpp">General C++</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="math" class="astro-AYHEVNF7">Mathematics</a></li>
+            <!-- <li><a data-url="network">Network Programming</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="openGl" class="astro-AYHEVNF7">OpenGL Tips & Tricks</a></li>
+          </ul>
+        </li>  
+        <li class="astro-AYHEVNF7">Art & Sound Pipeline
+          <ul class="astro-AYHEVNF7">
+            <!-- <li><a data-url="audio">3D Audio Engine</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="trueSpace" class="astro-AYHEVNF7">Caligari trueSpace</a></li>
+          </ul>
+        </li>  
+        <li class="last astro-AYHEVNF7">Other
+          <ul class="astro-AYHEVNF7">
+            <li class="astro-AYHEVNF7"><a data-url="puzzles" class="astro-AYHEVNF7">Puzzles</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div><script>
+    //populate nav links
+    const navSubMenuEl = document.querySelector( '.navSubMenu' );
+    const current = navSubMenuEl.getAttribute( 'data-current' );
+    const hash = window.location.hash;
 
-<div class="header astro-I6QUYNAY">
-  <img src="/images/marekKnows/math.png" alt="Math" class="astro-I6QUYNAY">
-  <h1 class="astro-I6QUYNAY">Math</h1>
-  <p class="astro-I6QUYNAY">VMK in this section are focused on analyzing and working through the mathematic formulae used to perform particular tasks. The main branches of mathematics used in these VMK are Algebra, Geometry, and Calculus. Each VMK will step you through the derivation and required calculations.</p>
+    document.querySelectorAll( '.navSubMenu a[data-url]' ).forEach( aEl => {
+      const url = aEl.getAttribute( 'data-url' );
+      let isCurrent = false;
+      if( current === 'marekKnows' ) { //marekKnows root index
+        switch( url ) {
+          case '#': {
+            isCurrent = hash.length === 0 || hash === '#';
+            break;
+          }
+          case '#faq':
+          case '#about': {
+            isCurrent = url === hash;
+            break;
+          }
+        }
+      } else {
+        isCurrent = url === current;
+      }
+      const href = "/marekKnows" + ( url.startsWith( '#' ) ? '' : '/' ) + url;
+      if( !isCurrent ) {
+        aEl.href = href; //set a.href to the correct target
+      } else {
+        const text = aEl.textContent;
+        aEl.parentElement.innerHTML = text; //remove the a element
+      }
+    } );
+  </script>  
+
+<div class="header astro-ZKEDGFK2">
+  <img src="/images/marekKnows/math.png" alt="Math" class="astro-ZKEDGFK2">
+  <h1 class="astro-ZKEDGFK2">Math</h1>
+  <p class="astro-ZKEDGFK2">VMK in this section are focused on analyzing and working through the mathematic formulae used to perform particular tasks. The main branches of mathematics used in these VMK are Algebra, Geometry, and Calculus. Each VMK will step you through the derivation and required calculations.</p>
 </div>
-<div class="section astro-I6QUYNAY">
+<div class="section astro-ZKEDGFK2">
   
 
-<div id="math1" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">1: Lines in 2D</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_1.jpg" alt="Lines in 2D" title="Lines in 2D"><div class="text astro-ABSLUDGG">In this video I explain how lines can be drawn in 2D and their general mathematical equation.</div>
+<div id="math1" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">1: Lines in 2D</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_1.jpg" alt="Lines in 2D" title="Lines in 2D"><div class="text astro-YV6VUWXJ">In this video I explain how lines can be drawn in 2D and their general mathematical equation.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('I473AvxLLbY')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 1: Lines in 2D" title="VMK 1: Lines in 2D"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('I473AvxLLbY')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 1: Lines in 2D" title="VMK 1: Lines in 2D"></a>
     
   </div>
 </div>
 
-<div id="math2" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">2: Parabolas</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_2.jpg" alt="Parabolas" title="Parabolas"><div class="text astro-ABSLUDGG">In this video I explain the general equation used to define a parabola in 2D.</div>
+<div id="math2" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">2: Parabolas</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_2.jpg" alt="Parabolas" title="Parabolas"><div class="text astro-YV6VUWXJ">In this video I explain the general equation used to define a parabola in 2D.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('73HDQ3FChUM')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 2: Parabolas" title="VMK 2: Parabolas"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('73HDQ3FChUM')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 2: Parabolas" title="VMK 2: Parabolas"></a>
     
   </div>
 </div>
 
-<div id="math3" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">3: Perpendicular in 2D</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_3.jpg" alt="Perpendicular in 2D" title="Perpendicular in 2D"><div class="text astro-ABSLUDGG">This VMK shows you how to find a perpendicular line to a reference line. The reference line can be defined as two points or an equation.</div>
+<div id="math3" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">3: Perpendicular in 2D</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_3.jpg" alt="Perpendicular in 2D" title="Perpendicular in 2D"><div class="text astro-YV6VUWXJ">This VMK shows you how to find a perpendicular line to a reference line. The reference line can be defined as two points or an equation.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('_9Yetr-l3Nk')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 3: Perpendicular in 2D" title="VMK 3: Perpendicular in 2D"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('_9Yetr-l3Nk')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 3: Perpendicular in 2D" title="VMK 3: Perpendicular in 2D"></a>
     
   </div>
 </div>
 
-<div id="math4" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">4: Normals in 3D</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_4.jpg" alt="Normals in 3D" title="Normals in 3D"><div class="text astro-ABSLUDGG">You will be shown how to calculate the normal to a surface defined in 3D.</div>
+<div id="math4" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">4: Normals in 3D</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_4.jpg" alt="Normals in 3D" title="Normals in 3D"><div class="text astro-YV6VUWXJ">You will be shown how to calculate the normal to a surface defined in 3D.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('YWdDScKXzR8')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 4: Normals in 3D" title="VMK 4: Normals in 3D"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('YWdDScKXzR8')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 4: Normals in 3D" title="VMK 4: Normals in 3D"></a>
     
   </div>
 </div>
 
-<div id="math5" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">5: Change Range</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_5.jpg" alt="Change Range" title="Change Range"><div class="text astro-ABSLUDGG">The ability to map one set of numbers to another set of numbers is very useful in many applications. This VMK shows you how to set up a linear relationship between the input and the output values.</div>
+<div id="math5" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">5: Change Range</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_5.jpg" alt="Change Range" title="Change Range"><div class="text astro-YV6VUWXJ">The ability to map one set of numbers to another set of numbers is very useful in many applications. This VMK shows you how to set up a linear relationship between the input and the output values.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('SxvnccYdjqo')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 5: Change Range" title="VMK 5: Change Range"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('SxvnccYdjqo')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 5: Change Range" title="VMK 5: Change Range"></a>
     
   </div>
 </div>
 
-<div id="math6" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">6: Unit Circle</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_6.jpg" alt="Unit Circle" title="Unit Circle"><div class="text astro-ABSLUDGG">In this VMK I show you how to calculate the (X,Y) coordinates for points located on a circle.  I also briefly discuss the difference between degrees and radians.</div>
+<div id="math6" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">6: Unit Circle</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_6.jpg" alt="Unit Circle" title="Unit Circle"><div class="text astro-YV6VUWXJ">In this VMK I show you how to calculate the (X,Y) coordinates for points located on a circle.  I also briefly discuss the difference between degrees and radians.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('Ztw85f417Jc')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 6: Unit Circle" title="VMK 6: Unit Circle"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('Ztw85f417Jc')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 6: Unit Circle" title="VMK 6: Unit Circle"></a>
     
   </div>
 </div>
 
-<div id="math7" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">7: Dot Product</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_7.jpg" alt="Dot Product" title="Dot Product"><div class="text astro-ABSLUDGG">In this VMK we explore the dot product of a vector and how to use it to find the length of a vector, the angle between two vectors and the projection of one vector onto another.</div>
+<div id="math7" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">7: Dot Product</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_7.jpg" alt="Dot Product" title="Dot Product"><div class="text astro-YV6VUWXJ">In this VMK we explore the dot product of a vector and how to use it to find the length of a vector, the angle between two vectors and the projection of one vector onto another.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('yAG4aUqulek')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 7: Dot Product" title="VMK 7: Dot Product"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('yAG4aUqulek')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 7: Dot Product" title="VMK 7: Dot Product"></a>
     
   </div>
 </div>
 
-<div id="math8" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">8: Spherical Coordinate System</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_8.jpg" alt="Spherical Coordinate System" title="Spherical Coordinate System"><div class="text astro-ABSLUDGG">The workings of the spherical coordinate system are explained and the three parameters: r, theta, phi are related to the standard cartesian x,y,z coordinates.</div>
+<div id="math8" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">8: Spherical Coordinate System</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_8.jpg" alt="Spherical Coordinate System" title="Spherical Coordinate System"><div class="text astro-YV6VUWXJ">The workings of the spherical coordinate system are explained and the three parameters: r, theta, phi are related to the standard cartesian x,y,z coordinates.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('OTeyeWI8wxw')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 8: Spherical Coordinate System" title="VMK 8: Spherical Coordinate System"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('OTeyeWI8wxw')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 8: Spherical Coordinate System" title="VMK 8: Spherical Coordinate System"></a>
     
   </div>
 </div>
 
-<div id="math9" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">9: Rolling Ball using Quaternions</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_9.jpg" alt="Rolling Ball using Quaternions" title="Rolling Ball using Quaternions"><div class="text astro-ABSLUDGG">Using the arrow keys, you can control a rolling ball on the screen.  The quaternion equations used to make this happen is shown in this video. Visit the forum to download the finished application from this VMK.</div>
+<div id="math9" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">9: Rolling Ball using Quaternions</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_9.jpg" alt="Rolling Ball using Quaternions" title="Rolling Ball using Quaternions"><div class="text astro-YV6VUWXJ">Using the arrow keys, you can control a rolling ball on the screen.  The quaternion equations used to make this happen is shown in this video. Visit the forum to download the finished application from this VMK.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('RMLdBgzoHmQ')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 9: Rolling Ball using Quaternions" title="VMK 9: Rolling Ball using Quaternions"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('RMLdBgzoHmQ')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 9: Rolling Ball using Quaternions" title="VMK 9: Rolling Ball using Quaternions"></a>
     
   </div>
 </div>
 
-<div id="math10" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">10: Smooth Interpolation</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/math/math_10.jpg" alt="Smooth Interpolation" title="Smooth Interpolation"><div class="text astro-ABSLUDGG">In this video I show how to derive the equation used to create a smooth interpolation curve that connects two points. To see how to use this equation in C++ code, see Ghost Toast VMK 30.</div>
+<div id="math10" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">10: Smooth Interpolation</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/math/math_10.jpg" alt="Smooth Interpolation" title="Smooth Interpolation"><div class="text astro-YV6VUWXJ">In this video I show how to derive the equation used to create a smooth interpolation curve that connects two points. To see how to use this equation in C++ code, see Ghost Toast VMK 30.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('tld8ikO_OU8')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 10: Smooth Interpolation" title="VMK 10: Smooth Interpolation"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('tld8ikO_OU8')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 10: Smooth Interpolation" title="VMK 10: Smooth Interpolation"></a>
     
   </div>
 </div>
 </div>
-
   </div>
 
-  <div id="footer" class="astro-GWSUWYKX">
-    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-GWSUWYKX"><img src="/images/email.svg" alt="email" class="astro-GWSUWYKX"></a>
-    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-GWSUWYKX"><img src="/images/twitter.svg" alt="Twitter" class="astro-GWSUWYKX"></a>
-    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-GWSUWYKX"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-GWSUWYKX"></a>
-    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-GWSUWYKX"><img src="/images/youTube.svg" alt="youtube" class="astro-GWSUWYKX"></a>
+  <div id="footer" class="astro-74TE7IYS">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-74TE7IYS"><img src="/images/email.svg" alt="email" class="astro-74TE7IYS"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-74TE7IYS"><img src="/images/twitter.svg" alt="Twitter" class="astro-74TE7IYS"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-74TE7IYS"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-74TE7IYS"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-74TE7IYS"><img src="/images/youTube.svg" alt="youtube" class="astro-74TE7IYS"></a>
   </div>
 
-  <div id="youTubePlayer" class="astro-GWSUWYKX">
-    <div class="closer astro-GWSUWYKX">X</div>
-    <div class="playerWindow astro-GWSUWYKX">
-      <div id="player" class="astro-GWSUWYKX"></div>
+  <div id="youTubePlayer" class="astro-74TE7IYS">
+    <div class="closer astro-74TE7IYS">X</div>
+    <div class="playerWindow astro-74TE7IYS">
+      <div id="player" class="astro-74TE7IYS"></div>
     </div>
   </div>
 
-  <script type="text/javascript">
+  <script>
     const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
     const closerEl = youTubePlayerEl.querySelector( '.closer' );
 

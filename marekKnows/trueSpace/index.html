@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" dir="ltr" class="maxSize astro-GWSUWYKX">
+<html lang="en" dir="ltr" class="maxSize astro-74TE7IYS">
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
@@ -10,117 +10,194 @@
 <link rel="stylesheet" type="text/css" href="/css/base.css">
   
   <script src="https://www.youtube.com/iframe_api"></script> 
-<link rel="stylesheet" href="/assets/asset.319db5b6.css"></link>
-</head>
-<body class="maxSize globalDefaultStyles">
-  <div id="header" class="astro-GWSUWYKX">
-    <img class="logo astro-GWSUWYKX" src="/images/logo.png" alt="Logo">
-    <a href="/" class=" astro-GWSUWYKX"><img class="createStones astro-GWSUWYKX" src="/images/createStones.png" alt="Create Stones"></a>
+<link rel="stylesheet" href="/assets/index.4a58f878.css" />
+<link rel="stylesheet" href="/assets/index.45f44d07.css" />
+<link rel="stylesheet" href="/assets/math.241e3208.css" /></head>
+<body class="maxSize globalDefaultStyles astro-74TE7IYS">
+  <div id="header" class="astro-74TE7IYS">
+    <img class="logo astro-74TE7IYS" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-74TE7IYS"><img class="createStones astro-74TE7IYS" src="/images/createStones.png" alt="Create Stones"></a>
       
 
-<div class="breadCrumbs astro-LZC32ZAU">
-  <img src="/images/rock.png" alt="rock" class="rock astro-LZC32ZAU"><a href="/marekKnows" class="astro-LZC32ZAU">marekKnows</a>
+<div class="breadCrumbs astro-XG6CCH5A">
+  <img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows" class="astro-XG6CCH5A">marekKnows</a><img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows/trueSpace" class="astro-XG6CCH5A">trueSpace</a>
 </div>
   </div>
-  <div id="content" class="astro-GWSUWYKX">
-      
+  <div id="content" class="astro-74TE7IYS">
+    <div class="navBar astro-AYHEVNF7">
+    <img class="logo astro-AYHEVNF7" src="/images/marekKnows/logoHead.png" alt="MarekKnows Logo">
+    <div class="navSubMenu astro-AYHEVNF7" data-current="">
+      <ul class="astro-AYHEVNF7">
+        <li class="astro-AYHEVNF7">MarekKnows
+          <ul class="astro-AYHEVNF7">
+            <li class="astro-AYHEVNF7"><a data-url="#" class="astro-AYHEVNF7">Welcome</a></li>
+            <li class="astro-AYHEVNF7"><a data-url="#faq" class="astro-AYHEVNF7">FAQ</a></li>
+            <!-- <li><a data-url="#about">About</a></li> -->
+          </ul>
+        </li>  
+        <!-- <li>Engine Series
+          <ul>
+            <li><a data-url="gameDev">OpenGL Game Engine</a></li>
+            <li><a data-url="physics">Physics Engine</a></li>
+            <li><a data-url="shader">Shader Engine</a></li>
+          </ul>
+        </li>  
+        <li>Game Series
+          <ul>
+            <li><a data-url="ghost">Ghost Toast</a></li>
+            <li><a data-url="zing">Zing</a></li>
+          </ul>  
+        </li>   -->
+        <li class="astro-AYHEVNF7">General Information
+          <ul class="astro-AYHEVNF7">
+            <!-- <li><a data-url="cpp">General C++</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="math" class="astro-AYHEVNF7">Mathematics</a></li>
+            <!-- <li><a data-url="network">Network Programming</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="openGl" class="astro-AYHEVNF7">OpenGL Tips & Tricks</a></li>
+          </ul>
+        </li>  
+        <li class="astro-AYHEVNF7">Art & Sound Pipeline
+          <ul class="astro-AYHEVNF7">
+            <!-- <li><a data-url="audio">3D Audio Engine</a></li> -->
+            <li class="astro-AYHEVNF7"><a data-url="trueSpace" class="astro-AYHEVNF7">Caligari trueSpace</a></li>
+          </ul>
+        </li>  
+        <li class="last astro-AYHEVNF7">Other
+          <ul class="astro-AYHEVNF7">
+            <li class="astro-AYHEVNF7"><a data-url="puzzles" class="astro-AYHEVNF7">Puzzles</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div><script>
+    //populate nav links
+    const navSubMenuEl = document.querySelector( '.navSubMenu' );
+    const current = navSubMenuEl.getAttribute( 'data-current' );
+    const hash = window.location.hash;
 
-<div class="header astro-I6QUYNAY">
-  <img src="/images/marekKnows/trueSpace.png" alt="TrueSpace" class="astro-I6QUYNAY">
-  <h1 class="astro-I6QUYNAY">TrueSpace</h1>
-  <p class="astro-I6QUYNAY">Caligari Corporation (acquired by Microsoft in 2008) created a 3D modeling software application called trueSpace. The VMK in this section will familiarize you with the software's user interface so that you can create 3D models, apply and change material on your models, and work with textures.<br><br>Microsoft released the full version of trueSpace for free, and then discontinued the software in 2009. You may still be able to find it for download somewhere online.  See <a href="https://en.wikipedia.org/wiki/TrueSpace" target=external title="about trueSpace">Wikipedia</a> for details.</p>
+    document.querySelectorAll( '.navSubMenu a[data-url]' ).forEach( aEl => {
+      const url = aEl.getAttribute( 'data-url' );
+      let isCurrent = false;
+      if( current === 'marekKnows' ) { //marekKnows root index
+        switch( url ) {
+          case '#': {
+            isCurrent = hash.length === 0 || hash === '#';
+            break;
+          }
+          case '#faq':
+          case '#about': {
+            isCurrent = url === hash;
+            break;
+          }
+        }
+      } else {
+        isCurrent = url === current;
+      }
+      const href = "/marekKnows" + ( url.startsWith( '#' ) ? '' : '/' ) + url;
+      if( !isCurrent ) {
+        aEl.href = href; //set a.href to the correct target
+      } else {
+        const text = aEl.textContent;
+        aEl.parentElement.innerHTML = text; //remove the a element
+      }
+    } );
+  </script>  
+
+<div class="header astro-ZKEDGFK2">
+  <img src="/images/marekKnows/trueSpace.png" alt="TrueSpace" class="astro-ZKEDGFK2">
+  <h1 class="astro-ZKEDGFK2">TrueSpace</h1>
+  <p class="astro-ZKEDGFK2">Caligari Corporation (acquired by Microsoft in 2008) created a 3D modeling software application called trueSpace. The VMK in this section will familiarize you with the software's user interface so that you can create 3D models, apply and change material on your models, and work with textures.<br><br>Microsoft released the full version of trueSpace for free, and then discontinued the software in 2009. You may still be able to find it for download somewhere online.  See <a href="https://en.wikipedia.org/wiki/TrueSpace" target=external title="about trueSpace">Wikipedia</a> for details.</p>
 </div>
-<div class="section astro-I6QUYNAY">
+<div class="section astro-ZKEDGFK2">
   
 
-<div id="trueSpace1" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">1: Introduction</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/trueSpace/trueSpace_1.jpg" alt="Introduction" title="Introduction"><div class="text astro-ABSLUDGG">An introduction to the caligari series of VMK's with instructions on where to download the free version of gameSpace Light from the internet.</div>
+<div id="trueSpace1" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">1: Introduction</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/trueSpace/trueSpace_1.jpg" alt="Introduction" title="Introduction"><div class="text astro-YV6VUWXJ">An introduction to the caligari series of VMK's with instructions on where to download the free version of gameSpace Light from the internet.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('j_VuDJ_yCEU')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 1: Introduction" title="VMK 1: Introduction"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('j_VuDJ_yCEU')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 1: Introduction" title="VMK 1: Introduction"></a>
     
   </div>
 </div>
 
-<div id="trueSpace2" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">2: User Interface</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/trueSpace/trueSpace_2.jpg" alt="User Interface" title="User Interface"><div class="text astro-ABSLUDGG">This VMK introduces you to the user interface inside trueSpace v6.6.  I show you how to navigate in the 3D scene and how to use the buttons to execute commands and bring up additional menu options.</div>
+<div id="trueSpace2" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">2: User Interface</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/trueSpace/trueSpace_2.jpg" alt="User Interface" title="User Interface"><div class="text astro-YV6VUWXJ">This VMK introduces you to the user interface inside trueSpace v6.6.  I show you how to navigate in the 3D scene and how to use the buttons to execute commands and bring up additional menu options.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('pVvcRrJx7Fo')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 2: User Interface" title="VMK 2: User Interface"></a>
-    <a href="/download/trueSpace/Caligari-VMK002-UserInterface.rar" class="astro-ABSLUDGG"><img class="download astro-ABSLUDGG" src="/images/marekKnows/download.png" alt="Download VMK 2 Resources" title="Download VMK 2 Resources"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('pVvcRrJx7Fo')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 2: User Interface" title="VMK 2: User Interface"></a>
+    <a href="/download/trueSpace/Caligari-VMK002-UserInterface.rar" class="astro-YV6VUWXJ"><img class="download astro-YV6VUWXJ" src="/images/marekKnows/download.png" alt="Download VMK 2 Resources" title="Download VMK 2 Resources"></a>
   </div>
 </div>
 
-<div id="trueSpace3" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">3: Workflow and Hotkey Setup</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/trueSpace/trueSpace_3.jpg" alt="Workflow and Hotkey Setup" title="Workflow and Hotkey Setup"><div class="text astro-ABSLUDGG">This VMK shows you how to setup trueSpace for optimal workflow.  Mapping hotkeys for important operations is also done.</div>
+<div id="trueSpace3" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">3: Workflow and Hotkey Setup</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/trueSpace/trueSpace_3.jpg" alt="Workflow and Hotkey Setup" title="Workflow and Hotkey Setup"><div class="text astro-YV6VUWXJ">This VMK shows you how to setup trueSpace for optimal workflow.  Mapping hotkeys for important operations is also done.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('JO0_A3z_YYg')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 3: Workflow and Hotkey Setup" title="VMK 3: Workflow and Hotkey Setup"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('JO0_A3z_YYg')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 3: Workflow and Hotkey Setup" title="VMK 3: Workflow and Hotkey Setup"></a>
     
   </div>
 </div>
 
-<div id="trueSpace4" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">4: Using Primitives</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/trueSpace/trueSpace_4.jpg" alt="Using Primitives" title="Using Primitives"><div class="text astro-ABSLUDGG">I show you how to use the primitive creation tools in this VMK.  Primitives are positioned, rotated and scaled.  Multiple object selection is also shown.</div>
+<div id="trueSpace4" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">4: Using Primitives</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/trueSpace/trueSpace_4.jpg" alt="Using Primitives" title="Using Primitives"><div class="text astro-YV6VUWXJ">I show you how to use the primitive creation tools in this VMK.  Primitives are positioned, rotated and scaled.  Multiple object selection is also shown.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('xx63TjmHxIg')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 4: Using Primitives" title="VMK 4: Using Primitives"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('xx63TjmHxIg')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 4: Using Primitives" title="VMK 4: Using Primitives"></a>
     
   </div>
 </div>
 
-<div id="trueSpace5" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">5: Model Editing</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/trueSpace/trueSpace_5.jpg" alt="Model Editing" title="Model Editing"><div class="text astro-ABSLUDGG">In this VMK I show you how to change the location of an object's pivot point, and how to pull on the model's faces to make interesting shapes.</div>
+<div id="trueSpace5" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">5: Model Editing</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/trueSpace/trueSpace_5.jpg" alt="Model Editing" title="Model Editing"><div class="text astro-YV6VUWXJ">In this VMK I show you how to change the location of an object's pivot point, and how to pull on the model's faces to make interesting shapes.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('axMN6ds63t0')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 5: Model Editing" title="VMK 5: Model Editing"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('axMN6ds63t0')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 5: Model Editing" title="VMK 5: Model Editing"></a>
     
   </div>
 </div>
 
-<div id="trueSpace6" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">6: Material Editor</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/trueSpace/trueSpace_6.jpg" alt="Material Editor" title="Material Editor"><div class="text astro-ABSLUDGG">I show you how to use the Material Editor to color an entire object or individual faces.  I also show you how to apply transparencies, emissive color, specular color and all other material properties.</div>
+<div id="trueSpace6" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">6: Material Editor</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/trueSpace/trueSpace_6.jpg" alt="Material Editor" title="Material Editor"><div class="text astro-YV6VUWXJ">I show you how to use the Material Editor to color an entire object or individual faces.  I also show you how to apply transparencies, emissive color, specular color and all other material properties.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('GWl4QxZfcDk')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 6: Material Editor" title="VMK 6: Material Editor"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('GWl4QxZfcDk')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 6: Material Editor" title="VMK 6: Material Editor"></a>
     
   </div>
 </div>
 
-<div id="trueSpace7" class="card astro-ABSLUDGG">
-  <div class="header astro-ABSLUDGG">7: Texturing Objects</div>
-  <div class="info astro-ABSLUDGG"><img class="screenShot astro-ABSLUDGG" src="/images/marekKnows/trueSpace/trueSpace_7.jpg" alt="Texturing Objects" title="Texturing Objects"><div class="text astro-ABSLUDGG">I show you how to use the material editor in this VMK to apply a texture to an object.  UV coordinate manipulation is also done using the texture editor.</div>
+<div id="trueSpace7" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">7: Texturing Objects</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/trueSpace/trueSpace_7.jpg" alt="Texturing Objects" title="Texturing Objects"><div class="text astro-YV6VUWXJ">I show you how to use the material editor in this VMK to apply a texture to an object.  UV coordinate manipulation is also done using the texture editor.</div>
   </div>
-  <div class="buttons astro-ABSLUDGG">
-    <a onclick="playYouTubeVideo('LibRkh_s3lQ')" class="astro-ABSLUDGG"><img class="watch astro-ABSLUDGG" src="/images/marekKnows/watch.png" alt="VMK 7: Texturing Objects" title="VMK 7: Texturing Objects"></a>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('LibRkh_s3lQ')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 7: Texturing Objects" title="VMK 7: Texturing Objects"></a>
     
   </div>
 </div>
 </div>
-
   </div>
 
-  <div id="footer" class="astro-GWSUWYKX">
-    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-GWSUWYKX"><img src="/images/email.svg" alt="email" class="astro-GWSUWYKX"></a>
-    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-GWSUWYKX"><img src="/images/twitter.svg" alt="Twitter" class="astro-GWSUWYKX"></a>
-    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-GWSUWYKX"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-GWSUWYKX"></a>
-    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-GWSUWYKX"><img src="/images/youTube.svg" alt="youtube" class="astro-GWSUWYKX"></a>
+  <div id="footer" class="astro-74TE7IYS">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-74TE7IYS"><img src="/images/email.svg" alt="email" class="astro-74TE7IYS"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-74TE7IYS"><img src="/images/twitter.svg" alt="Twitter" class="astro-74TE7IYS"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-74TE7IYS"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-74TE7IYS"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-74TE7IYS"><img src="/images/youTube.svg" alt="youtube" class="astro-74TE7IYS"></a>
   </div>
 
-  <div id="youTubePlayer" class="astro-GWSUWYKX">
-    <div class="closer astro-GWSUWYKX">X</div>
-    <div class="playerWindow astro-GWSUWYKX">
-      <div id="player" class="astro-GWSUWYKX"></div>
+  <div id="youTubePlayer" class="astro-74TE7IYS">
+    <div class="closer astro-74TE7IYS">X</div>
+    <div class="playerWindow astro-74TE7IYS">
+      <div id="player" class="astro-74TE7IYS"></div>
     </div>
   </div>
 
-  <script type="text/javascript">
+  <script>
     const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
     const closerEl = youTubePlayerEl.querySelector( '.closer' );
 
