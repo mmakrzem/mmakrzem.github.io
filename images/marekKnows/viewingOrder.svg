@@ -22,74 +22,92 @@
 	
 		<line id="network_1_" display="none" fill="none" stroke="#8A4A00" stroke-width="3" stroke-miterlimit="10" x1="87.333" y1="1170.667" x2="87.333" y2="36.667"/>
 	
-		<line id="puzzles_1_" fill="none" stroke="#8A4A00" stroke-width="1.5862" stroke-miterlimit="10" x1="284.333" y1="309.667" x2="284.333" y2="-7.333"/>
+		<line id="puzzles_1_" fill="none" stroke="#8A4A00" stroke-width="1.5861" stroke-miterlimit="10" x1="284.333" y1="309.667" x2="284.333" y2="-7.333"/>
 	
 		<line id="openGl" fill="none" stroke="#8A4A00" stroke-width="3" stroke-miterlimit="10" x1="482.333" y1="1170.667" x2="482.333" y2="36.667"/>
 	
 		<line id="math" fill="none" stroke="#8A4A00" stroke-width="2.6845" stroke-miterlimit="10" x1="1274.334" y1="944.667" x2="1274.334" y2="36.667"/>
 	
 		<line id="trueSpace" fill="none" stroke="#8A4A00" stroke-width="1.7051" stroke-miterlimit="10" x1="1472.334" y1="403" x2="1472.334" y2="36.667"/>
+	
+		<line id="C_x2B__x2B__2_" fill="none" stroke="#8A4A00" stroke-width="3.2318" stroke-miterlimit="10" x1="681.333" y1="1352.667" x2="681.333" y2="36.667"/>
 </g>
 <g id="horizontal_Lines">
-	<g id="left">
+	<g id="c_x2B__x2B_15_left">
 		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M362,263.667c211.333,0,17.25-46,315.333-46"/>
 		<polygon id="arrowHead_-_left" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
 			369.125,269.698 357.076,262.742 369.125,255.786 		"/>
 	</g>
-	<g id="left_copy" display="none">
-		<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="3.6773" stroke-miterlimit="10" d="M87.333,1032.667
-			c564.951,0,36.061-46,594-46"/>
-		
-			<polygon id="arrowHead_-_left_1_" display="inline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
+	<g id="c_x2B__x2B_22_left">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M162.101,1031.742
+			c445.899,0-27-45.075,527.334-45.075"/>
+		<polygon id="arrowHead_-_left_1_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
 			168.125,1038.698 156.076,1031.742 168.125,1024.786 		"/>
 	</g>
-	<g id="left_copy_2" display="none">
-		<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="3.6773" stroke-miterlimit="10" d="M87.333,1122.667
-			c564.951,0,36.061-46,594-46"/>
-		
-			<polygon id="arrowHead_-_left_2_" display="inline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
+	<g id="c_x2B__x2B_23_left">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M156.076,1121.742
+			c463.784,0-32.682-45.075,525.258-45.075"/>
+		<polygon id="arrowHead_-_left_2_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
 			168.125,1128.698 156.076,1121.742 168.125,1114.786 		"/>
 	</g>
-	<g id="left_copy_4">
+	<g id="gameDev45_left">
 		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M560.767,674.667c200.899,0,18.231-46,315.333-46"
 			/>
 		<polygon id="arrowHead_-_left_4_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
 			565.125,680.698 553.076,673.742 565.125,666.786 		"/>
 	</g>
-	<g id="left_copy_3">
-		<path fill="none" stroke="#FFFFFF" stroke-width="2.0807" stroke-miterlimit="10" d="M558.553,1163.833
+	<g id="c_x2B__x2B_24_left">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M558.553,1163.833
 			c76.947-16.5-13.886-42.091,122.615-42.091"/>
 		<polygon id="arrowHead_-_left_3_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
 			564.467,1169.258 551.214,1165.023 561.507,1155.664 		"/>
 	</g>
-	<g id="left_copy_5">
+	<g id="math2_left">
 		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M956.101,265.886
 			c256.565-2.886-50.767-45.219,320.566-45.219"/>
 		<polygon id="arrowHead_-_left_5_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
 			962.125,272.698 950.076,265.742 962.125,258.786 		"/>
 	</g>
-	<g id="left_copy_6">
+	<g id="math6_left">
 		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M957.667,355.742
 			c261.667-1.742-52.333-45.075,319-45.075"/>
 		<polygon id="arrowHead_-_left_6_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
 			962.125,362.698 950.076,355.742 962.125,348.786 		"/>
 	</g>
-	<g id="left_copy_8">
-		<path fill="none" stroke="#FFFFFF" stroke-width="3.6431" stroke-miterlimit="10" d="M957.667,446.667
-			c447.667,0-40.94-46,506.667-46"/>
+	<g id="truespace7_left">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M957.667,446.667c447.667,0-40.94-46,506.667-46"
+			/>
 		<polygon id="arrowHead_-_left_8_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
 			962.125,452.698 950.076,445.742 962.125,438.786 		"/>
 	</g>
-	<g id="left_copy_7">
+	<g id="math7_left">
 		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M957.667,536.667c255,0-52.333-46,319-46"/>
 		<polygon id="arrowHead_-_left_7_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
 			962.125,542.698 950.076,535.742 962.125,528.786 		"/>
 	</g>
-	<g id="right">
+	<g id="math10_right">
 		<path fill="none" stroke="#FFFFFF" stroke-width="2.9982" stroke-miterlimit="10" d="M1275.334,942.723
 			c376,0,84.666,44.109,318.137,44.109"/>
 		<polygon id="arrowHead_-_right" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.9982" stroke-miterlimit="10" points="
 			1587.446,993.779 1599.495,986.832 1587.446,979.884 		"/>
+	</g>
+	<g id="math25_right">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M685.334,1262.723
+			c1304.607,0,106.666,44.109,1304.607,44.109"/>
+		<polygon id="arrowHead_-_right_1_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.9982" stroke-miterlimit="10" points="
+			1981.446,1313.779 1993.495,1306.832 1981.446,1299.884 		"/>
+	</g>
+	<g id="math17_right">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M685.334,898.723
+			c323,0,90.333,44.109,317.027,44.109"/>
+		<polygon id="arrowHead_-_right_2_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.9982" stroke-miterlimit="10" points="
+			993.446,949.779 1005.495,942.832 993.446,935.884 		"/>
+	</g>
+	<g id="math13_right">
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M685.334,128.723
+			c121.414,0,66.666,28.944,119.169,44.109"/>
+		<polygon id="arrowHead_-_right_3_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.9982" stroke-miterlimit="10" points="
+			793.835,175.957 807.284,172.411 797.478,162.547 		"/>
 	</g>
 </g>
 <g id="boxes">
@@ -129,6 +147,22 @@
 		<rect x="1405.334" y="65.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
 		<rect x="1405.334" y="385.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
 	</g>
+	<g id="C_x2B__x2B__1_">
+		<rect x="613.333" y="20.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="65.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="112.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="157.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="202.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="837.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="882.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="927.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="972.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="1062.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="1107.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="1246.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="1291.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="613.333" y="1336.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+	</g>
 </g>
 <g id="text">
 	<g id="network_2_" display="none">
@@ -156,11 +190,11 @@
 		<text transform="matrix(1 0 0 1 225.6665 41.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">0: Introduction</text>
 		<text transform="matrix(1 0 0 1 223.6665 270.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">1a: The 3x3 Puzzle</text>
 		<g id="_x31_b-_x3E__1c">
-			<text transform="matrix(1 0 0 1 223.6665 315.3262)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">1b</text>
+			<text transform="matrix(1 0 0 1 223.6665 315.3257)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">1b</text>
 			
 				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="249.667" y1="308.66" x2="283.333" y2="308.66"/>
 			<polygon fill="#FFFFFF" points="295,308.66 282.952,315.616 282.952,301.704 			"/>
-			<text transform="matrix(1 0 0 1 297.6665 315.3262)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">1c</text>
+			<text transform="matrix(1 0 0 1 297.6665 315.3257)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">1c</text>
 		</g>
 	</g>
 	<g id="OpenGL_Tips">
@@ -210,9 +244,39 @@
 		</g>
 		<text transform="matrix(1 0 0 1 1410.666 398.3335)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">7: Texturing</tspan><tspan x="0" y="16" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">    Objects</tspan></text>
 	</g>
+	<g id="C_x2B__x2B_">
+		<text transform="matrix(1 0 0 1 649.6665 12.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">General C++</text>
+		<text transform="matrix(1 0 0 1 623.6665 34.3335)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">1: Number </tspan><tspan x="0" y="14" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">    Systems</tspan></text>
+		<g id="_x2D__x3E__copy_4">
+			<text transform="matrix(1 0 0 1 623.6665 86.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">2</text>
+			
+				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="638.715" y1="80.667" x2="672.382" y2="80.667"/>
+			<polygon fill="#FFFFFF" points="684.048,80.667 672,87.623 672,73.711 			"/>
+			<text transform="matrix(1 0 0 1 689.6665 86.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">12</text>
+		</g>
+		<text transform="matrix(1 0 0 1 623.6665 126.3335)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">13: Visual C++</tspan><tspan x="0" y="14" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">      Debugger</tspan></text>
+		<text transform="matrix(1 0 0 1 623.6665 179.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">14: Templates</text>
+		<text transform="matrix(1 0 0 1 623.6665 224.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">15: Threads</text>
+		<text transform="matrix(1 0 0 1 623.6665 852.334)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">16: Random</tspan><tspan x="0" y="14" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">      Numbers</tspan></text>
+		<text transform="matrix(1 0 0 1 623.6665 897.334)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">17: zLib</tspan><tspan x="0" y="14" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">      Compression</tspan></text>
+		<g id="_x2D__x3E__copy_5">
+			<text transform="matrix(1 0 0 1 623.6665 948.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">18</text>
+			
+				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="648.715" y1="942.667" x2="682.382" y2="942.667"/>
+			<polygon fill="#FFFFFF" points="694.048,942.667 682,949.623 682,935.711 			"/>
+			<text transform="matrix(1 0 0 1 699.6665 948.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">21</text>
+		</g>
+		<text transform="matrix(1 0 0 1 623.6665 993.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">22: i++ vs ++i</text>
+		<text transform="matrix(1 0 0 1 623.6665 1083.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">23: Bit Fields</text>
+		<text transform="matrix(1 0 0 1 623.6665 1128.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">24: PNG Loader</text>
+		<text transform="matrix(1 0 0 1 623.6665 1267.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">25: Exceptions</text>
+		<text transform="matrix(1 0 0 1 623.6665 1306.334)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">26: Console</tspan><tspan x="0" y="14" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">      Colors</tspan></text>
+		<text transform="matrix(1 0 0 1 623.6665 1351.334)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">27: Virtual</tspan><tspan x="0" y="14" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">      Destructor</tspan></text>
+	</g>
 </g>
 <g id="Layer_1" display="none">
-	<image display="inline" overflow="visible" opacity="0.7" width="2355" height="1570" xlink:href="viewingOrder.png" >
+	
+		<image display="inline" overflow="visible" opacity="0.7" width="2355" height="1570" xlink:href="../../../master/marekKnows/viewingOrder.png" >
 	</image>
 </g>
 </svg>

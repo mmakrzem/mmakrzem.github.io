@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr" class="maxSize astro-74TE7IYS">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
+<title>Create Stones</title>
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+  
+  <script src="https://www.youtube.com/iframe_api"></script> 
+<link rel="stylesheet" href="/assets/cpp.4a58f878.css" />
+<link rel="stylesheet" href="/assets/cpp.d5c0f222.css" />
+<link rel="stylesheet" href="/assets/cpp.241e3208.css" /></head>
+<body class="maxSize globalDefaultStyles astro-74TE7IYS">
+  <div id="header" class="astro-74TE7IYS">
+    <img class="logo astro-74TE7IYS" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-74TE7IYS"><img class="createStones astro-74TE7IYS" src="/images/createStones.png" alt="Create Stones"></a>
+      
+
+<div class="breadCrumbs astro-XG6CCH5A">
+  <img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows" class="astro-XG6CCH5A">marekKnows</a><img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows/cpp" class="astro-XG6CCH5A">cpp</a>
+</div>
+  </div>
+  <div id="content" class="astro-74TE7IYS">
+    <div class="navBar astro-GTRVMSOB">
+    <img class="logo astro-GTRVMSOB" src="/images/marekKnows/logoHead.png" alt="MarekKnows Logo">
+    <div class="navSubMenu astro-GTRVMSOB" data-current="cpp">
+      <ul class="astro-GTRVMSOB">
+        <li class="astro-GTRVMSOB">MarekKnows
+          <ul class="astro-GTRVMSOB">
+            <li class="astro-GTRVMSOB"><a data-url="#" class="astro-GTRVMSOB">Welcome</a></li>
+            <li class="astro-GTRVMSOB"><a data-url="#faq" class="astro-GTRVMSOB">FAQ</a></li>
+            <!-- <li><a data-url="#about">About</a></li> -->
+          </ul>
+        </li>  
+        <!-- <li>Engine Series
+          <ul>
+            <li><a data-url="gameDev">OpenGL Game Engine</a></li>
+            <li><a data-url="physics">Physics Engine</a></li>
+            <li><a data-url="shader">Shader Engine</a></li>
+          </ul>
+        </li>  
+        <li>Game Series
+          <ul>
+            <li><a data-url="ghost">Ghost Toast</a></li>
+            <li><a data-url="zing">Zing</a></li>
+          </ul>  
+        </li>   -->
+        <li class="astro-GTRVMSOB">General Information
+          <ul class="astro-GTRVMSOB">
+            <li class="astro-GTRVMSOB"><a data-url="cpp" class="astro-GTRVMSOB">General C++</a></li>
+            <li class="astro-GTRVMSOB"><a data-url="math" class="astro-GTRVMSOB">Mathematics</a></li>
+            <!-- <li><a data-url="network">Network Programming</a></li> -->
+            <li class="astro-GTRVMSOB"><a data-url="openGl" class="astro-GTRVMSOB">OpenGL Tips & Tricks</a></li>
+          </ul>
+        </li>  
+        <li class="astro-GTRVMSOB">Art & Sound Pipeline
+          <ul class="astro-GTRVMSOB">
+            <!-- <li><a data-url="audio">3D Audio Engine</a></li> -->
+            <li class="astro-GTRVMSOB"><a data-url="trueSpace" class="astro-GTRVMSOB">Caligari trueSpace</a></li>
+          </ul>
+        </li>  
+        <li class="last astro-GTRVMSOB">Other
+          <ul class="astro-GTRVMSOB">
+            <li class="astro-GTRVMSOB"><a data-url="puzzles" class="astro-GTRVMSOB">Puzzles</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div><script>
+    //populate nav links
+    const navSubMenuEl = document.querySelector( '.navSubMenu' );
+    const current = navSubMenuEl.getAttribute( 'data-current' );
+    const hash = window.location.hash;
+
+    document.querySelectorAll( '.navSubMenu a[data-url]' ).forEach( aEl => {
+      const url = aEl.getAttribute( 'data-url' );
+      let isCurrent = false;
+      if( current === 'marekKnows' ) { //marekKnows root index
+        switch( url ) {
+          case '#': {
+            isCurrent = hash.length === 0 || hash === '#';
+            break;
+          }
+          case '#faq':
+          case '#about': {
+            isCurrent = url === hash;
+            break;
+          }
+        }
+      } else {
+        isCurrent = url === current;
+      }
+      const href = "/marekKnows" + ( url.startsWith( '#' ) ? '' : '/' ) + url;
+      if( !isCurrent ) {
+        aEl.href = href; //set a.href to the correct target
+      } else {
+        const text = aEl.textContent;
+        aEl.parentElement.innerHTML = text; //remove the a element
+      }
+    } );
+  </script>  
+
+<div class="header astro-ZKEDGFK2">
+  <img src="/images/marekKnows/cpp.png" alt="General C++" class="astro-ZKEDGFK2">
+  <h1 class="astro-ZKEDGFK2">General C++</h1>
+  <p class="astro-ZKEDGFK2">The VMK in this section cover many topics related to C++ programming.  If you want to be serious about programming in C++, you should fully understand each of the topics covered here.</p>
+</div>
+<div class="section astro-ZKEDGFK2">
+  
+
+<div id="cpp1" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">1: Number Systems</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_1.jpg" alt="Number Systems" title="Number Systems"><div class="text astro-YV6VUWXJ">In this VMK I show you how number systems work.  I describe the decimal, binary and hexadecimal number systems in detail.  At the end, I show you how to use Visual C++ to view decimal (integers) and hexadecimal numbers.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('JfWndzmmCCk')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 1: Number Systems" title="VMK 1: Number Systems"></a>
+    
+  </div>
+</div>
+
+<div id="cpp2" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">2: Computer Logic</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_2.jpg" alt="Computer Logic" title="Computer Logic"><div class="text astro-YV6VUWXJ">I describe how to write a program that can make decisions.  I demonstrate the use of the if-else structure and then the AND, OR, NOT, bitwise OR and bitwise AND are described and used.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('9_jgK7cF2b4')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 2: Computer Logic" title="VMK 2: Computer Logic"></a>
+    
+  </div>
+</div>
+
+<div id="cpp3" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">3: Switch and Enum Keywords</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_3.jpg" alt="Switch and Enum Keywords" title="Switch and Enum Keywords"><div class="text astro-YV6VUWXJ">You can make your code more readable by replacing if-else statements with switches working from enumerated variables.  This VMK shows you how to do just that.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('U_V8HFLsf9c')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 3: Switch and Enum Keywords" title="VMK 3: Switch and Enum Keywords"></a>
+    
+  </div>
+</div>
+
+<div id="cpp4" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">4: Looping Structures</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_4.jpg" alt="Looping Structures" title="Looping Structures"><div class="text astro-YV6VUWXJ">I show you how to use the while and the for loop in this VMK so that you can perform repeated tasks in your programs.  Near the end I also describe how random numbers work in C++.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('velmqUWTy2Q')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 4: Looping Structures" title="VMK 4: Looping Structures"></a>
+    
+  </div>
+</div>
+
+<div id="cpp5" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">5: Data Types</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_5.jpg" alt="Data Types" title="Data Types"><div class="text astro-YV6VUWXJ">A number of commonly used C++ data types are described in this VMK.  I discuss the int, float, double, and char types.  After that, I describe how to use arrays and how they work a little differently with the char data type to make strings.  We group data types into struct's and lastly I show you how to use a union.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('7IN3bQGYjwk')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 5: Data Types" title="VMK 5: Data Types"></a>
+    
+  </div>
+</div>
+
+<div id="cpp6" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">6: Dynamic Memory and Variable Scope</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_6.jpg" alt="Dynamic Memory and Variable Scope" title="Dynamic Memory and Variable Scope"><div class="text astro-YV6VUWXJ">I describe the important concept of variable scope in this VMK.  I also show you how to use, create and delete dynamic memory in C++.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('_Qus8cdwxB4')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 6: Dynamic Memory and Variable Scope" title="VMK 6: Dynamic Memory and Variable Scope"></a>
+    
+  </div>
+</div>
+
+<div id="cpp7" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">7: Using Functions</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_7.jpg" alt="Using Functions" title="Using Functions"><div class="text astro-YV6VUWXJ">This VMK is all about functions and how to use them. I demonstrate how to pass variables into functions and how to get values back.  I explain the difference between passing variables by value, and passing variables by reference.  I show you how to use a function to return multiple values to you and I describe how you can use functions with pointers and array's of variables.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('ALwypwrK41U')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 7: Using Functions" title="VMK 7: Using Functions"></a>
+    
+  </div>
+</div>
+
+<div id="cpp8" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">8: Libraries and Projects</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_8.jpg" alt="Libraries and Projects" title="Libraries and Projects"><div class="text astro-YV6VUWXJ">I show you how to setup a visual studio solution to contain multiple projects.  One project contains the main() entry point and the other is a static library which we link to.  I also show how build order dependence plays a role when using multiple projects in a solution.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('0WLh_7mOa54')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 8: Libraries and Projects" title="VMK 8: Libraries and Projects"></a>
+    
+  </div>
+</div>
+
+<div id="cpp9a" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">9a: Struct vs Class</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_9a.jpg" alt="Struct vs Class" title="Struct vs Class"><div class="text astro-YV6VUWXJ">The differences between a struct and a class are described in this VMK.  I also go onto show how to use public and private functions and variables within a class and how to use a class constructor.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('TdwriSsLrhk')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 9a: Struct vs Class" title="VMK 9a: Struct vs Class"></a>
+    
+  </div>
+</div>
+
+<div id="cpp9b" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">9b: Static Variables and Functions</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_9b.jpg" alt="Static Variables and Functions" title="Static Variables and Functions"><div class="text astro-YV6VUWXJ">I demonstrate how to use static variables and static functions inside of a class.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('jgcV8ahmIno')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 9b: Static Variables and Functions" title="VMK 9b: Static Variables and Functions"></a>
+    
+  </div>
+</div>
+
+<div id="cpp9c" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">9c: Class Inheritance</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_9c.jpg" alt="Class Inheritance" title="Class Inheritance"><div class="text astro-YV6VUWXJ">I show you how to use a very powerful object oriented technique called inheritance in this VMK.  Public, private and protected functions and variables are used and virtual functions are explained.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('hr-JxP8lRPo')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 9c: Class Inheritance" title="VMK 9c: Class Inheritance"></a>
+    
+  </div>
+</div>
+
+<div id="cpp9d" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">9d: Copy Constructor</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_9d.jpg" alt="Copy Constructor" title="Copy Constructor"><div class="text astro-YV6VUWXJ">When using dynamic memory inside of classes you will need to create a copy constructor to copy one class's values to another.  In this VMK I show you why you need copy constructors and how to make them.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('nsJjLB070YY')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 9d: Copy Constructor" title="VMK 9d: Copy Constructor"></a>
+    
+  </div>
+</div>
+
+<div id="cpp10" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">10: Standard Template Library</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_10.jpg" alt="Standard Template Library" title="Standard Template Library"><div class="text astro-YV6VUWXJ">The first part shows you how to use std::vector and some of it's common functions. This second part shows you how to use std::string and std::map.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('1ToO4bA0iB8')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 10: Standard Template Library" title="VMK 10: Standard Template Library"></a>
+    
+  </div>
+</div>
+
+<div id="cpp11" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">11: File Handling</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_11.jpg" alt="File Handling" title="File Handling"><div class="text astro-YV6VUWXJ">In this VMK I show you how to work with ascii (text) files to read data in and write data out to a file.  I show you how to setup Visual Studio and how to read in a bunch of data into one variable, or parse input into individual variables like integers, strings or floating point numbers.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('RranDMvbJyA')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 11: File Handling" title="VMK 11: File Handling"></a>
+    
+  </div>
+</div>
+
+<div id="cpp12" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">12: Install VC 2005 Express with PSDK</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_12.jpg" alt="Install VC 2005 Express with PSDK" title="Install VC 2005 Express with PSDK"><div class="text astro-YV6VUWXJ">I show you how to download and install the free Visual C++ 2005 Express compiler from Microsoft.  I also show you how to download and install the Platform SDK required if you want to use this compiler to follow along with the game development VMK's or if you want to do any windows type programming.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('K6ieB36xYyk')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 12: Install VC 2005 Express with PSDK" title="VMK 12: Install VC 2005 Express with PSDK"></a>
+    
+  </div>
+</div>
+
+<div id="cpp13" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">13: Visual C++ Debugger</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_13.jpg" alt="Visual C++ Debugger" title="Visual C++ Debugger"><div class="text astro-YV6VUWXJ">In this VMK you will learn how to use the Visual C++ Debugger.  I show you how to create breakpoints (always break and conditional). I show you how to watch your variables and how to change them while your program is running.  We also trace through the program flow by using the calling stack.  At the end I also show you how you can comment your code so that software development is a little easier.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('zk2lEn1v_Jk')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 13: Visual C++ Debugger" title="VMK 13: Visual C++ Debugger"></a>
+    
+  </div>
+</div>
+
+<div id="cpp14" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">14: Templates</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_14.jpg" alt="Templates" title="Templates"><div class="text astro-YV6VUWXJ">In this video I explain the benefits of using templates in C++. I demonstrate how to template a function and also how to template a class.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('x1FxrtWqFGY')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 14: Templates" title="VMK 14: Templates"></a>
+    
+  </div>
+</div>
+
+<div id="cpp15" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">15: Threads</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_15.jpg" alt="Threads" title="Threads"><div class="text astro-YV6VUWXJ">I start by showing how to create a 2nd thread and how to pass data to and from it.  A Mutex is used to monitor when a thread is finished and a Critical Section is used to protect data shared between threads.  Finally I show how to use a thread inside a class.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('bRrxN8hYSys')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 15: Threads" title="VMK 15: Threads"></a>
+    
+  </div>
+</div>
+
+<div id="cpp16" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">16: Random Numbers</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_16.jpg" alt="Random Numbers" title="Random Numbers"><div class="text astro-YV6VUWXJ">In this video I describe how random numbers work in C++. How you can create a range of random numbers, and also what things you should look out for if you truly want a set of random numbers.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('ryuW8OocElY')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 16: Random Numbers" title="VMK 16: Random Numbers"></a>
+    
+  </div>
+</div>
+
+<div id="cpp17" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">17: zLib Compression</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_17.jpg" alt="zLib Compression" title="zLib Compression"><div class="text astro-YV6VUWXJ">Data compression is discussed in this VMK. By the end of the video you will see how to compress and uncompress data using the zlib library.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('ghjA7P9dWsI')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 17: zLib Compression" title="VMK 17: zLib Compression"></a>
+    
+  </div>
+</div>
+
+<div id="cpp18" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">18: Coding Style</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_18.jpg" alt="Coding Style" title="Coding Style"><div class="text astro-YV6VUWXJ">In this video I speak about the C++ coding style that I'm going to try to stick to from this day forward.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('nNkwTDsYSQ8')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 18: Coding Style" title="VMK 18: Coding Style"></a>
+    
+  </div>
+</div>
+
+<div id="cpp19" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">19: 3rd Party AddOn Tools</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_19.jpg" alt="3rd Party AddOn Tools" title="3rd Party AddOn Tools"><div class="text astro-YV6VUWXJ">If you are using Visual Studio 2010 Professional, you can install AddIn tools to extend the functionality of your development environment.  In this VMK I demonstrate the tools that I use when programming in C++.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('b5AJhy8Q5rw')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 19: 3rd Party AddOn Tools" title="VMK 19: 3rd Party AddOn Tools"></a>
+    
+  </div>
+</div>
+
+<div id="cpp20" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">20: Unique Pointers</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_20.jpg" alt="Unique Pointers" title="Unique Pointers"><div class="text astro-YV6VUWXJ">Unique pointers are very handy in VC++ 2010.  They let you manage your dynamic memory in a smart way making sure that memory is deallocated when your pointers go out of scope.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('I9_cBT-Pylk')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 20: Unique Pointers" title="VMK 20: Unique Pointers"></a>
+    
+  </div>
+</div>
+
+<div id="cpp21" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">21: Explicit Constructors</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_21.jpg" alt="Explicit Constructors" title="Explicit Constructors"><div class="text astro-YV6VUWXJ">In this video I explain when you should be using explicit constructors.  I demonstrate what will happen if you do not use them, and I also show when you should not use explicit constructors.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('GnrkFse94fY')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 21: Explicit Constructors" title="VMK 21: Explicit Constructors"></a>
+    
+  </div>
+</div>
+
+<div id="cpp22" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">22: i++ vs ++i</div>
+  <div class="info noImage astro-YV6VUWXJ"><div class="text astro-YV6VUWXJ">I show the differences between using postfix (i++) operators as opposed to using prefix (++i) operators.  It is especially important to choose the correct operator when working with looping structures like for loops.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('YSY5ga9Whoo')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 22: i++ vs ++i" title="VMK 22: i++ vs ++i"></a>
+    
+  </div>
+</div>
+
+<div id="cpp23" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">23: Bit Fields</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_23.jpg" alt="Bit Fields" title="Bit Fields"><div class="text astro-YV6VUWXJ">In this video I describe how to use bit fields in C++.  I demonstrate how the compiler packs bits together and I point out the pit falls that people can fall into when using bit fields.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('PVr1-UrDX8I')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 23: Bit Fields" title="VMK 23: Bit Fields"></a>
+    
+  </div>
+</div>
+
+<div id="cpp24" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">24: PNG Loader</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_24.jpg" alt="PNG Loader" title="PNG Loader"><div class="text astro-YV6VUWXJ">In this video I show how to download, install, and use the libpng library to work with images encoded in the png file format.  By the end of this video you should be able to load and parse any png file in your own projects.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('Nh1Dat9bXk0')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 24: PNG Loader" title="VMK 24: PNG Loader"></a>
+    
+  </div>
+</div>
+
+<div id="cpp25" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">25: Exceptions</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_25.jpg" alt="Exceptions" title="Exceptions"><div class="text astro-YV6VUWXJ">In this VMK I introduce how to use C++ exceptions.  We explore how to write try and catch statements, how to throw values and classes, and I demonstrate the differences between throwing from a function and throwing from a class.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('7GNAXAyaRBQ')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 25: Exceptions" title="VMK 25: Exceptions"></a>
+    
+  </div>
+</div>
+
+<div id="cpp26" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">26: Console Colors</div>
+  <div class="info astro-YV6VUWXJ"><img class="screenShot astro-YV6VUWXJ" src="/images/marekKnows/cpp/cpp_26.jpg" alt="Console Colors" title="Console Colors"><div class="text astro-YV6VUWXJ">Using the Windows API, I demonstrate how to change the foreground and background color of text, how to control the placement of text in the window and how to change the title.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('K1LsNnFd7Xw')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 26: Console Colors" title="VMK 26: Console Colors"></a>
+    
+  </div>
+</div>
+
+<div id="cpp27" class="card astro-YV6VUWXJ">
+  <div class="header astro-YV6VUWXJ">27: Virtual Destructor</div>
+  <div class="info noImage astro-YV6VUWXJ"><div class="text astro-YV6VUWXJ">This video shows you why virtual destructors are important and when you need to use them when writing code.</div>
+  </div>
+  <div class="buttons astro-YV6VUWXJ">
+    <a onclick="playYouTubeVideo('jgbew3KwAos')" class="astro-YV6VUWXJ"><img class="watch astro-YV6VUWXJ" src="/images/marekKnows/watch.png" alt="VMK 27: Virtual Destructor" title="VMK 27: Virtual Destructor"></a>
+    
+  </div>
+</div>
+</div>
+  </div>
+
+  <div id="footer" class="astro-74TE7IYS">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-74TE7IYS"><img src="/images/email.svg" alt="email" class="astro-74TE7IYS"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-74TE7IYS"><img src="/images/twitter.svg" alt="Twitter" class="astro-74TE7IYS"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-74TE7IYS"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-74TE7IYS"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-74TE7IYS"><img src="/images/youTube.svg" alt="youtube" class="astro-74TE7IYS"></a>
+  </div>
+
+  <div id="youTubePlayer" class="astro-74TE7IYS">
+    <div class="closer astro-74TE7IYS">X</div>
+    <div class="playerWindow astro-74TE7IYS">
+      <div id="player" class="astro-74TE7IYS"></div>
+    </div>
+  </div>
+
+  <script>
+    const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
+    const closerEl = youTubePlayerEl.querySelector( '.closer' );
+
+    let player;
+
+    closerEl.addEventListener( 'click', () => {
+      player && player.stopVideo();
+      youTubePlayerEl.style.display = 'none';
+    } );
+
+    function playYouTubeVideo( videoId ) {
+      youTubePlayerEl.style.display = 'block';
+
+      if( player === undefined ) {
+        const playerEl = youTubePlayerEl.querySelector( '#player' );
+        const playerWidth = window.getComputedStyle( playerEl ).width;
+        let width = Number.parseInt( playerWidth );
+        if( width === undefined || width < 400 ) {
+          width = 400;
+        }
+
+        player = new YT.Player( 'player', {
+          width,
+          height: width * 0.6,
+          videoId,
+          playerVars: {
+            'playsinline': 1,
+          },
+          events: {
+            'onReady': () => player.playVideo()
+          }
+        } );
+      } else {
+        player.loadVideoById( videoId, 0 );
+      }
+    }
+
+  </script>
+</body>
+</html>
