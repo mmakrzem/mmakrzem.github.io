@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr" class="maxSize astro-DBAQNJTZ">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
+<title>Create Stones</title>
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+  
+  <script src="https://www.youtube.com/iframe_api"></script> 
+<link rel="stylesheet" href="/assets/audioEng.8f375fda.css" />
+<link rel="stylesheet" href="/assets/audioEng.33519160.css" />
+<link rel="stylesheet" href="/assets/audioEng.a9c07711.css" /><script type="module" src="/hoisted.b942c3e1.js"></script></head>
+<body class="maxSize globalDefaultStyles astro-DBAQNJTZ">
+  <div id="header" class="astro-DBAQNJTZ">
+    <img class="logo astro-DBAQNJTZ" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-DBAQNJTZ"><img class="createStones astro-DBAQNJTZ" src="/images/createStones.png" alt="Create Stones"></a>
+      
+
+<div class="breadCrumbs astro-XG6CCH5A">
+  <img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows" class="astro-XG6CCH5A">marekKnows</a><img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows/network" class="astro-XG6CCH5A">network</a>
+</div>
+  </div>
+  <div id="content" class="astro-DBAQNJTZ">
+    <div class="navBar astro-ELR36ZQ7">
+    <img class="logo astro-ELR36ZQ7" src="/images/marekKnows/logoHead.png" alt="MarekKnows Logo">
+    <div class="navSubMenu astro-ELR36ZQ7" data-current="network">
+      <ul class="astro-ELR36ZQ7">
+        <li class="astro-ELR36ZQ7">MarekKnows
+          <ul class="astro-ELR36ZQ7">
+            <li class="astro-ELR36ZQ7"><a data-url="#" class="astro-ELR36ZQ7">Welcome</a></li>
+            <li class="astro-ELR36ZQ7"><a data-url="#faq" class="astro-ELR36ZQ7">FAQ</a></li>
+            <!-- <li><a data-url="#about">About</a></li> -->
+          </ul>
+        </li>  
+        <!-- <li>Engine Series
+          <ul>
+            <li><a data-url="gameDev">OpenGL Game Engine</a></li>
+            <li><a data-url="physics">Physics Engine</a></li>
+            <li><a data-url="shader">Shader Engine</a></li>
+          </ul>
+        </li>  
+        <li>Game Series
+          <ul>
+            <li><a data-url="ghost">Ghost Toast</a></li>
+            <li><a data-url="zing">Zing</a></li>
+          </ul>  
+        </li>   -->
+        <li class="astro-ELR36ZQ7">General Information
+          <ul class="astro-ELR36ZQ7">
+            <li class="astro-ELR36ZQ7"><a data-url="cpp" class="astro-ELR36ZQ7">General C++</a></li>
+            <li class="astro-ELR36ZQ7"><a data-url="math" class="astro-ELR36ZQ7">Mathematics</a></li>
+            <li class="astro-ELR36ZQ7"><a data-url="network" class="astro-ELR36ZQ7">Network Programming</a></li>
+            <li class="astro-ELR36ZQ7"><a data-url="openGl" class="astro-ELR36ZQ7">OpenGL Tips & Tricks</a></li>
+          </ul>
+        </li>  
+        <li class="astro-ELR36ZQ7">Art & Sound Pipeline
+          <ul class="astro-ELR36ZQ7">
+            <li class="astro-ELR36ZQ7"><a data-url="audioEng" class="astro-ELR36ZQ7">3D Audio Engine</a></li>
+            <li class="astro-ELR36ZQ7"><a data-url="trueSpace" class="astro-ELR36ZQ7">Caligari trueSpace</a></li>
+          </ul>
+        </li>  
+        <li class="last astro-ELR36ZQ7">Other
+          <ul class="astro-ELR36ZQ7">
+            <li class="astro-ELR36ZQ7"><a data-url="puzzles" class="astro-ELR36ZQ7">Puzzles</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div><script>
+    //populate nav links
+    const navSubMenuEl = document.querySelector( '.navSubMenu' );
+    const current = navSubMenuEl.getAttribute( 'data-current' );
+    const hash = window.location.hash;
+
+    document.querySelectorAll( '.navSubMenu a[data-url]' ).forEach( aEl => {
+      const url = aEl.getAttribute( 'data-url' );
+      let isCurrent = false;
+      if( current === 'marekKnows' ) { //marekKnows root index
+        switch( url ) {
+          case '#': {
+            isCurrent = hash.length === 0 || hash === '#';
+            break;
+          }
+          case '#faq':
+          case '#about': {
+            isCurrent = url === hash;
+            break;
+          }
+        }
+      } else {
+        isCurrent = url === current;
+      }
+      const href = "/marekKnows" + ( url.startsWith( '#' ) ? '' : '/' ) + url;
+      if( !isCurrent ) {
+        aEl.href = href; //set a.href to the correct target
+      } else {
+        const text = aEl.textContent;
+        aEl.parentElement.innerHTML = text; //remove the a element
+      }
+    } );
+  </script>
+
+  
+
+<div class="header astro-ZKEDGFK2">
+  <img src="/images/marekKnows/network.png" alt="Network Programming" class="astro-ZKEDGFK2">
+  <h1 class="astro-ZKEDGFK2">Network Programming</h1>
+  <p class="astro-ZKEDGFK2">This series will teach you to use windows sockets to create internet, intranet, and other network-capable applications to transmit data across the wire, independent of the network protocol being used. We will be creating TCP and UDP networks for both client and server applications using C++.</p>
+</div>
+<div class="section astro-ZKEDGFK2">
+  <div id="loginAndPurchase" data-vmk-section="network" class="astro-ZA632JZ6">
+      <div class="astro-ZA632JZ6">
+        <img src="/images/marekKnows/loading.gif" id="loading" class="astro-ZA632JZ6">
+        <button class="signIn astro-ZA632JZ6" style="display:none;"><img src="/images/marekKnows/google.svg" class="astro-ZA632JZ6"><span class="astro-ZA632JZ6">Sign in with Google</span></button>
+        <button class="signOut astro-ZA632JZ6" style="display:none;">Sign out</button>
+      </div>
+      <div class="rightSide astro-ZA632JZ6">
+        <p id="loading2" class="astro-ZA632JZ6">Looking for server...</p>
+        <img class="signIn astro-ZA632JZ6" src="/images/marekKnows/key.png" style="display:none;">
+        <div class="purchase astro-ZA632JZ6" style="display:none;">
+          <img src="/images/marekKnows/loading.gif" id="loadingPayPal" class="astro-ZA632JZ6">
+          <div class="price astro-ZA632JZ6"><span class="normal astro-ZA632JZ6"></span><span class="sale astro-ZA632JZ6" style="display:none"></span></div>
+          <div id="payPalButton" class="astro-ZA632JZ6"></div>
+          <div class="info astro-ZA632JZ6">All orders can take up to 5 minutes to process before your account is updated.</div>
+        </div>
+        <p class="thanks astro-ZA632JZ6" style="display:none;">Thank you for supporting this website!</p>
+      </div>
+    </div>
+
+<div id="network0" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">0: Introduction</div>
+  <div class="info noImage astro-MBZ3OF5B"><div class="text astro-MBZ3OF5B">Welcome to network programming in Visual Studio 2010 using C++. This VMK describes what will be covered in the series.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('ABq28C3-Mik')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 0: Introduction" title="VMK 0: Introduction"></a>
+    
+    
+  </div>
+</div>
+
+<div id="network1" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">1: Setup</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_1.jpg" alt="Setup" title="Setup"><div class="text astro-MBZ3OF5B">I show how to setup the Network Manager project using Microsoft Visual Studio 2010.  I also create a menu system that allows the user to choose whether they want to create a Server or a Client application, whether it will use TCP or UDP, and select which port number to use.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('1')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 1: Setup" title="VMK 1: Setup"></a>
+    
+  </div>
+</div>
+
+<div id="network2" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">2: TCP Server</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_2.jpg" alt="TCP Server" title="TCP Server"><div class="text astro-MBZ3OF5B">In this VMK I create the network manager class which is used throughout the series. In this video I show how to write the code to create a TCP server.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('2')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 2: TCP Server" title="VMK 2: TCP Server"></a>
+    
+  </div>
+</div>
+
+<div id="network3" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">3: TCP Client</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_3.jpg" alt="TCP Client" title="TCP Client"><div class="text astro-MBZ3OF5B">The TCP client code is written in this vmk.  Using the client, you will now be able to connect to the tcp server developed in the previous vmk.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('3')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 3: TCP Client" title="VMK 3: TCP Client"></a>
+    
+  </div>
+</div>
+
+<div id="network4" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">4: Send String</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_4.jpg" alt="Send String" title="Send String"><div class="text astro-MBZ3OF5B">In this video I create a function that lets us send a fixed length string using the TCP connection that we established between the client and the server.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('4')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 4: Send String" title="VMK 4: Send String"></a>
+    
+  </div>
+</div>
+
+<div id="network5" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">5: Receive String</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_5.jpg" alt="Receive String" title="Receive String"><div class="text astro-MBZ3OF5B">I clean up the main function to show more clearly what the Server and Client applications do.  Then I add the function to the NetworkManager that lets us receive string data sent over the network.  Finally I test the functionality so that it works in both directions, Server to Client and Client to Server.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('5')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 5: Receive String" title="VMK 5: Receive String"></a>
+    
+  </div>
+</div>
+
+<div id="network6" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">6: UDP Send &amp; Receive</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_6.jpg" alt="UDP Send &#38;amp; Receive" title="UDP Send &#38;amp; Receive"><div class="text astro-MBZ3OF5B">The sendString and receiveString function calls are updated in this VMK to allow UDP communication to send and receive string data.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('6')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 6: UDP Send &#38;amp; Receive" title="VMK 6: UDP Send &#38;amp; Receive"></a>
+    
+  </div>
+</div>
+
+<div id="network7" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">7: UDP Server</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_7.jpg" alt="UDP Server" title="UDP Server"><div class="text astro-MBZ3OF5B">In this video I show how to setup the server portion of the network if you plan on using UDP communication.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('7')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 7: UDP Server" title="VMK 7: UDP Server"></a>
+    
+  </div>
+</div>
+
+<div id="network8" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">8: UDP Client</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_8.jpg" alt="UDP Client" title="UDP Client"><div class="text astro-MBZ3OF5B">In this video I wrap up the missing component that is needed to do UDP communication across the network.  We finally see how to initialize the _socketAddress member variable.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('8')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 8: UDP Client" title="VMK 8: UDP Client"></a>
+    
+  </div>
+</div>
+
+<div id="network9" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">9: Using Real IP Addresses</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_9.jpg" alt="Using Real IP Addresses" title="Using Real IP Addresses"><div class="text astro-MBZ3OF5B">In this video I replace the loopback IP address (127.0.0.1) with the real IP address used on my local area network. I also explain how to prepare remote computers so that they will be able to run the NetworkManager code.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('9')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 9: Using Real IP Addresses" title="VMK 9: Using Real IP Addresses"></a>
+    
+  </div>
+</div>
+
+<div id="network10" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">10: Memory Clean Up</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_10.jpg" alt="Memory Clean Up" title="Memory Clean Up"><div class="text astro-MBZ3OF5B">In this video I cleanup the code used to allocate and deallocate dynamic memory in the network manager using the unique_ptr class. After this smart pointer is introduced, we won't have to call delete explicitly.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('10')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 10: Memory Clean Up" title="VMK 10: Memory Clean Up"></a>
+    
+  </div>
+</div>
+
+<div id="network11" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">11: Non-Blocking WinSock</div>
+  <div class="info noImage astro-MBZ3OF5B"><div class="text astro-MBZ3OF5B">In this video I present the different ways in which a WinSock program can be written so that it does not block your main execution thread.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('11')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 11: Non-Blocking WinSock" title="VMK 11: Non-Blocking WinSock"></a>
+    
+  </div>
+</div>
+
+<div id="network12" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">12: Non-Blocking TCP Server</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_12.jpg" alt="Non-Blocking TCP Server" title="Non-Blocking TCP Server"><div class="text astro-MBZ3OF5B">I demonstrate how to make the winsock code not block the TCP server. After switching to non-blocking mode, we explore the error messages that we get with our existing code and then we go through to fix them all to make the code run once again.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('12')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 12: Non-Blocking TCP Server" title="VMK 12: Non-Blocking TCP Server"></a>
+    
+  </div>
+</div>
+
+<div id="network13" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">13: Non-Blocking TCP Client</div>
+  <div class="info noImage astro-MBZ3OF5B"><div class="text astro-MBZ3OF5B">In this VMK I update the TCP client code so that it too will run using non-blocking sockets.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('13')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 13: Non-Blocking TCP Client" title="VMK 13: Non-Blocking TCP Client"></a>
+    
+  </div>
+</div>
+
+<div id="network14" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">14: Non-Blocking UDP Communication</div>
+  <div class="info noImage astro-MBZ3OF5B"><div class="text astro-MBZ3OF5B">In this video I show how to modify the udp server and udp client code so that they both will run using non-blocking sockets.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('14')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 14: Non-Blocking UDP Communication" title="VMK 14: Non-Blocking UDP Communication"></a>
+    
+  </div>
+</div>
+
+<div id="network15" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">15: Send String Packet</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_15.jpg" alt="Send String Packet" title="Send String Packet"><div class="text astro-MBZ3OF5B">In this video I introduce the concept of a packet.  I show how to form a sample packet that can be used to transmit strings containing different lengths of characters.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('15')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 15: Send String Packet" title="VMK 15: Send String Packet"></a>
+    
+  </div>
+</div>
+
+<div id="network16" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">16: Receive String Packet</div>
+  <div class="info noImage astro-MBZ3OF5B"><div class="text astro-MBZ3OF5B">In this video tutorial, I show how to decode the string packet that was sent in the previous VMK so that we can see what is being transmitted across the network.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('16')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 16: Receive String Packet" title="VMK 16: Receive String Packet"></a>
+    
+  </div>
+</div>
+
+<div id="network17" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">17: GameData Class</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_17.jpg" alt="GameData Class" title="GameData Class"><div class="text astro-MBZ3OF5B">In this video I create a generic GameData class which holds different data types.  In the next VMK we'll see how to transmit the contents of the class across the network.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('17')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 17: GameData Class" title="VMK 17: GameData Class"></a>
+    
+  </div>
+</div>
+
+<div id="network18" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">18: GameData Packet</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_18.jpg" alt="GameData Packet" title="GameData Packet"><div class="text astro-MBZ3OF5B">The GameData class created in the previous VMK is converted to a packet in this VMK so that the data contained in the class can be transmitted across the network.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('18')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 18: GameData Packet" title="VMK 18: GameData Packet"></a>
+    
+  </div>
+</div>
+
+<div id="network19" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">19: Float Conversion Tests</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_19.jpg" alt="Float Conversion Tests" title="Float Conversion Tests"><div class="text astro-MBZ3OF5B">In the previous VMK I left out how to transmit floating point numbers across the network.  In this VMK I demonstrate different ways in which this can be done.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('19')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 19: Float Conversion Tests" title="VMK 19: Float Conversion Tests"></a>
+    
+  </div>
+</div>
+
+<div id="network20" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">20: Bitfield GameData Packet</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_20.jpg" alt="Bitfield GameData Packet" title="Bitfield GameData Packet"><div class="text astro-MBZ3OF5B">The data stored in the GameData class is packaged into a bitfield packet in this VMK to make it easier to transmit and receive data across the network.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('20')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 20: Bitfield GameData Packet" title="VMK 20: Bitfield GameData Packet"></a>
+    
+  </div>
+</div>
+
+<div id="network21" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">21: Chatter Demo</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/network/network_21.jpg" alt="Chatter Demo" title="Chatter Demo"><div class="text astro-MBZ3OF5B">In this video I demonstrate a simple chat program that can now be built with all the tools we developed so far.<br><br>Unfortunately due to lack of interest in this VMK series from users, I never created anymore videos in this series to show how to actually create this chatter application.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    
+    <a onclick="unlockVideo('21')" class="astro-MBZ3OF5B"><img class="locked astro-MBZ3OF5B" src="/images/marekKnows/locked.png" alt="VMK 21: Chatter Demo" title="VMK 21: Chatter Demo"></a>
+    
+  </div>
+</div>
+</div>
+
+  </div>
+
+  <div id="footer" class="astro-DBAQNJTZ">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-DBAQNJTZ"><img src="/images/email.svg" alt="email" class="astro-DBAQNJTZ"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-DBAQNJTZ"><img src="/images/twitter.svg" alt="Twitter" class="astro-DBAQNJTZ"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-DBAQNJTZ"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-DBAQNJTZ"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-DBAQNJTZ"><img src="/images/youTube.svg" alt="youtube" class="astro-DBAQNJTZ"></a>
+    <a id="privacy" href="/privacy" title="Privacy Policy" class="astro-DBAQNJTZ">Privacy Policy</a>
+  </div>
+
+  <div id="youTubePlayer" class="astro-DBAQNJTZ">
+    <div class="closer astro-DBAQNJTZ">X</div>
+    <div class="playerWindow astro-DBAQNJTZ">
+      <div id="player" class="astro-DBAQNJTZ"></div>
+    </div>
+  </div>
+
+  <script>
+    const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
+    const closerEl = youTubePlayerEl.querySelector( '.closer' );
+
+    let player;
+
+    closerEl.addEventListener( 'click', () => {
+      player && player.stopVideo();
+      youTubePlayerEl.style.display = 'none';
+    } );
+
+    function playYouTubeVideo( videoId ) {
+      youTubePlayerEl.style.display = 'block';
+
+      if( player === undefined ) {
+        const playerEl = youTubePlayerEl.querySelector( '#player' );
+        const playerWidth = window.getComputedStyle( playerEl ).width;
+        let width = Number.parseInt( playerWidth );
+        if( width === undefined || width < 400 ) {
+          width = 400;
+        }
+
+        player = new YT.Player( 'player', {
+          width,
+          height: width * 0.6,
+          videoId,
+          playerVars: {
+            'playsinline': 1,
+          },
+          events: {
+            'onReady': () => player.playVideo()
+          }
+        } );
+      } else {
+        player.loadVideoById( videoId, 0 );
+      }
+    }
+
+  </script>
+</body>
+</html>

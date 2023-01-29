@@ -20,7 +20,7 @@
 </g>
 <g id="vert_Lines">
 	
-		<line id="network_1_" display="none" fill="none" stroke="#8A4A00" stroke-width="3" stroke-miterlimit="10" x1="87.333" y1="1170.667" x2="87.333" y2="36.667"/>
+		<line id="network_1_" fill="none" stroke="#8A4A00" stroke-width="3" stroke-miterlimit="10" x1="87.333" y1="1170.667" x2="87.333" y2="36.667"/>
 	
 		<line id="puzzles_1_" fill="none" stroke="#8A4A00" stroke-width="1.5861" stroke-miterlimit="10" x1="284.333" y1="309.667" x2="284.333" y2="-7.333"/>
 	
@@ -45,13 +45,13 @@
 			<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M162.101,1031.742
 				c445.899,0-27-45.075,527.334-45.075"/>
 			<polygon id="arrowHead_-_left_1_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
-				168.125,1038.698 156.076,1031.742 168.125,1024.786 			"/>
+				171.125,1038.698 159.076,1031.742 171.125,1024.786 			"/>
 		</g>
 		<g id="c_x2B__x2B_23_left">
-			<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M156.076,1121.742
-				c463.784,0-32.682-45.075,525.258-45.075"/>
-			<polygon id="arrowHead_-_left_2_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
-				168.125,1128.698 156.076,1121.742 168.125,1114.786 			"/>
+			<path fill="none" stroke="#FFFFFF" stroke-width="2.9749" stroke-miterlimit="10" d="M164.843,1121.742
+				c456.043,0-32.137-45.075,516.491-45.075"/>
+			<polygon id="arrowHead_-_left_9_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="
+				171.125,1128.698 159.076,1121.742 171.125,1114.786 			"/>
 		</g>
 		<g id="gameDev45_left">
 			<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M560.767,674.667c200.899,0,18.231-46,315.333-46
@@ -123,16 +123,12 @@
 	</g>
 </g>
 <g id="boxes">
-	<g id="network" display="none">
-		<rect x="19.333" y="20.667" display="inline" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
-		
-			<rect x="19.333" y="1017.667" display="inline" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
-		
-			<rect x="19.333" y="1062.667" display="inline" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
-		
-			<rect x="19.333" y="1107.667" display="inline" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
-		
-			<rect x="19.333" y="1154.667" display="inline" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+	<g id="network">
+		<rect x="19.333" y="20.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="19.333" y="1017.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="19.333" y="1062.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="19.333" y="1107.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
+		<rect x="19.333" y="1154.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
 	</g>
 	<g id="Puzzles">
 		<rect x="217.333" y="20.667" fill="#09628A" stroke="#000000" stroke-miterlimit="10" width="136" height="32"/>
@@ -183,25 +179,21 @@
 	</g>
 </g>
 <g id="text">
-	<g id="network_2_" display="none">
-		
-			<text transform="matrix(1 0 0 1 30.6665 12.3335)" display="inline" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Network Programming</text>
-		
-			<text transform="matrix(1 0 0 1 25.6665 41.3335)" display="inline" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">0: Introduction</text>
-		
-			<text transform="matrix(1 0 0 1 25.6665 1038.334)" display="inline" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">1: Setup</text>
-		<g id="_x32_-_x3E_19" display="inline">
-			<text transform="matrix(1 0 0 1 25.6665 1085.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">2</text>
+	<g id="network_2_">
+		<text transform="matrix(1 0 0 1 30.6665 12.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Network Programming</text>
+		<text transform="matrix(1 0 0 1 25.6665 41.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">0: Introduction</text>
+		<text transform="matrix(1 0 0 1 30.6665 1038.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">1: Setup</text>
+		<g id="_x32_-_x3E_19">
+			<text transform="matrix(1 0 0 1 30.6665 1085.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">2</text>
 			
-				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="41.667" y1="1078.667" x2="75.333" y2="1078.667"/>
-			<polygon fill="#FFFFFF" points="87,1078.667 74.952,1085.623 74.952,1071.711 			"/>
-			<text transform="matrix(1 0 0 1 89.6665 1085.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">19</text>
+				<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="46.667" y1="1078.667" x2="80.333" y2="1078.667"/>
+			<polygon fill="#FFFFFF" points="92,1078.667 79.952,1085.623 79.952,1071.711 			"/>
+			<text transform="matrix(1 0 0 1 94.6665 1085.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="18">19</text>
 		</g>
-		<g id="_x32_0" display="inline">
+		<g id="_x32_0">
 			<text transform="matrix(1 0 0 1 25.6665 1122.334)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">20: Bitfield Game </tspan><tspan x="0" y="14" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">       Data Packet</tspan></text>
 		</g>
-		
-			<text transform="matrix(1 0 0 1 25.6665 1175.334)" display="inline" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">21: Chatter Demo</text>
+		<text transform="matrix(1 0 0 1 25.6665 1175.334)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="16">21: Chatter Demo</text>
 	</g>
 	<g id="puzzles">
 		<text transform="matrix(1 0 0 1 232.6665 12.3335)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="12">Puzzles &amp; Challenges</text>
