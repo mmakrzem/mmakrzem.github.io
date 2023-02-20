@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr" class="maxSize astro-DBAQNJTZ">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
+<title>Create Stones</title>
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+  
+  <script src="https://www.youtube.com/iframe_api"></script> 
+<link rel="stylesheet" href="/assets/audioEng.8f375fda.css" />
+<link rel="stylesheet" href="/assets/audioEng.b8b0f981.css" />
+<link rel="stylesheet" href="/assets/audioEng.43504922.css" /><script type="module" src="/hoisted.b942c3e1.js"></script></head>
+<body class="maxSize globalDefaultStyles astro-DBAQNJTZ">
+  <div id="header" class="astro-DBAQNJTZ">
+    <img class="logo astro-DBAQNJTZ" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-DBAQNJTZ"><img class="createStones astro-DBAQNJTZ" src="/images/createStones.png" alt="Create Stones"></a>
+      
+
+<div class="breadCrumbs astro-XG6CCH5A">
+  <img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows" class="astro-XG6CCH5A">marekKnows</a><img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows/gameEng" class="astro-XG6CCH5A">gameEng</a>
+</div>
+  </div>
+  <div id="content" class="astro-DBAQNJTZ">
+    <div class="navBar astro-AD57S5MP">
+    <img class="logo astro-AD57S5MP" src="/images/marekKnows/logoHead.png" alt="MarekKnows Logo">
+    <div class="navSubMenu astro-AD57S5MP" data-current="gameEng">
+      <ul class="astro-AD57S5MP">
+        <li class="astro-AD57S5MP">MarekKnows
+          <ul class="astro-AD57S5MP">
+            <li class="astro-AD57S5MP"><a data-url="#" class="astro-AD57S5MP">Welcome</a></li>
+            <li class="astro-AD57S5MP"><a data-url="#faq" class="astro-AD57S5MP">FAQ</a></li>
+            <!-- <li><a data-url="#about">About</a></li> -->
+          </ul>
+        </li>  
+        <li class="astro-AD57S5MP">Engine Series
+          <ul class="astro-AD57S5MP">
+            <li class="astro-AD57S5MP"><a data-url="gameEng" class="astro-AD57S5MP">OpenGL Game Engine</a></li>
+            <li class="astro-AD57S5MP"><a data-url="physics" class="astro-AD57S5MP">Physics Engine <img class="paid astro-AD57S5MP" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <!-- <li><a data-url="shader">Shader Engine <img class="paid" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li> -->
+          </ul>
+        </li>  
+        <!--<li>Game Series
+          <ul>
+            <li><a data-url="ghost">Ghost Toast <img class="paid" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li><a data-url="zing">Zing <img class="paid" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+          </ul>  
+        </li>   -->
+        <li class="astro-AD57S5MP">General Information
+          <ul class="astro-AD57S5MP">
+            <li class="astro-AD57S5MP"><a data-url="cpp" class="astro-AD57S5MP">General C++</a></li>
+            <li class="astro-AD57S5MP"><a data-url="math" class="astro-AD57S5MP">Mathematics</a></li>
+            <li class="astro-AD57S5MP"><a data-url="network" class="astro-AD57S5MP">Network Programming <img class="paid astro-AD57S5MP" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-AD57S5MP"><a data-url="openGl" class="astro-AD57S5MP">OpenGL Tips & Tricks</a></li>
+          </ul>
+        </li>  
+        <li class="astro-AD57S5MP">Art & Sound Pipeline
+          <ul class="astro-AD57S5MP">
+            <li class="astro-AD57S5MP"><a data-url="audioEng" class="astro-AD57S5MP">3D Audio Engine <img class="paid astro-AD57S5MP" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-AD57S5MP"><a data-url="trueSpace" class="astro-AD57S5MP">Caligari trueSpace</a></li>
+          </ul>
+        </li>  
+        <li class="last astro-AD57S5MP">Other
+          <ul class="astro-AD57S5MP">
+            <li class="astro-AD57S5MP"><a data-url="puzzles" class="astro-AD57S5MP">Puzzles</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div><script>
+    //populate nav links
+    const navSubMenuEl = document.querySelector( '.navSubMenu' );
+    const current = navSubMenuEl.getAttribute( 'data-current' );
+    const hash = window.location.hash;
+
+    document.querySelectorAll( '.navSubMenu a[data-url]' ).forEach( aEl => {
+      const url = aEl.getAttribute( 'data-url' );
+      let isCurrent = false;
+      if( current === 'marekKnows' ) { //marekKnows root index
+        switch( url ) {
+          case '#': {
+            isCurrent = hash.length === 0 || hash === '#';
+            break;
+          }
+          case '#faq':
+          case '#about': {
+            isCurrent = url === hash;
+            break;
+          }
+        }
+      } else {
+        isCurrent = url === current;
+      }
+      const href = "/marekKnows" + ( url.startsWith( '#' ) ? '' : '/' ) + url;
+      if( !isCurrent ) {
+        aEl.href = href; //set a.href to the correct target
+      } else {
+        const text = aEl.innerHTML;
+        aEl.parentElement.innerHTML = text; //remove the a element
+      }
+    } );
+  </script>
+
+  
+
+<div class="header astro-ZKEDGFK2">
+  <img src="/images/marekKnows/gameEng.png" alt="OpenGL Game Engine" class="astro-ZKEDGFK2">
+  <h1 class="astro-ZKEDGFK2">OpenGL Game Engine</h1>
+  <p class="astro-ZKEDGFK2">This section will teach you to create a first person shooter game engine from scratch using OpenGL and C++.  Topics covered include window management, game timing, scene management, 3D model loading, and graphical user interfaces.</p>
+</div>
+<div class="section astro-ZKEDGFK2">
+  
+
+<div id="gameEng0" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">0: Introduction</div>
+  <div class="info noImage astro-MBZ3OF5B"><div class="text astro-MBZ3OF5B">A brief description of the Game Development series of videos. If you are going to be using Visual C++ 2005/2008 Express, you should watch VMK 45 to see the differences between the compilers that you will encounter.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('uVSSGfrM1nY')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 0: Introduction" title="VMK 0: Introduction"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng1" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">1: Creating the FPS Game Engine Project</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_1.jpg" alt="Creating the FPS Game Engine Project" title="Creating the FPS Game Engine Project"><div class="text astro-MBZ3OF5B">This video shows how to create the C++ project using Microsoft Visual Studio 2003. The WinMain is created in this video.<br><br>VMK45 shows how to update this GameEngine project when using a newer Microsoft Visual Studio Compiler.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('2_E7it09sf8')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 1: Creating the FPS Game Engine Project" title="VMK 1: Creating the FPS Game Engine Project"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng2" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">2: Error Handler Class</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_2.jpg" alt="Error Handler Class" title="Error Handler Class"><div class="text astro-MBZ3OF5B">A class is created to handle all errors that may be generated in the game engine. All errors can be written to a file and displayed to the screen.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('f2KsrdTnJVU')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 2: Error Handler Class" title="VMK 2: Error Handler Class"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng3a" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">3a: GameOGL Class Setup</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_3a.jpg" alt="GameOGL Class Setup" title="GameOGL Class Setup"><div class="text astro-MBZ3OF5B">The GameOGL class is used to handle all OpenGL code in the game engine. This video is the first of a 2 part series. This video introduces the functions and variables which the class will be using.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('3TV50zMhW0Q')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 3a: GameOGL Class Setup" title="VMK 3a: GameOGL Class Setup"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng3bc" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">3bc: GameOGL Class Code</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_3bc.jpg" alt="GameOGL Class Code" title="GameOGL Class Code"><div class="text astro-MBZ3OF5B">This class is used to handle all OpenGL code in the game engine. This video is the second of a 2 part series. This video covers the first half of the functions contained in the OpenGL class.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('GgYEdCu_6Jk')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 3bc: GameOGL Class Code" title="VMK 3bc: GameOGL Class Code"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng4" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">4: Creating a Vertex and Triangle Class</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_4.jpg" alt="Creating a Vertex and Triangle Class" title="Creating a Vertex and Triangle Class"><div class="text astro-MBZ3OF5B">Short tutorial showing how to create a vertex and triangle class.  These two classes will be used heavily by the engine to render objects on the screen.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('-H5q5Ekoj8o')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 4: Creating a Vertex and Triangle Class" title="VMK 4: Creating a Vertex and Triangle Class"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng5" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">5: Scene Class</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_5.jpg" alt="Scene Class" title="Scene Class"><div class="text astro-MBZ3OF5B">The scene class is used to lay the foundation down for the scene graph that we will be making. The scene class is used to store all the objects in the game world.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('ZfmnkJ84NY4')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 5: Scene Class" title="VMK 5: Scene Class"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng6" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">6: Scene Construction</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_6.jpg" alt="Scene Construction" title="Scene Construction"><div class="text astro-MBZ3OF5B">Added color information to the Triangle class from VMK 4 and made modifications to the engine. Created a simple 3D scene to be used in the next few VMK's.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('pu5Yn_G5V3Q')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 6: Scene Construction" title="VMK 6: Scene Construction"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng7" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">7: Vector3 Class</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_7.jpg" alt="Vector3 Class" title="Vector3 Class"><div class="text astro-MBZ3OF5B">A 3D vector class is created in this video using inline function calls. This class will be used heavily in the game engine.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('pnDUnPXKv1A')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 7: Vector3 Class" title="VMK 7: Vector3 Class"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng8" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">8: Camera Class</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_8.jpg" alt="Camera Class" title="Camera Class"><div class="text astro-MBZ3OF5B">The camera class enables you to view the 3D scene from different positions.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('Ed5Pd7fQcBY')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 8: Camera Class" title="VMK 8: Camera Class"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng9" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">9: Keyboard Control</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_9.jpg" alt="Keyboard Control" title="Keyboard Control"><div class="text astro-MBZ3OF5B">This VMK shows you how to add keyboard controls to your scene so that you can move around in the 3D world.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('M0-fD2BDb78')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 9: Keyboard Control" title="VMK 9: Keyboard Control"></a>
+    
+    
+  </div>
+</div>
+
+<div id="gameEng10" class="card astro-MBZ3OF5B">
+  <div class="header astro-MBZ3OF5B">10: Mouse Control</div>
+  <div class="info astro-MBZ3OF5B"><img class="screenShot astro-MBZ3OF5B" src="/images/marekKnows/gameEng/gameEng_10.jpg" alt="Mouse Control" title="Mouse Control"><div class="text astro-MBZ3OF5B">This VMK shows you how to handle the mouse input to allow you to look around in the 3D world.</div>
+  </div>
+  <div class="buttons astro-MBZ3OF5B">
+    <a onclick="playYouTubeVideo('MjVoZFONPSU')" class="astro-MBZ3OF5B"><img class="watch astro-MBZ3OF5B" src="/images/marekKnows/watch.png" alt="VMK 10: Mouse Control" title="VMK 10: Mouse Control"></a>
+    
+    
+  </div>
+</div>
+</div>
+<p>More will be uploaded soon...</p>
+  </div>
+
+  <div id="footer" class="astro-DBAQNJTZ">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-DBAQNJTZ"><img src="/images/email.svg" alt="email" class="astro-DBAQNJTZ"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-DBAQNJTZ"><img src="/images/twitter.svg" alt="Twitter" class="astro-DBAQNJTZ"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-DBAQNJTZ"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-DBAQNJTZ"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-DBAQNJTZ"><img src="/images/youTube.svg" alt="youtube" class="astro-DBAQNJTZ"></a>
+    <a id="privacy" href="/privacy" title="Privacy Policy" class="astro-DBAQNJTZ">Privacy Policy</a>
+  </div>
+
+  <div id="youTubePlayer" class="astro-DBAQNJTZ">
+    <div class="closer astro-DBAQNJTZ">X</div>
+    <div class="playerWindow astro-DBAQNJTZ">
+      <div id="player" class="astro-DBAQNJTZ"></div>
+    </div>
+  </div>
+
+  <script>
+    const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
+    const closerEl = youTubePlayerEl.querySelector( '.closer' );
+
+    let player;
+
+    closerEl.addEventListener( 'click', () => {
+      player && player.stopVideo();
+      youTubePlayerEl.style.display = 'none';
+    } );
+
+    function playYouTubeVideo( videoId ) {
+      youTubePlayerEl.style.display = 'block';
+
+      if( player === undefined ) {
+        const playerEl = youTubePlayerEl.querySelector( '#player' );
+        const playerWidth = window.getComputedStyle( playerEl ).width;
+        let width = Number.parseInt( playerWidth );
+        if( width === undefined || width < 400 ) {
+          width = 400;
+        }
+
+        player = new YT.Player( 'player', {
+          width,
+          height: width * 0.6,
+          videoId,
+          playerVars: {
+            'playsinline': 1,
+          },
+          events: {
+            'onReady': () => player.playVideo()
+          }
+        } );
+      } else {
+        player.loadVideoById( videoId, 0 );
+      }
+    }
+
+  </script>
+</body>
+</html>
