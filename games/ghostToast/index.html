@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr" class="maxSize astro-DBAQNJTZ">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
+<title>Create Stones</title>
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+  
+  <script src="https://www.youtube.com/iframe_api"></script> 
+<link rel="stylesheet" href="/assets/audioEng.8f375fda.css" />
+<link rel="stylesheet" href="/assets/index.defa03c9.css" /></head>
+<body class="maxSize globalDefaultStyles astro-DBAQNJTZ">
+  <div id="header" class="astro-DBAQNJTZ">
+    <img class="logo astro-DBAQNJTZ" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-DBAQNJTZ"><img class="createStones astro-DBAQNJTZ" src="/images/createStones.png" alt="Create Stones"></a>
+      
+
+<div class="breadCrumbs astro-XG6CCH5A">
+  <img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/games" class="astro-XG6CCH5A">games</a><img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/games/ghostToast" class="astro-XG6CCH5A">ghostToast</a>
+</div>
+  </div>
+  <div id="content" class="astro-DBAQNJTZ">
+    <div class="astro-RRNMQL6E">
+    <img class="ghost astro-RRNMQL6E" src="/images/games/ghostToast/ghost.png" alt="Ghost">
+    
+    <p class="astro-RRNMQL6E"><b class="astro-RRNMQL6E">Ghost Toast</b> is a first person shooter game that I created using the <a href="/marekKnows/gameEng" class="astro-RRNMQL6E">3D OpenGL Game Engine</a>.  You control a 'hunter' that finds themselves inside of a maze with wondering ghosts.  Your objective is to stay alive as long as possible using a mace and a crossbow to defend yourself.  Each ghost that you kill will earn you a different number points. Points are calculated based on how you kill the ghost.  Headshots with a crossbow arrow at a long distance will earn you the most amount of points.</p>
+    
+    <p class="astro-RRNMQL6E">While roaming in the maze you will find randomly spawning packs of crossbow arrows; first aid kits used to restore your heath, and batteries which are needed to power your ghost detecting radar unit.</p>
+
+    <img class="mace astro-RRNMQL6E" src="/images/games/ghostToast/mace.png" alt="Mace">
+
+    <p class="astro-RRNMQL6E">If you want to learn how to create this game yourself, I have created 90+ step-by-step instructional video tutorials showing you everything line of code used to make this game in C++.  The video tutorial series can be <a href="/marekKnows/ghost" class="astro-RRNMQL6E">found here</a>.</p>
+      
+    <p class="astro-RRNMQL6E"><a href="/download/ghost/GhostToast_v1-04.zip" class="astro-RRNMQL6E"><img class="download astro-RRNMQL6E" src="/images/downloadGame.svg" alt="download Ghost Toast" title="download Ghost Toast"></a> To play the completed <b class="astro-RRNMQL6E">Ghost Toast</b> game, <a href="/download/ghost/GhostToast_v1-04.zip" class="astro-RRNMQL6E">download it</a> from here.</p>
+     
+    <iframe width="660" height="500" src="https://www.youtube.com/embed/Rk-pqKLEtI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="astro-RRNMQL6E"></iframe>
+
+  </div>
+  </div>
+
+  <div id="footer" class="astro-DBAQNJTZ">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-DBAQNJTZ"><img src="/images/email.svg" alt="email" class="astro-DBAQNJTZ"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-DBAQNJTZ"><img src="/images/twitter.svg" alt="Twitter" class="astro-DBAQNJTZ"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-DBAQNJTZ"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-DBAQNJTZ"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-DBAQNJTZ"><img src="/images/youTube.svg" alt="youtube" class="astro-DBAQNJTZ"></a>
+    <a id="privacy" href="/privacy" title="Privacy Policy" class="astro-DBAQNJTZ">Privacy Policy</a>
+  </div>
+
+  <div id="youTubePlayer" class="astro-DBAQNJTZ">
+    <div class="closer astro-DBAQNJTZ">X</div>
+    <div class="playerWindow astro-DBAQNJTZ">
+      <div id="player" class="astro-DBAQNJTZ"></div>
+    </div>
+  </div>
+
+  <script>
+    const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
+    const closerEl = youTubePlayerEl.querySelector( '.closer' );
+
+    let player;
+
+    closerEl.addEventListener( 'click', () => {
+      player && player.stopVideo();
+      youTubePlayerEl.style.display = 'none';
+    } );
+
+    function playYouTubeVideo( videoId ) {
+      youTubePlayerEl.style.display = 'block';
+
+      if( player === undefined ) {
+        const playerEl = youTubePlayerEl.querySelector( '#player' );
+        const playerWidth = window.getComputedStyle( playerEl ).width;
+        let width = Number.parseInt( playerWidth );
+        if( width === undefined || width < 400 ) {
+          width = 400;
+        }
+
+        player = new YT.Player( 'player', {
+          width,
+          height: width * 0.6,
+          videoId,
+          playerVars: {
+            'playsinline': 1,
+          },
+          events: {
+            'onReady': () => player.playVideo()
+          }
+        } );
+      } else {
+        player.loadVideoById( videoId, 0 );
+      }
+    }
+
+  </script>
+</body>
+</html>

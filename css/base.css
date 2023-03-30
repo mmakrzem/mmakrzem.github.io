@@ -1,5 +1,6 @@
 :root {
   --link-color: #ff5d01;
+  --link-visited-color: gray;
 
   --text-color: #333;
   --text-disabled-color: #999;
@@ -53,7 +54,7 @@ a:link {
   color: var(--link-color);
 }
 a:visited {
-  color: gray;
+  color: var(--link-visited-color);
 }
 a:hover {
   color: var( --color-light );

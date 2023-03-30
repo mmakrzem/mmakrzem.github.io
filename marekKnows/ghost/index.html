@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr" class="maxSize astro-DBAQNJTZ">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
+<title>Create Stones</title>
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+  
+  <script src="https://www.youtube.com/iframe_api"></script> 
+<link rel="stylesheet" href="/assets/audioEng.8f375fda.css" />
+<link rel="stylesheet" href="/assets/audioEng.416f3b7f.css" />
+<link rel="stylesheet" href="/assets/audioEng.3a59ad3d.css" /><script type="module" src="/hoisted.d6558f192.js"></script></head>
+<body class="maxSize globalDefaultStyles astro-DBAQNJTZ">
+  <div id="header" class="astro-DBAQNJTZ">
+    <img class="logo astro-DBAQNJTZ" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-DBAQNJTZ"><img class="createStones astro-DBAQNJTZ" src="/images/createStones.png" alt="Create Stones"></a>
+      
+
+<div class="breadCrumbs astro-XG6CCH5A">
+  <img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows" class="astro-XG6CCH5A">marekKnows</a><img src="/images/rock.png" alt="rock" class="rock astro-XG6CCH5A"><a href="/marekKnows/ghost" class="astro-XG6CCH5A">ghost</a>
+</div>
+  </div>
+  <div id="content" class="astro-DBAQNJTZ">
+    <div class="navBar astro-G2ULSVJO">
+    <img class="logo astro-G2ULSVJO" src="/images/marekKnows/logoHead.png" alt="MarekKnows Logo">
+    <div class="navSubMenu astro-G2ULSVJO" data-current="ghost">
+      <ul class="astro-G2ULSVJO">
+        <li class="astro-G2ULSVJO">MarekKnows
+          <ul class="astro-G2ULSVJO">
+            <li class="astro-G2ULSVJO"><a data-url="#" class="astro-G2ULSVJO">Welcome</a></li>
+            <li class="astro-G2ULSVJO"><a data-url="#faq" class="astro-G2ULSVJO">FAQ</a></li>
+            <!-- <li><a data-url="#about">About</a></li> -->
+          </ul>
+        </li>  
+        <li class="astro-G2ULSVJO">Engine Series
+          <ul class="astro-G2ULSVJO">
+            <li class="astro-G2ULSVJO"><a data-url="gameEng" class="astro-G2ULSVJO">OpenGL Game Engine</a></li>
+            <li class="astro-G2ULSVJO"><a data-url="physics" class="astro-G2ULSVJO">Physics Engine <img class="paid astro-G2ULSVJO" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-G2ULSVJO"><a data-url="shader" class="astro-G2ULSVJO">Shader Engine <img class="paid astro-G2ULSVJO" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+          </ul>
+        </li>  
+        <li class="astro-G2ULSVJO">Game Series
+          <ul class="astro-G2ULSVJO">
+            <li class="astro-G2ULSVJO"><a data-url="ghost" class="astro-G2ULSVJO">Ghost Toast <img class="paid astro-G2ULSVJO" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-G2ULSVJO"><a data-url="zing" class="astro-G2ULSVJO">Zing <img class="paid astro-G2ULSVJO" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+          </ul>  
+        </li>
+        <li class="astro-G2ULSVJO">General Information
+          <ul class="astro-G2ULSVJO">
+            <li class="astro-G2ULSVJO"><a data-url="cpp" class="astro-G2ULSVJO">General C++</a></li>
+            <li class="astro-G2ULSVJO"><a data-url="math" class="astro-G2ULSVJO">Mathematics</a></li>
+            <li class="astro-G2ULSVJO"><a data-url="network" class="astro-G2ULSVJO">Network Programming <img class="paid astro-G2ULSVJO" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-G2ULSVJO"><a data-url="openGl" class="astro-G2ULSVJO">OpenGL Tips & Tricks</a></li>
+          </ul>
+        </li>  
+        <li class="astro-G2ULSVJO">Art & Sound Pipeline
+          <ul class="astro-G2ULSVJO">
+            <li class="astro-G2ULSVJO"><a data-url="audioEng" class="astro-G2ULSVJO">3D Audio Engine <img class="paid astro-G2ULSVJO" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-G2ULSVJO"><a data-url="trueSpace" class="astro-G2ULSVJO">Caligari trueSpace</a></li>
+          </ul>
+        </li>  
+        <li class="last astro-G2ULSVJO">Other
+          <ul class="astro-G2ULSVJO">
+            <li class="astro-G2ULSVJO"><a data-url="puzzles" class="astro-G2ULSVJO">Puzzles</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div><script>
+    //populate nav links
+    const navSubMenuEl = document.querySelector( '.navSubMenu' );
+    const current = navSubMenuEl.getAttribute( 'data-current' );
+    const hash = window.location.hash;
+
+    document.querySelectorAll( '.navSubMenu a[data-url]' ).forEach( aEl => {
+      const url = aEl.getAttribute( 'data-url' );
+      let isCurrent = false;
+      if( current === 'marekKnows' ) { //marekKnows root index
+        switch( url ) {
+          case '#': {
+            isCurrent = hash.length === 0 || hash === '#';
+            break;
+          }
+          case '#faq':
+          case '#about': {
+            isCurrent = url === hash;
+            break;
+          }
+        }
+      } else {
+        isCurrent = url === current;
+      }
+      const href = "/marekKnows" + ( url.startsWith( '#' ) ? '' : '/' ) + url;
+      if( !isCurrent ) {
+        aEl.href = href; //set a.href to the correct target
+      } else {
+        const text = aEl.innerHTML;
+        aEl.parentElement.innerHTML = text; //remove the a element
+      }
+    } );
+  </script>
+
+  
+
+<div class="header astro-XZRUDQPB">
+  <img src="/images/marekKnows/ghost.png" alt="Ghost Toast" class="astro-XZRUDQPB">
+  <h1 class="astro-XZRUDQPB">Ghost Toast</h1>
+  <p class="astro-XZRUDQPB">This section will take you through the entire game design and development process of creating a FPS game using the <a href="/marekKnows/gameEng">3D OpenGL Game Engine</a>.  All 2D textures and 3D models used in the game are supplied to you.  Learn to take your imagination and turn it into reality!<br><br>To learn more about the game, <a href="/games/ghostToast">visit this page</a>.</p>
+</div>
+<div class="section astro-XZRUDQPB">
+  <div id="loginAndPurchase" data-vmk-section="ghost" class="astro-JJQ4MAEP">
+      <div class="astro-JJQ4MAEP">
+        <img src="/images/marekKnows/loading.gif" id="loading" class="astro-JJQ4MAEP">
+        <button class="signIn astro-JJQ4MAEP" style="display:none;"><img src="/images/marekKnows/google.svg" class="astro-JJQ4MAEP"><span class="astro-JJQ4MAEP">Sign in with Google</span></button>
+        <button class="signOut astro-JJQ4MAEP" style="display:none;">Sign out</button>
+      </div>
+      <div class="rightSide astro-JJQ4MAEP">
+        <p id="loading2" class="astro-JJQ4MAEP">Looking for server...</p>
+        <img class="signIn astro-JJQ4MAEP" src="/images/marekKnows/key.svg" style="display:none;">
+        <div class="purchase astro-JJQ4MAEP" style="display:none;">
+          <img src="/images/marekKnows/loading.gif" id="loadingPayPal" class="astro-JJQ4MAEP">
+          <div class="price astro-JJQ4MAEP"><span class="normal astro-JJQ4MAEP"></span><span class="sale astro-JJQ4MAEP" style="display:none"></span></div>
+          <div id="payPalButton" class="astro-JJQ4MAEP"></div>
+          <div class="info astro-JJQ4MAEP">All orders can take up to 5 minutes to process before your account is updated.</div>
+        </div>
+        <p class="thanks astro-JJQ4MAEP" style="display:none;">Thank you for supporting this website!</p>
+      </div>
+    </div>
+
+<div id="ghost0" class="card astro-U7IW2D7D">
+  <div class="header astro-U7IW2D7D">0: Introduction</div>
+  <div class="info astro-U7IW2D7D"><img class="screenShot astro-U7IW2D7D" src="/images/marekKnows/ghost/ghost_0.jpg" alt="Introduction" title="Introduction"><div class="text astro-U7IW2D7D">A brief introduction to the Ghost Toast series. Where I will be starting and what will be covered.</div>
+  </div>
+  <div class="buttons astro-U7IW2D7D">
+    <a onclick="playYouTubeVideo('fGEMbte2mvY')" class="astro-U7IW2D7D"><img class="watch astro-U7IW2D7D" src="/images/marekKnows/watch.png" alt="VMK 0: Introduction" title="VMK 0: Introduction"></a>
+    
+    
+  </div>
+</div>
+</div>
+<p>More coming soon...</p>
+  </div>
+
+  <div id="footer" class="astro-DBAQNJTZ">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-DBAQNJTZ"><img src="/images/email.svg" alt="email" class="astro-DBAQNJTZ"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-DBAQNJTZ"><img src="/images/twitter.svg" alt="Twitter" class="astro-DBAQNJTZ"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-DBAQNJTZ"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-DBAQNJTZ"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-DBAQNJTZ"><img src="/images/youTube.svg" alt="youtube" class="astro-DBAQNJTZ"></a>
+    <a id="privacy" href="/privacy" title="Privacy Policy" class="astro-DBAQNJTZ">Privacy Policy</a>
+  </div>
+
+  <div id="youTubePlayer" class="astro-DBAQNJTZ">
+    <div class="closer astro-DBAQNJTZ">X</div>
+    <div class="playerWindow astro-DBAQNJTZ">
+      <div id="player" class="astro-DBAQNJTZ"></div>
+    </div>
+  </div>
+
+  <script>
+    const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
+    const closerEl = youTubePlayerEl.querySelector( '.closer' );
+
+    let player;
+
+    closerEl.addEventListener( 'click', () => {
+      player && player.stopVideo();
+      youTubePlayerEl.style.display = 'none';
+    } );
+
+    function playYouTubeVideo( videoId ) {
+      youTubePlayerEl.style.display = 'block';
+
+      if( player === undefined ) {
+        const playerEl = youTubePlayerEl.querySelector( '#player' );
+        const playerWidth = window.getComputedStyle( playerEl ).width;
+        let width = Number.parseInt( playerWidth );
+        if( width === undefined || width < 400 ) {
+          width = 400;
+        }
+
+        player = new YT.Player( 'player', {
+          width,
+          height: width * 0.6,
+          videoId,
+          playerVars: {
+            'playsinline': 1,
+          },
+          events: {
+            'onReady': () => player.playVideo()
+          }
+        } );
+      } else {
+        player.loadVideoById( videoId, 0 );
+      }
+    }
+
+  </script>
+</body>
+</html>
