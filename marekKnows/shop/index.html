@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" dir="ltr" class="maxSize astro-37FXCHFA">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
+<title>Create Stones</title>
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+  
+  <script src="https://www.youtube.com/iframe_api"></script> 
+<link rel="stylesheet" href="/_astro/shop.978545ec.css" />
+<link rel="stylesheet" href="/_astro/audioEng.7b5e2479.css" />
+<link rel="stylesheet" href="/_astro/audioEng.1244ec52.css" /><script type="module" src="/_astro/hoisted.3308130e.js"></script></head>
+<body class="maxSize globalDefaultStyles astro-37FXCHFA">
+  <div id="header" class="astro-37FXCHFA">
+    <img class="logo astro-37FXCHFA" src="/images/logo.png" alt="Logo">
+    <a href="/" class=" astro-37FXCHFA"><img class="createStones astro-37FXCHFA" src="/images/createStones.png" alt="Create Stones"></a>
+      
+
+<div class="breadCrumbs astro-URS4OWFO">
+  <img src="/images/rock.png" alt="rock" class="rock astro-URS4OWFO"><a href="/marekKnows" class="astro-URS4OWFO">marekKnows</a><img src="/images/rock.png" alt="rock" class="rock astro-URS4OWFO"><a href="/marekKnows/shop" class="astro-URS4OWFO">shop</a>
+</div>
+  </div>
+  <div id="content" class="astro-37FXCHFA">
+    
+  <div class="navBar astro-GEUNSWSQ">
+    <img class="logo astro-GEUNSWSQ" src="/images/marekKnows/logoHead.png" alt="MarekKnows Logo">
+    <div class="navSubMenu astro-GEUNSWSQ" data-current="shop">
+      <ul class="astro-GEUNSWSQ">
+        <li class="astro-GEUNSWSQ">MarekKnows
+          <ul class="astro-GEUNSWSQ">
+            <li class="astro-GEUNSWSQ"><a data-url="#" class="astro-GEUNSWSQ">Welcome</a></li>
+            <li class="astro-GEUNSWSQ"><a data-url="#faq" class="astro-GEUNSWSQ">FAQ</a></li>
+            <!-- <li><a data-url="shop">Shop <img class="paid" src="/images/marekKnows/cart.svg" alt="Store" title="Store"></a></li> -->
+            <!-- <li><a data-url="#about">About</a></li> -->
+          </ul>
+        </li>  
+        <li class="astro-GEUNSWSQ">Engine Series
+          <ul class="astro-GEUNSWSQ">
+            <li class="astro-GEUNSWSQ"><a data-url="gameEng" class="astro-GEUNSWSQ">OpenGL Game Engine</a></li>
+            <li class="astro-GEUNSWSQ"><a data-url="physics" class="astro-GEUNSWSQ">Physics Engine <img class="paid astro-GEUNSWSQ" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-GEUNSWSQ"><a data-url="shader" class="astro-GEUNSWSQ">Shader Engine <img class="paid astro-GEUNSWSQ" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+          </ul>
+        </li>  
+        <li class="astro-GEUNSWSQ">Game Series
+          <ul class="astro-GEUNSWSQ">
+            <li class="astro-GEUNSWSQ"><a data-url="ghost" class="astro-GEUNSWSQ">Ghost Toast <img class="paid astro-GEUNSWSQ" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-GEUNSWSQ"><a data-url="zing" class="astro-GEUNSWSQ">Zing <img class="paid astro-GEUNSWSQ" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+          </ul>  
+        </li>
+        <li class="astro-GEUNSWSQ">General Information
+          <ul class="astro-GEUNSWSQ">
+            <li class="astro-GEUNSWSQ"><a data-url="cpp" class="astro-GEUNSWSQ">General C++</a></li>
+            <li class="astro-GEUNSWSQ"><a data-url="math" class="astro-GEUNSWSQ">Mathematics</a></li>
+            <li class="astro-GEUNSWSQ"><a data-url="network" class="astro-GEUNSWSQ">Network Programming <img class="paid astro-GEUNSWSQ" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-GEUNSWSQ"><a data-url="openGl" class="astro-GEUNSWSQ">OpenGL Tips & Tricks</a></li>
+          </ul>
+        </li>  
+        <li class="astro-GEUNSWSQ">Art & Sound Pipeline
+          <ul class="astro-GEUNSWSQ">
+            <li class="astro-GEUNSWSQ"><a data-url="audioEng" class="astro-GEUNSWSQ">3D Audio Engine <img class="paid astro-GEUNSWSQ" src="/images/marekKnows/paidContent.svg" alt="Paid Content" title="Paid Content"></a></li>
+            <li class="astro-GEUNSWSQ"><a data-url="trueSpace" class="astro-GEUNSWSQ">Caligari trueSpace</a></li>
+          </ul>
+        </li>  
+        <li class="last astro-GEUNSWSQ">Other
+          <ul class="astro-GEUNSWSQ">
+            <li class="astro-GEUNSWSQ"><a data-url="puzzles" class="astro-GEUNSWSQ">Puzzles</a></li>
+          </ul>
+        </li>  
+      </ul>
+    </div>
+  </div>
+  <script>
+    //populate nav links
+    const navSubMenuEl = document.querySelector( '.navSubMenu' );
+    const current = navSubMenuEl.getAttribute( 'data-current' );
+    const hash = window.location.hash;
+
+    document.querySelectorAll( '.navSubMenu a[data-url]' ).forEach( aEl => {
+      const url = aEl.getAttribute( 'data-url' );
+      let isCurrent = false;
+      if( current === 'marekKnows' ) { //marekKnows root index
+        switch( url ) {
+          case '#': {
+            isCurrent = hash.length === 0 || hash === '#';
+            break;
+          }
+          case '#faq':
+          case '#about': {
+            isCurrent = url === hash;
+            break;
+          }
+        }
+      } else {
+        isCurrent = url === current;
+      }
+      const href = "/marekKnows" + ( url.startsWith( '#' ) ? '' : '/' ) + url;
+      if( !isCurrent ) {
+        aEl.href = href; //set a.href to the correct target
+      } else {
+        const text = aEl.innerHTML;
+        aEl.parentElement.innerHTML = text; //remove the a element
+      }
+    } );
+  </script>
+
+  
+  <div class="stack astro-36LWNPBC">
+    <div id="topSection" class="info astro-36LWNPBC">
+      <div class="astro-36LWNPBC">
+        <button class="astro-36LWNPBC">SignIn</button>
+        <!-- <img src="/images/marekKnows/loading.gif" id="loading">
+        <button class="signIn" style="display:none;"><img src="/images/marekKnows/google.svg"><span>Sign in with Google</span></button>
+        <button class="signOut" style="display:none;">Sign out</button> -->
+      </div>
+      <div class="rightSide astro-36LWNPBC">
+        <p class="astro-36LWNPBC">Sign in to buy new items, or to download purchased items.</p>
+        <!-- <p id="loading2">Looking for server...</p>
+        <img class="signIn" src="/images/marekKnows/key.svg" style="display:none;">
+        <div class="purchase" style="display:none;">
+          <img src="/images/marekKnows/loading.gif" id="loadingPayPal">
+          <div class="price"><span class="normal"></span><span class="sale" style="display:none"></span></div>
+        </div>
+        <p class="thanks" style="display:none;">Thank you for supporting this website!</p> -->
+      </div>
+    </div>
+    
+    <div class="section info astro-36LWNPBC">
+      <div class="title astro-36LWNPBC">
+        <h2 class="astro-36LWNPBC">Store Items</h2>
+        <span class="titleCap astro-36LWNPBC">&nbsp;</span>
+      </div>
+      <div class="content astro-36LWNPBC">
+        <p class="astro-36LWNPBC">Software</p>
+        <hr class="astro-36LWNPBC">
+        <p class="astro-36LWNPBC">Source Code</p>
+        <hr class="astro-36LWNPBC">
+        <p class="astro-36LWNPBC">VMK Series</p>
+        <hr class="astro-36LWNPBC">
+        <p class="astro-36LWNPBC">Checkout Total:</p>
+        <div id="payPalButton" class="astro-36LWNPBC"></div>
+        <div class="info astro-36LWNPBC">All orders can take up to 5 minutes to process before your account is updated.</div>
+      </div>
+    </div>
+
+    <br class="astro-36LWNPBC"><br class="astro-36LWNPBC">
+
+    <div id="purchaseHistory" class="section info astro-36LWNPBC" style="display:none">
+      <div class="title astro-36LWNPBC">
+        <h2 class="astro-36LWNPBC">Purchase History</h2>
+        <span class="titleCap astro-36LWNPBC">&nbsp;</span>
+      </div>
+      <div class="content astro-36LWNPBC">
+        TODO:
+      </div>
+    </div>
+
+    <br class="astro-36LWNPBC"><br class="astro-36LWNPBC">
+
+    
+    
+  </div>
+
+
+  </div>
+
+  <div id="footer" class="astro-37FXCHFA">
+    <a href="mailto:marek.krzeminski@gmail.com" target="external" title="Send an email" class="astro-37FXCHFA"><img src="/images/email.svg" alt="email" class="astro-37FXCHFA"></a>
+    <a href="https://twitter.com/cr8dev" target="external" title="@cr8dev" class="astro-37FXCHFA"><img src="/images/twitter.svg" alt="Twitter" class="astro-37FXCHFA"></a>
+    <a href="https://www.linkedin.com/in/mkrzeminski/" target="external" title="LinkedIn Marek" class="astro-37FXCHFA"><img src="/images/linkedIn.svg" alt="LinkedIn" class="astro-37FXCHFA"></a>
+    <a href="https://www.youtube.com/user/mmakrzem" target="external" title="YouTube Marek" class="astro-37FXCHFA"><img src="/images/youTube.svg" alt="youtube" class="astro-37FXCHFA"></a>
+    <a id="privacy" href="/privacy" title="Privacy Policy" class="astro-37FXCHFA">Privacy Policy</a>
+  </div>
+
+  <div id="youTubePlayer" class="astro-37FXCHFA">
+    <div class="closer astro-37FXCHFA">X</div>
+    <div class="playerWindow astro-37FXCHFA">
+      <div id="player" class="astro-37FXCHFA"></div>
+    </div>
+  </div>
+
+  <script>
+    const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
+    const closerEl = youTubePlayerEl.querySelector( '.closer' );
+
+    let player;
+
+    closerEl.addEventListener( 'click', () => {
+      player && player.stopVideo();
+      youTubePlayerEl.style.display = 'none';
+    } );
+
+    function playYouTubeVideo( videoId ) {
+      youTubePlayerEl.style.display = 'block';
+
+      if( player === undefined ) {
+        const playerEl = youTubePlayerEl.querySelector( '#player' );
+        const playerWidth = window.getComputedStyle( playerEl ).width;
+        let width = Number.parseInt( playerWidth );
+        if( width === undefined || width < 400 ) {
+          width = 400;
+        }
+
+        player = new YT.Player( 'player', {
+          width,
+          height: width * 0.6,
+          videoId,
+          playerVars: {
+            'playsinline': 1,
+          },
+          events: {
+            'onReady': () => player.playVideo()
+          }
+        } );
+      } else {
+        player.loadVideoById( videoId, 0 );
+      }
+    }
+
+  </script>
+</body>
+</html>
