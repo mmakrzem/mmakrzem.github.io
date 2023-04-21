@@ -12,9 +12,9 @@
 <link rel="stylesheet" type="text/css" href="/css/base.css">
   
   <script src="https://www.youtube.com/iframe_api"></script> 
-<link rel="stylesheet" href="/_astro/shop.978545ec.css" />
+<link rel="stylesheet" href="/_astro/shop.856ed7b0.css" />
 <link rel="stylesheet" href="/_astro/audioEng.7b5e2479.css" />
-<link rel="stylesheet" href="/_astro/audioEng.1244ec52.css" /><script type="module" src="/_astro/hoisted.f9c4c898.js"></script></head>
+<link rel="stylesheet" href="/_astro/audioEng.1244ec52.css" /><script type="module" src="/_astro/hoisted.fa8c2ea8.js"></script></head>
 <body class="maxSize globalDefaultStyles astro-37FXCHFA">
   <div id="header" class="astro-37FXCHFA">
     <img class="logo astro-37FXCHFA" src="/images/logo.png" alt="Logo">
@@ -112,17 +112,16 @@
   <div class="stack astro-36LWNPBC">
     <div id="topSection" class="info astro-36LWNPBC">
       <div class="astro-36LWNPBC">
-        <button class="astro-36LWNPBC">SignIn</button>
-        <!-- <img src="/images/marekKnows/loading.gif" id="loading">
-        <button class="signIn" style="display:none;"><img src="/images/marekKnows/google.svg"><span>Sign in with Google</span></button>
-        <button class="signOut" style="display:none;">Sign out</button> -->
+        <img id="loading" src="/images/marekKnows/loading.gif" class="astro-36LWNPBC">
+        <button class="signIn astro-36LWNPBC" style="display:none;"><img src="/images/marekKnows/google.svg" class="astro-36LWNPBC"><span class="astro-36LWNPBC">Sign in with Google</span></button>
+        <button class="signOut astro-36LWNPBC" style="display:none;">Sign out</button>
       </div>
       <div class="rightSide astro-36LWNPBC">
         <p class="astro-36LWNPBC">Sign in to buy new items, or to download purchased items.</p>
         <!-- <p id="loading2">Looking for server...</p>
         <img class="signIn" src="/images/marekKnows/key.svg" style="display:none;">
         <div class="purchase" style="display:none;">
-          <img src="/images/marekKnows/loading.gif" id="loadingPayPal">
+          <img id="loadingPayPal" src="/images/marekKnows/loading.gif">
           <div class="price"><span class="normal"></span><span class="sale" style="display:none"></span></div>
         </div>
         <p class="thanks" style="display:none;">Thank you for supporting this website!</p> -->
@@ -134,16 +133,33 @@
         <h2 class="astro-36LWNPBC">Store Items</h2>
         <span class="titleCap astro-36LWNPBC">&nbsp;</span>
       </div>
-      <div class="content astro-36LWNPBC">
-        <p class="astro-36LWNPBC">Software</p>
-        <hr class="astro-36LWNPBC">
-        <p class="astro-36LWNPBC">Source Code</p>
-        <hr class="astro-36LWNPBC">
-        <p class="astro-36LWNPBC">VMK Series</p>
-        <hr class="astro-36LWNPBC">
-        <p class="astro-36LWNPBC">Checkout Total:</p>
-        <div id="payPalButton" class="astro-36LWNPBC"></div>
-        <div class="info astro-36LWNPBC">All orders can take up to 5 minutes to process before your account is updated.</div>
+      <div id="storeContent" class="content astro-36LWNPBC">
+        <div class="header astro-36LWNPBC">
+          <p class="price astro-36LWNPBC">In Cart</p>
+          <p class="price astro-36LWNPBC">Price</p>
+          <p class="astro-36LWNPBC">Software</p>
+        </div>
+
+        <input type="checkbox" id="gameEngSource" value="gameEngSource" class="astro-36LWNPBC"><label for="gameEngSource" class="astro-36LWNPBC">
+            <img src="https://plchldr.co/i/200x150?&#38;bg=777777&#38;fc=111111" class="astro-36LWNPBC">
+            <p class="astro-36LWNPBC">Game Engine Source Code</p>
+          </label><p class="price astro-36LWNPBC">$ 3.00</p><p class="price inCart astro-36LWNPBC"></p><div class="rowBorder astro-36LWNPBC"></div><input type="checkbox" id="ghostToastSource" value="ghostToastSource" class="astro-36LWNPBC"><label for="ghostToastSource" class="astro-36LWNPBC">
+            <img src="https://plchldr.co/i/200x150?&#38;bg=777777&#38;fc=111111" class="astro-36LWNPBC">
+            <p class="astro-36LWNPBC">Ghost Toast Source Code</p>
+          </label><p class="price astro-36LWNPBC">$ 4.00</p><p class="price inCart astro-36LWNPBC"></p><div class="rowBorder astro-36LWNPBC"></div><input type="checkbox" id="shaderEngineSource" value="shaderEngineSource" class="astro-36LWNPBC"><label for="shaderEngineSource" class="astro-36LWNPBC">
+            <img src="https://plchldr.co/i/200x150?&#38;bg=777777&#38;fc=111111" class="astro-36LWNPBC">
+            <p class="astro-36LWNPBC">Shader Engine Source Code</p>
+          </label><p class="price astro-36LWNPBC">$ 5.00</p><p class="price inCart astro-36LWNPBC"></p><div class="rowBorder astro-36LWNPBC"></div><input type="checkbox" id="ZingStarter" value="ZingStarter" class="astro-36LWNPBC"><label for="ZingStarter" class="astro-36LWNPBC">
+            <img src="https://plchldr.co/i/200x150?&#38;bg=777777&#38;fc=111111" class="astro-36LWNPBC">
+            <p class="astro-36LWNPBC">Zing Starter Source Code</p>
+          </label><p class="price astro-36LWNPBC">$ 6.00</p><p class="price inCart astro-36LWNPBC"></p><div class="rowBorder astro-36LWNPBC"></div>
+
+        <p class="header astro-36LWNPBC">Source Code</p>
+        <p class="header astro-36LWNPBC">VMK Series</p>
+        <!-- 
+        <p>Checkout Total:</p>
+        <div id="payPalButton"></div>
+        <div class="info">All orders can take up to 5 minutes to process before your account is updated.</div> -->
       </div>
     </div>
 
