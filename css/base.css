@@ -1,4 +1,7 @@
 :root {
+  --mk-base-orange: #d6801b;
+  --mk-background-color: #1e1e1e;
+
   --link-color: #ff5d01;
   --link-visited-color: gray;
 
@@ -57,7 +60,7 @@ a:visited {
   color: var(--link-visited-color);
 }
 a:hover {
-  color: var( --color-light );
+  color: var(--color-light);
 }
 a:active {
   color: var(--link-color);;

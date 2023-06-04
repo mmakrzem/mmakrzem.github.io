@@ -1,0 +1,54 @@
+#storeContent > p.price.item > span.sale {
+  color: var( --mk-base-orange );
+  text-decoration: line-through;
+}
+
+#storeContent .soldOut {
+  grid-column: 1 / span 4;
+}
+
+#purchaseContent .header {
+  padding-top: 1em;
+  border-bottom: 1px solid lightgray;
+}
+
+#purchaseContent .purchasedItem {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 10px 10px;
+  align-items: center;
+  border-bottom: 1px solid #3f3f3f;
+}
+
+#purchaseContent .purchasedItem img.vmk {
+  border: none;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#purchaseContent .purchasedItem .files {
+  display: flex;
+}
+
+#purchaseContent .purchasedItem .download {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  align-items: center;
+  text-align: center;
+  padding-right: 20px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+#purchaseContent .purchasedItem .download p {
+  margin-bottom: 0;
+}
+#purchaseContent .purchasedItem .download a {
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+#purchaseContent .purchasedItem .download img {
+  border: none;
+  padding-top: 3px;
+}

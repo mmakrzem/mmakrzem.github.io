@@ -62,14 +62,22 @@
     const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
     const closerEl = youTubePlayerEl.querySelector( '.closer' );
 
+    const payPalButtonEl = document.querySelector( '#payPalButton' );
+
     let player;
 
     closerEl.addEventListener( 'click', () => {
       player && player.stopVideo();
       youTubePlayerEl.style.display = 'none';
+      if( payPalButtonEl !== undefined ) {
+        payPalButtonEl.style.display = 'block';
+      }
     } );
 
     function playYouTubeVideo( videoId ) {
+      if( payPalButtonEl !== undefined ) {
+        payPalButtonEl.style.display = 'none';
+      }
       youTubePlayerEl.style.display = 'block';
 
       if( player === undefined ) {

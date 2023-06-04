@@ -10,9 +10,9 @@
 <link rel="stylesheet" type="text/css" href="/css/base.css">
   
   <script src="https://www.youtube.com/iframe_api"></script> 
-<link rel="stylesheet" href="/_astro/audioEng.7b5e2479.css" />
+<link rel="stylesheet" href="/_astro/audioEng.c266531c.css" />
 <link rel="stylesheet" href="/_astro/audioEng.56dde9d9.css" />
-<link rel="stylesheet" href="/_astro/audioEng.1244ec52.css" /><script type="module" src="/_astro/hoisted.57e05922.js"></script></head>
+<link rel="stylesheet" href="/_astro/audioEng.1244ec52.css" /><script type="module" src="/_astro/hoisted.2b3278cf.js"></script></head>
 <body class="maxSize globalDefaultStyles astro-37FXCHFA">
   <div id="header" class="astro-37FXCHFA">
     <img class="logo astro-37FXCHFA" src="/images/logo.png" alt="Logo">
@@ -33,7 +33,7 @@
           <ul class="astro-GEUNSWSQ">
             <li class="astro-GEUNSWSQ"><a data-url="#" class="astro-GEUNSWSQ">Welcome</a></li>
             <li class="astro-GEUNSWSQ"><a data-url="#faq" class="astro-GEUNSWSQ">FAQ</a></li>
-            <!-- <li><a data-url="shop">Shop <img class="paid" src="/images/marekKnows/cart.svg" alt="Store" title="Store"></a></li> -->
+            <li class="astro-GEUNSWSQ"><a data-url="shop" class="astro-GEUNSWSQ">Shop <img class="paid astro-GEUNSWSQ" src="/images/marekKnows/cart.svg" alt="Store" title="Store"></a></li>
             <!-- <li><a data-url="#about">About</a></li> -->
           </ul>
         </li>  
@@ -474,14 +474,22 @@
     const youTubePlayerEl = document.querySelector( '#youTubePlayer' );
     const closerEl = youTubePlayerEl.querySelector( '.closer' );
 
+    const payPalButtonEl = document.querySelector( '#payPalButton' );
+
     let player;
 
     closerEl.addEventListener( 'click', () => {
       player && player.stopVideo();
       youTubePlayerEl.style.display = 'none';
+      if( payPalButtonEl !== undefined ) {
+        payPalButtonEl.style.display = 'block';
+      }
     } );
 
     function playYouTubeVideo( videoId ) {
+      if( payPalButtonEl !== undefined ) {
+        payPalButtonEl.style.display = 'none';
+      }
       youTubePlayerEl.style.display = 'block';
 
       if( player === undefined ) {
