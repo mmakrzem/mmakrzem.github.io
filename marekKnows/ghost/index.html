@@ -7,12 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
 <title>Create Stones</title>
 <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/css/base.css?1686055698626">
+<link rel="stylesheet" type="text/css" href="/css/base.css?1703188247909">
   
   <script src="https://www.youtube.com/iframe_api"></script> 
 <link rel="stylesheet" href="/_astro/audioEng.c266531c.css" />
 <link rel="stylesheet" href="/_astro/audioEng.56dde9d9.css" />
-<link rel="stylesheet" href="/_astro/audioEng.1244ec52.css" /><script type="module" src="/_astro/hoisted.879dc608.js"></script></head>
+<link rel="stylesheet" href="/_astro/audioEng.1244ec52.css" /><script type="module" src="/_astro/hoisted.07f00d8f.js"></script></head>
 <body class="maxSize globalDefaultStyles astro-37FXCHFA">
   <div id="header" class="astro-37FXCHFA">
     <img class="logo astro-37FXCHFA" src="/images/logo.png" alt="Logo">
@@ -114,7 +114,7 @@
 <div class="header astro-24LAQHCG">
   <img src="/images/marekKnows/ghost.png" alt="Ghost Toast" class="astro-24LAQHCG">
   <h1 class="astro-24LAQHCG">Ghost Toast</h1>
-  <p class="astro-24LAQHCG">This section will take you through the entire game design and development process of creating a FPS game using the <a href="/marekKnows/gameEng">3D OpenGL Game Engine</a>.  All 2D textures and 3D models used in the game are supplied to you.  Learn to take your imagination and turn it into reality!<br><br>To learn more about the game, <a href="/games/ghostToast">visit this page</a>.</p>
+  <p class="astro-24LAQHCG">This tutorial series will take you through the entire game design and development process of creating a FPS game using the <a href="/marekKnows/gameEng">3D OpenGL Game Engine</a>.  All 2D textures and 3D models used in the game are supplied to you.  Learn to take your imagination and turn it into reality!<br><br>To learn more about the game, <a href="/games/ghostToast">visit this page</a>.<br><br>You can purchase the starting OpenGL Game Engine source code (and other helpful tools used throughout the video series) from the <a href="/marekKnows/shop">Shop</a>.</p>
 </div>
 <div class="section astro-24LAQHCG">
   <div id="loginAndPurchase" data-vmk-section="ghost" class="astro-Q6Q7HVCJ">
@@ -146,11 +146,350 @@
     
   </div>
 </div>
+
+<div id="ghost1" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">1: Design Plan</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_1.jpg" alt="Design Plan" title="Design Plan"><div class="text astro-DOYHEAPI">In this video I talk about the general design of this game.  I cover the following topics: Objective, Rules, Screen Layout, AI, Animations, Pickups, Spawning, Damage, Points, Map and Collisions.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('1')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 1: Design Plan" title="VMK 1: Design Plan"></a>
+    
+  </div>
+</div>
+
+<div id="ghost2ab" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">2ab: Project Setup</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_2ab.jpg" alt="Project Setup" title="Project Setup"><div class="text astro-DOYHEAPI">I show how to take a fresh copy of the Game Engine Source Code and start using it to make the Ghost Toast game.<br><br>The generic game engine splash screen is also replaced with a new one in this video.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('2ab')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 2ab: Project Setup" title="VMK 2ab: Project Setup"></a>
+    <a href="/download/ghost/Ghost-VMK002B-GhostToastSetup.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 2ab Resources" title="Download VMK 2ab Resources"></a>
+  </div>
+</div>
+
+<div id="ghost2cd" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">2cd: Cursor and Main Menu</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_2cd.jpg" alt="Cursor and Main Menu" title="Cursor and Main Menu"><div class="text astro-DOYHEAPI">This VMK focuses on getting the cursor and main menu setup.  When you are done, you will have the cursor rendering correctly on the screen, and you will have also fixed the GUIButton class so that we can get perfect pixel-to-pixel mapping onto our controls.<br><br>The console window will be reactivated, allowing us to dynamically position the four GUIButton controls (Play, Highscore, Config and Quit) found on the main menu using the gui command.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('2cd')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 2cd: Cursor and Main Menu" title="VMK 2cd: Cursor and Main Menu"></a>
+    <a href="/download/ghost/Ghost-VMK002D-CursorMainMenu.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 2cd Resources" title="Download VMK 2cd Resources"></a>
+  </div>
+</div>
+
+<div id="ghost2e" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">2e: GUI Image Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_2e.jpg" alt="GUI Image Class" title="GUI Image Class"><div class="text astro-DOYHEAPI">A new GUI control is added to the game engine called GUIImage.  This control is used to display the Ghost Toast title on the main menu.<br><br>The GUIImage class is also used to display a menu selector on the main menu.  When you highlight a menu option, the selector will move to point at the highlighted option.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('2e')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 2e: GUI Image Class" title="VMK 2e: GUI Image Class"></a>
+    <a href="/download/ghost/Ghost-VMK002E-GUIImage.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 2e Resources" title="Download VMK 2e Resources"></a>
+  </div>
+</div>
+
+<div id="ghost3a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">3a: Texture Manager Info</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_3a.jpg" alt="Texture Manager Info" title="Texture Manager Info"><div class="text astro-DOYHEAPI">I will be creating a Texture Manager so that it is easier to load and handle textures inside the game engine. This VMK explains the changes that are going to be made.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('3a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 3a: Texture Manager Info" title="VMK 3a: Texture Manager Info"></a>
+    
+  </div>
+</div>
+
+<div id="ghost3b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">3b: Texture Manager Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_3b.jpg" alt="Texture Manager Class" title="Texture Manager Class"><div class="text astro-DOYHEAPI">I create the Texture Manager class in this VMK which I'll be using to handle all my textures from now on.  The Texture Manager allows you to load textures into groups for easy management of resources.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('3b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 3b: Texture Manager Class" title="VMK 3b: Texture Manager Class"></a>
+    
+  </div>
+</div>
+
+<div id="ghost3c" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">3c: Texture Class Update</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_3c.jpg" alt="Texture Class Update" title="Texture Class Update"><div class="text astro-DOYHEAPI">To be able to compile the Texture Manager class, I need to update the Texture class and add a new class (Vertex2i) to the game engine. Both of these things are done in this VMK.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('3c')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 3c: Texture Class Update" title="VMK 3c: Texture Class Update"></a>
+    
+  </div>
+</div>
+
+<div id="ghost3de" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">3de: Scene Class Update</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_3de.jpg" alt="Scene Class Update" title="Scene Class Update"><div class="text astro-DOYHEAPI">I update the Scene class so that I can start using the Texture Manager to handle all the loaded textures in the Ghost Toast game. The game engine is cleaned up a little too. I move around all the static member variables from different classes.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('3de')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 3de: Scene Class Update" title="VMK 3de: Scene Class Update"></a>
+    
+  </div>
+</div>
+
+<div id="ghost3f" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">3f: Font Management</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_3f.jpg" alt="Font Management" title="Font Management"><div class="text astro-DOYHEAPI">Functions that were previously written for the Scene class are moved into the Texture Manager to expand its capabilities.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('3f')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 3f: Font Management" title="VMK 3f: Font Management"></a>
+    
+  </div>
+</div>
+
+<div id="ghost3g" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">3g: Delete Graphics Renderer</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_3g.jpg" alt="Delete Graphics Renderer" title="Delete Graphics Renderer"><div class="text astro-DOYHEAPI">A short VMK showing how to remove the graphics renderer enumeration in the game engine.  We are always using OpenGL so there is no need for extra switch statements everywhere.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('3g')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 3g: Delete Graphics Renderer" title="VMK 3g: Delete Graphics Renderer"></a>
+    
+  </div>
+</div>
+
+<div id="ghost3h" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">3h: Font Class Upgrade</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_3h.jpg" alt="Font Class Upgrade" title="Font Class Upgrade"><div class="text astro-DOYHEAPI">The Font class is upgraded so that it will work with the Texture Manager created back in VMK3F.  The Font class also had the same 1 pixel offset problem that was described in VMK2CD, but it is fixed in this VMK.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('3h')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 3h: Font Class Upgrade" title="VMK 3h: Font Class Upgrade"></a>
+    
+  </div>
+</div>
+
+<div id="ghost3i" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">3i: Using Font Management</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_3i.jpg" alt="Using Font Management" title="Using Font Management"><div class="text astro-DOYHEAPI">I update the Scene class to now use the Font Management functions in the Texture Manager. The GUIText and GUIList functionality has been disabled so if you try to use these classes, your program will crash. I will address this in VMK 4.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('3i')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 3i: Using Font Management" title="VMK 3i: Using Font Management"></a>
+    <a href="/download/ghost/Ghost-VMK003I-UsingFontManagement.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 3i Resources" title="Download VMK 3i Resources"></a>
+  </div>
+</div>
+
+<div id="ghost4a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">4a: GUI Manager Intro</div>
+  <div class="info noImage astro-DOYHEAPI"><div class="text astro-DOYHEAPI">A short introduction to the GUI Manager class which will be added to the game engine. The GUI Manager will be responsible for managing all the GUI assets that are loaded into the game engine.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('4a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 4a: GUI Manager Intro" title="VMK 4a: GUI Manager Intro"></a>
+    
+  </div>
+</div>
+
+<div id="ghost4bcd" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">4bcd: GUI Manager</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_4bcd.jpg" alt="GUI Manager" title="GUI Manager"><div class="text astro-DOYHEAPI">The GuiManager class is created and all the code used to interface with a GUIButton is added into the manager.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('4bcd')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 4bcd: GUI Manager" title="VMK 4bcd: GUI Manager"></a>
+    
+  </div>
+</div>
+
+<div id="ghost4e" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">4e: GUI Button and GUIControl Upgrade</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_4e.jpg" alt="GUI Button and GUIControl Upgrade" title="GUI Button and GUIControl Upgrade"><div class="text astro-DOYHEAPI">The GUIButton class and the GUIControl class are upgraded in this VMK so that they will work with the new GuiManager class.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('4e')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 4e: GUI Button and GUIControl Upgrade" title="VMK 4e: GUI Button and GUIControl Upgrade"></a>
+    
+  </div>
+</div>
+
+<div id="ghost4fg" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">4fg: Using GUI Manager</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_4fg.jpg" alt="Using GUI Manager" title="Using GUI Manager"><div class="text astro-DOYHEAPI">Changes made in the GUI Control class earlier forces me to update the other GUI classes so that they will work with the GUI Manager. The Scene class is also updated to allow for the use of GUI Buttons on the main menu.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('4fg')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 4fg: Using GUI Manager" title="VMK 4fg: Using GUI Manager"></a>
+    
+  </div>
+</div>
+
+<div id="ghost4h" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">4h: Adding GUI Image to Manager</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_4h.jpg" alt="Adding GUI Image to Manager" title="Adding GUI Image to Manager"><div class="text astro-DOYHEAPI">This is a short video showing how to add the GUI Image class to the GUI Manager.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('4h')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 4h: Adding GUI Image to Manager" title="VMK 4h: Adding GUI Image to Manager"></a>
+    
+  </div>
+</div>
+
+<div id="ghost4i" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">4i: Using GUI Images</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_4i.jpg" alt="Using GUI Images" title="Using GUI Images"><div class="text astro-DOYHEAPI">Now that the GUI Manager can handle GUI Images, I update the Scene class to re introduce the Ghost Toast title and the menu selector found on the main menu.  I also convert the splash screen to a GUI Image.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('4i')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 4i: Using GUI Images" title="VMK 4i: Using GUI Images"></a>
+    
+  </div>
+</div>
+
+<div id="ghost4j" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">4j: GUI Cursor</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_4j.jpg" alt="GUI Cursor" title="GUI Cursor"><div class="text astro-DOYHEAPI">A cursor object is added to the GUI Manager in this video.  You can now easily swap the cursor image any time you like and you can render the cursor on any screen in the game.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('4j')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 4j: GUI Cursor" title="VMK 4j: GUI Cursor"></a>
+    
+  </div>
+</div>
+
+<div id="ghost4k" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">4k: Gui Move Command</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_4k.jpg" alt="Gui Move Command" title="Gui Move Command"><div class="text astro-DOYHEAPI">The Gui Manager is updated to include the console command GUI.  When you activate this command, you are able to move/position GUI controls on the screen using the mouse. This feature was first introduced in the <a href='gameEng#gameEng40'>OpenGL Game Engine VMK40</a></div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('4k')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 4k: Gui Move Command" title="VMK 4k: Gui Move Command"></a>
+    
+  </div>
+</div>
+
+<div id="ghost5a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">5a: Gui Navigation</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_5a.jpg" alt="Gui Navigation" title="Gui Navigation"><div class="text astro-DOYHEAPI">With the GUI Manager now working for us in the Scene class, the GameOGL::frame function can be simplified.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('5a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 5a: Gui Navigation" title="VMK 5a: Gui Navigation"></a>
+    
+  </div>
+</div>
+
+<div id="ghost5b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">5b: Animated Introduction</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_5b.jpg" alt="Animated Introduction" title="Animated Introduction"><div class="text astro-DOYHEAPI">I show how to animate the splash screen image. The image/logo slides into view from the left, pauses in the middle of the screen, and then slides off to the right.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('5b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 5b: Animated Introduction" title="VMK 5b: Animated Introduction"></a>
+    
+  </div>
+</div>
+
+<div id="ghost5c" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">5c: Menu Options</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_5c.jpg" alt="Menu Options" title="Menu Options"><div class="text astro-DOYHEAPI">Navigation from the Main Menu screen into and out of the Configure and the High Scores screens is implemented in this VMK.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('5c')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 5c: Menu Options" title="VMK 5c: Menu Options"></a>
+    <a href="/download/ghost/Ghost-VMK005C-MenuOptions.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 5c Resources" title="Download VMK 5c Resources"></a>
+  </div>
+</div>
+
+<div id="ghost5d" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">5d: Managing GUI List</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_5d.jpg" alt="Managing GUI List" title="Managing GUI List"><div class="text astro-DOYHEAPI">I add the necessary function to the Gui Manager class so that we are able to work with GUI List objects using the manager.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('5d')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 5d: Managing GUI List" title="VMK 5d: Managing GUI List"></a>
+    
+  </div>
+</div>
+
+<div id="ghost5e" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">5e: GUI List Update</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_5e.jpg" alt="GUI List Update" title="GUI List Update"><div class="text astro-DOYHEAPI">The GUI List class is updated in this video so that it will work properly with the GUI Manager. The GUI List class was first introduced in the OpenGL Game Engine <a href='gameEng#gameEng42a'>VMK 42</a></div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('5e')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 5e: GUI List Update" title="VMK 5e: GUI List Update"></a>
+    
+  </div>
+</div>
+
+<div id="ghost5f" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">5f: Highscore and Config List Boxes</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_5f.jpg" alt="Highscore and Config List Boxes" title="Highscore and Config List Boxes"><div class="text astro-DOYHEAPI">A list box is added to the Highscores screen. There are no scores listed here because we can''t earn points in the game yet. A list box is also added to the Configure screen which lists all the game controls that are available in the game.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('5f')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 5f: Highscore and Config List Boxes" title="VMK 5f: Highscore and Config List Boxes"></a>
+    <a href="/download/ghost/Ghost-VMK005F-ListBoxes.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 5f Resources" title="Download VMK 5f Resources"></a>
+  </div>
+</div>
+
+<div id="ghost6a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">6a: Managing GUI Text</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_6a.jpg" alt="Managing GUI Text" title="Managing GUI Text"><div class="text astro-DOYHEAPI">I add a few new functions to the GUI Manager class so that I can use GUI Text objects once again with the game engine.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('6a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 6a: Managing GUI Text" title="VMK 6a: Managing GUI Text"></a>
+    
+  </div>
+</div>
+
+<div id="ghost6b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">6b: GUI Text Update</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_6b.jpg" alt="GUI Text Update" title="GUI Text Update"><div class="text astro-DOYHEAPI">The GUI Text class is updated in this VMK so that it will work properly with the GUI Manager. The Vertex2 class is also updated to allow for Vertex2 * float calculations to be performed.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('6b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 6b: GUI Text Update" title="VMK 6b: GUI Text Update"></a>
+    
+  </div>
+</div>
+
+<div id="ghost7" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">7: Changing Key Mapping</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_7.jpg" alt="Changing Key Mapping" title="Changing Key Mapping"><div class="text astro-DOYHEAPI">The configuration screen is completed in this VMK.  By the end of the video you'll be able to change what key is associated with each control in the game.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('7')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 7: Changing Key Mapping" title="VMK 7: Changing Key Mapping"></a>
+    
+  </div>
+</div>
+
+<div id="ghost8" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">8: Bug Fix</div>
+  <div class="info noImage astro-DOYHEAPI"><div class="text astro-DOYHEAPI">In this video I show how to fix a bad bug in the game engine's parser found by a member of the website.  I also show how to fix one other bug.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('8')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 8: Bug Fix" title="VMK 8: Bug Fix"></a>
+    
+  </div>
+</div>
+
+<div id="ghost9" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">9: Play and Pause</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_9.jpg" alt="Play and Pause" title="Play and Pause"><div class="text astro-DOYHEAPI">I update the game so that we can click on the Play button on the main menu. This causes the game resources to get loaded into the group 2 memory space. From the play screen you can also ESC into the pause screen and from there you can now return back to the main menu.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('9')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 9: Play and Pause" title="VMK 9: Play and Pause"></a>
+    <a href="/download/ghost/Ghost-VMK009A-PlayAndPause.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 9 Resources" title="Download VMK 9 Resources"></a>
+  </div>
+</div>
   
 
 </div>
-
-  
 
   <p>More coming soon...</p>
 
