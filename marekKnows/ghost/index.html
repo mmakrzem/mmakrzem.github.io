@@ -7,12 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
 <title>Create Stones</title>
 <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/css/base.css?1704377957801">
+<link rel="stylesheet" type="text/css" href="/css/base.css?1704407767410">
   
   <script src="https://www.youtube.com/iframe_api"></script> 
 <link rel="stylesheet" href="/_astro/audioEng.c266531c.css" />
 <link rel="stylesheet" href="/_astro/audioEng.56dde9d9.css" />
-<link rel="stylesheet" href="/_astro/audioEng.1244ec52.css" /><script type="module" src="/_astro/hoisted.83b58d33.js"></script></head>
+<link rel="stylesheet" href="/_astro/audioEng.1244ec52.css" /><script type="module" src="/_astro/hoisted.f4fce796.js"></script></head>
 <body class="maxSize globalDefaultStyles astro-37FXCHFA">
   <div id="header" class="astro-37FXCHFA">
     <img class="logo astro-37FXCHFA" src="/images/logo.png" alt="Logo">
@@ -534,7 +534,7 @@
 
 <div id="ghost14" class="card astro-DOYHEAPI">
   <div class="header astro-DOYHEAPI">14: Ceiling</div>
-  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_14.jpg" alt="Ceiling" title="Ceiling"><div class="text astro-DOYHEAPI">First thing is to correct the initial position (and direction) that we start at.  Then I show how to add a ceiling above us.<br>Next step is to make the rooms taller than the hallways and raising the ceiling in the process.</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_14.jpg" alt="Ceiling" title="Ceiling"><div class="text astro-DOYHEAPI">First thing is to correct the initial position (and direction) that we start at.  Then I show how to add a ceiling above us.<br><br>Next step is to make the rooms taller than the hallways and raising the ceiling in the process.</div>
   </div>
   <div class="buttons astro-DOYHEAPI">
     
@@ -589,7 +589,7 @@
 
 <div id="ghost17" class="card astro-DOYHEAPI">
   <div class="header astro-DOYHEAPI">17: Pickup Object Class</div>
-  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_17.jpg" alt="Pickup Object Class" title="Pickup Object Class"><div class="text astro-DOYHEAPI">The generic pickup object class is defined in this VMK. We will be using this class to derive classes used for the health packs, arrows and energy pickups within the game.<br>To simplify the game engine and also make the Pickup Object class compile, I made some fundamental changes to the game engine. In this VMK you'll see that the ErrorHandler can now be accessed from anywhere, GameOGL is updated and I clean up all the virtual keywords throughout the program.</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_17.jpg" alt="Pickup Object Class" title="Pickup Object Class"><div class="text astro-DOYHEAPI">The generic pickup object class is defined in this VMK. We will be using this class to derive classes used for the health packs, arrows and energy pickups within the game.<br><br>To simplify the game engine and also make the Pickup Object class compile, I made some fundamental changes to the game engine. In this VMK you'll see that the ErrorHandler can now be accessed from anywhere, GameOGL is updated and I clean up all the virtual keywords throughout the program.</div>
   </div>
   <div class="buttons astro-DOYHEAPI">
     
@@ -597,13 +597,605 @@
     
   </div>
 </div>
+
+<div id="ghost18" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">18: Physics Engine</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_18.jpg" alt="Physics Engine" title="Physics Engine"><div class="text astro-DOYHEAPI">I copy the physics engine code from Physics Engine VMK 14 and add it into the game engine.  In the process I also update the WindowsParameters structure.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('18')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 18: Physics Engine" title="VMK 18: Physics Engine"></a>
+    
+  </div>
+</div>
+
+<div id="ghost19a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">19a: Health Pack Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_19a.jpg" alt="Health Pack Class" title="Health Pack Class"><div class="text astro-DOYHEAPI">The health pack pickup object class is created in this VMK and the 3D model of the health pack is loaded into the game. The VMK file format has been recently updated to v1.1 so I also show the changes that need to be made to be able to load this new format.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('19a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 19a: Health Pack Class" title="VMK 19a: Health Pack Class"></a>
+    <a href="/download/ghost/Ghost-VMK019A-HealthPack.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 19a Resources" title="Download VMK 19a Resources"></a>
+  </div>
+</div>
+
+<div id="ghost19b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">19b: Health Pickup and Respawn</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_19b.jpg" alt="Health Pickup and Respawn" title="Health Pickup and Respawn"><div class="text astro-DOYHEAPI">The isRetrieved function is implemented in this video. You will now be able to pickup health packs in the game and the player's health is updated accordingly every time you do.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('19b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 19b: Health Pickup and Respawn" title="VMK 19b: Health Pickup and Respawn"></a>
+    
+  </div>
+</div>
+
+<div id="ghost20a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">20a: Pickup Arrows Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_20a.jpg" alt="Pickup Arrows Class" title="Pickup Arrows Class"><div class="text astro-DOYHEAPI">I create the PickupArrows class used to animate, render and keep track of the arrow pack pickup object. Also in this VMK, the Integrator1 class from the physics engine is imported.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('20a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 20a: Pickup Arrows Class" title="VMK 20a: Pickup Arrows Class"></a>
+    <a href="/download/ghost/Ghost-VMK020A-PickupArrows.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 20a Resources" title="Download VMK 20a Resources"></a>
+  </div>
+</div>
+
+<div id="ghost20b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">20b: Arrows Pickup and Respawn</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_20b.jpg" alt="Arrows Pickup and Respawn" title="Arrows Pickup and Respawn"><div class="text astro-DOYHEAPI">Using the class created in the previous VMK I add the animated arrow pickup object to the game. Updates are made to the Player class and to the Scene class to make this happen.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('20b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 20b: Arrows Pickup and Respawn" title="VMK 20b: Arrows Pickup and Respawn"></a>
+    
+  </div>
+</div>
+
+<div id="ghost21a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">21a: Pickup Energy Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_21a.jpg" alt="Pickup Energy Class" title="Pickup Energy Class"><div class="text astro-DOYHEAPI">The PickupEnergy class is created in this VMK and the nested node transform structure used to animate the battery cell is explained.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('21a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 21a: Pickup Energy Class" title="VMK 21a: Pickup Energy Class"></a>
+    <a href="/download/ghost/Ghost-VMK021A-PickupEnergy.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 21a Resources" title="Download VMK 21a Resources"></a>
+  </div>
+</div>
+
+<div id="ghost21b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">21b: Energy Pickup and Respawn</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_21b.jpg" alt="Energy Pickup and Respawn" title="Energy Pickup and Respawn"><div class="text astro-DOYHEAPI">The battery object is added into the scene and animated. Near the end of this VMK, I clean up the Sleep(1); issue that I forgot about earlier and also removed one extra keyboard control.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('21b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 21b: Energy Pickup and Respawn" title="VMK 21b: Energy Pickup and Respawn"></a>
+    
+  </div>
+</div>
+
+<div id="ghost22" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">22: General Math Update</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_22.jpg" alt="General Math Update" title="General Math Update"><div class="text astro-DOYHEAPI">A number of small updates are made to the GeneralMath class.<br><br>The random number generator function is updated, the swap function is added, and the constant values that use the value of PI are also updated.<br><br>For more information about random numbers check out Intro to C++ VMK 16</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('22')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 22: General Math Update" title="VMK 22: General Math Update"></a>
+    
+  </div>
+</div>
+
+<div id="ghost23" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">23: Random Position</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_23.jpg" alt="Random Position" title="Random Position"><div class="text astro-DOYHEAPI">New functions are created in the Scene class that allow you to randomly place items in the map. Care is taken to make sure that the item will always land on an empty square (not in a wall) and that there is nothing else already in the same spot.<br><br>This is used to randomly scatter all the pickup objects in the level and also to randomly place the player when the game starts.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('23')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 23: Random Position" title="VMK 23: Random Position"></a>
+    
+  </div>
+</div>
+
+<div id="ghost24" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">24: Remove Vertex Classes</div>
+  <div class="info noImage astro-DOYHEAPI"><div class="text astro-DOYHEAPI">Three classes (Vertex2, Vertex2i and Vertex3) are removed from the game engine in this VMK. These classes are not needed so they are replaced with our Vector classes.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('24')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 24: Remove Vertex Classes" title="VMK 24: Remove Vertex Classes"></a>
+    
+  </div>
+</div>
+
+<div id="ghost25a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">25a: Radar Display</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_25a.jpg" alt="Radar Display" title="Radar Display"><div class="text astro-DOYHEAPI">I start work on the radar map unit by adding the graphic image to the resource files. This video focuses on making the radar map display in the top right hand corner of the screen and also animating it open and close based on the battery power.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('25a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 25a: Radar Display" title="VMK 25a: Radar Display"></a>
+    <a href="/download/ghost/Ghost-VMK025A-RadarDisplay.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 25a Resources" title="Download VMK 25a Resources"></a>
+  </div>
+</div>
+
+<div id="ghost25b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">25b: Radar Dots</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_25b.jpg" alt="Radar Dots" title="Radar Dots"><div class="text astro-DOYHEAPI">In this VMK I add the radar dots showing where things are located relative to the player. Blue dots for arrows, and yellow dots for batteries.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('25b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 25b: Radar Dots" title="VMK 25b: Radar Dots"></a>
+    <a href="/download/ghost/Ghost-VMK025B-RadarDots.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 25b Resources" title="Download VMK 25b Resources"></a>
+  </div>
+</div>
+
+<div id="ghost25c" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">25c: Radar Sweep Arm</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_25c.jpg" alt="Radar Sweep Arm" title="Radar Sweep Arm"><div class="text astro-DOYHEAPI">The arm that sweeps around in a circle in the radar unit is created in this VMK. A new function is also added to the GeneralMath class that will make things easier for us a little later on.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('25c')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 25c: Radar Sweep Arm" title="VMK 25c: Radar Sweep Arm"></a>
+    
+  </div>
+</div>
+
+<div id="ghost25d" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">25d: GUI Fade Dots</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_25d.jpg" alt="GUI Fade Dots" title="GUI Fade Dots"><div class="text astro-DOYHEAPI">In this last VMK in the Radar Unit section, I show how to make the dots appear when the arm sweeps by them, and slowly fade out of view when the arm moves away from the dot. New functions are added to the Vector2 and Math classes.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('25d')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 25d: GUI Fade Dots" title="VMK 25d: GUI Fade Dots"></a>
+    
+  </div>
+</div>
+
+<div id="ghost26" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">26: Static UserSettings Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_26.jpg" alt="Static UserSettings Class" title="Static UserSettings Class"><div class="text astro-DOYHEAPI">In this VMK, I update the UserSettings class and make a static get() function to allow us to retrieve a pointer to this class anywhere in the code without having to explicitly pass a pointer around.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('26')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 26: Static UserSettings Class" title="VMK 26: Static UserSettings Class"></a>
+    
+  </div>
+</div>
+
+<div id="ghost27a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">27a: Mace Weapon</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_27a.jpg" alt="Mace Weapon" title="Mace Weapon"><div class="text astro-DOYHEAPI">I have included the mace.vmk file with this video so that you can use it in the game. The mace class is started in this VMK and used to position and render the mace on the screen.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('27a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 27a: Mace Weapon" title="VMK 27a: Mace Weapon"></a>
+    <a href="/download/ghost/Ghost-VMK027A-MaceWeapon.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 27a Resources" title="Download VMK 27a Resources"></a>
+  </div>
+</div>
+
+<div id="ghost27b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">27b: Swing the Mace</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_27b.jpg" alt="Swing the Mace" title="Swing the Mace"><div class="text astro-DOYHEAPI">Three states are added to the mace class in this video. These states are used to animate the swinging motion of the mace when the attack button is pressed.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('27b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 27b: Swing the Mace" title="VMK 27b: Swing the Mace"></a>
+    
+  </div>
+</div>
+
+<div id="ghost28a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">28a: Ghost Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_28a.jpg" alt="Ghost Class" title="Ghost Class"><div class="text astro-DOYHEAPI">I have supplied the ghost.vmk 3D model with this video to be used to render a ghost on the screen. A Ghost class is created in this video to manage the ghost object in the game. The radar unit is also updated to show a red dot where the ghost is positioned in the map.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('28a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 28a: Ghost Class" title="VMK 28a: Ghost Class"></a>
+    <a href="/download/ghost/Ghost-VMK028A-Ghost.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 28a Resources" title="Download VMK 28a Resources"></a>
+  </div>
+</div>
+
+<div id="ghost28b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">28b: Duplication</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_28b.jpg" alt="Duplication" title="Duplication"><div class="text astro-DOYHEAPI">The ability to duplicate a subtree of the scenegraph is added in this VMK. I use the duplication function to make two more copies of the previously loaded ghost.vmk so that we have 3 ghosts in the game.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('28b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 28b: Duplication" title="VMK 28b: Duplication"></a>
+    
+  </div>
+</div>
+
+<div id="ghost29" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">29: ErrorHandler and Output Log</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_29.jpg" alt="ErrorHandler and Output Log" title="ErrorHandler and Output Log"><div class="text astro-DOYHEAPI">A bunch of clean up tasks are performed in this video. The ErrorHandler pointer inside a number of classes is handled better. All Wall, Floor and Ceiling objects loaded by the level are named so that they are easy to find in the scene graph and the Scene::OutputSceneGraphLog function is updated.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('29')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 29: ErrorHandler and Output Log" title="VMK 29: ErrorHandler and Output Log"></a>
+    
+  </div>
+</div>
+
+<div id="ghost30" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">30: Interpolate1 Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_30.jpg" alt="Interpolate1 Class" title="Interpolate1 Class"><div class="text astro-DOYHEAPI">This video is tied closely to Math VMK 10 - Smooth Interpolation. The equations derived in the Math VMK are implemented in a new class called Interpolate1.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('30')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 30: Interpolate1 Class" title="VMK 30: Interpolate1 Class"></a>
+    
+  </div>
+</div>
+
+<div id="ghost31a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">31a: Floating Ghosts</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_31a.jpg" alt="Floating Ghosts" title="Floating Ghosts"><div class="text astro-DOYHEAPI">Using the Interpolate1 class created in the previous VMK, the ghosts are given the ability to float on a spot.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('31a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 31a: Floating Ghosts" title="VMK 31a: Floating Ghosts"></a>
+    
+  </div>
+</div>
+
+<div id="ghost31b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">31b: Biting Ghosts</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_31b.jpg" alt="Biting Ghosts" title="Biting Ghosts"><div class="text astro-DOYHEAPI">Using the interpolate class again, and playing with some timing, we make the ghost's jaw move in a biting motion.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('31b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 31b: Biting Ghosts" title="VMK 31b: Biting Ghosts"></a>
+    
+  </div>
+</div>
+
+<div id="ghost32" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">32: Ghost Facing Direction</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_32.jpg" alt="Ghost Facing Direction" title="Ghost Facing Direction"><div class="text astro-DOYHEAPI">In this VMK I make the ghosts aware of the player's position so that they can turn to face the player.  A typo in the Vector3 class is fixed and a new GeneralMath function is added.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('32')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 32: Ghost Facing Direction" title="VMK 32: Ghost Facing Direction"></a>
+    
+  </div>
+</div>
+
+<div id="ghost33" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">33: Kill A Ghost</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_33.jpg" alt="Kill A Ghost" title="Kill A Ghost"><div class="text astro-DOYHEAPI">I show how to add 4 states to the Ghost class. The states are used to control the ghosts behavior. One of the states is the dying state which allows the player to hit a ghost with the mace and kill it.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('33')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 33: Kill A Ghost" title="VMK 33: Kill A Ghost"></a>
+    
+  </div>
+</div>
+
+<div id="ghost34" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">34: Score Keeping</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_34.jpg" alt="Score Keeping" title="Score Keeping"><div class="text astro-DOYHEAPI">I add a score indicator to the HUD. When a ghost is hit with the mace we collect points and the indicator updates. The renderHud function is also updated so that the HUD is always drawn on top of everything rather than having it get clipped by objects inside the scene.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('34')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 34: Score Keeping" title="VMK 34: Score Keeping"></a>
+    
+  </div>
+</div>
+
+<div id="ghost35" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">35: Game Lighting</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_35.jpg" alt="Game Lighting" title="Game Lighting"><div class="text astro-DOYHEAPI">I explain what causes little white dots to appear on the screen and I show how to fix them. I add some light attenuation to the game to make things a little darker and also attach light sources to the ghosts to make them stand out better.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('35')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 35: Game Lighting" title="VMK 35: Game Lighting"></a>
+    
+  </div>
+</div>
+
+<div id="ghost36" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">36: Respawn Ghosts</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_36.jpg" alt="Respawn Ghosts" title="Respawn Ghosts"><div class="text astro-DOYHEAPI">When a ghost is killed, it will be off the screen for a few seconds. When the time is up, it will reappear back in the level ready to go again.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('36')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 36: Respawn Ghosts" title="VMK 36: Respawn Ghosts"></a>
+    
+  </div>
+</div>
+
+<div id="ghost37a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">37a: Crossbow Weapon</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_37a.jpg" alt="Crossbow Weapon" title="Crossbow Weapon"><div class="text astro-DOYHEAPI">Included with this video are the 3D models for the crossbow and arrow objects. The video shows how to create the Crossbow class and use it to render the crossbow on the screen.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('37a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 37a: Crossbow Weapon" title="VMK 37a: Crossbow Weapon"></a>
+    <a href="/download/ghost/Ghost-VMK037A-CrossbowWeapon.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 37a Resources" title="Download VMK 37a Resources"></a>
+  </div>
+</div>
+
+<div id="ghost37b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">37b: Crossbow States</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_37b.jpg" alt="Crossbow States" title="Crossbow States"><div class="text astro-DOYHEAPI">The crossbow has 5 states that it can be in.   The state machine to control the crossbow is implemented in this VMK.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('37b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 37b: Crossbow States" title="VMK 37b: Crossbow States"></a>
+    
+  </div>
+</div>
+
+<div id="ghost37c" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">37c: Arrow Motion</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_37c.jpg" alt="Arrow Motion" title="Arrow Motion"><div class="text astro-DOYHEAPI">The arrow object is placed on the crossbow in this VMK when the player picks up a quiver of arrows.  We also animate the arrow being pulled back and shot forward when the attack button is pressed.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('37c')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 37c: Arrow Motion" title="VMK 37c: Arrow Motion"></a>
+    
+  </div>
+</div>
+
+<div id="ghost38a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">38a: Shooting Arrows</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_38a.jpg" alt="Shooting Arrows" title="Shooting Arrows"><div class="text astro-DOYHEAPI">In this VMK I explain how to handle arrow objects when the player shoots using the crossbow. This video focuses on rendering a single arrow object as it leaves the crossbow.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('38a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 38a: Shooting Arrows" title="VMK 38a: Shooting Arrows"></a>
+    
+  </div>
+</div>
+
+<div id="ghost38b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">38b: Multiple Arrows</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_38b.jpg" alt="Multiple Arrows" title="Multiple Arrows"><div class="text astro-DOYHEAPI">The arrow object is duplicated multiple times and code is added to allow for more than one arrow to be rendered on the screen at a time.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('38b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 38b: Multiple Arrows" title="VMK 38b: Multiple Arrows"></a>
+    
+  </div>
+</div>
+
+<div id="ghost38c" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">38c: Flying Arrows</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_38c.jpg" alt="Flying Arrows" title="Flying Arrows"><div class="text astro-DOYHEAPI">Motion equations are implemented for each arrow to make it move across the screen. Arrow collisions with the floor is also added.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('38c')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 38c: Flying Arrows" title="VMK 38c: Flying Arrows"></a>
+    
+  </div>
+</div>
+
+<div id="ghost38d" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">38d: Arrow Collisions</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_38d.jpg" alt="Arrow Collisions" title="Arrow Collisions"><div class="text astro-DOYHEAPI">A method to make flying arrows collide with the walls and ceilings of the level map is presented in this VMK.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('38d')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 38d: Arrow Collisions" title="VMK 38d: Arrow Collisions"></a>
+    
+  </div>
+</div>
+
+<div id="ghost39" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">39: Shooting A Ghost</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_39.jpg" alt="Shooting A Ghost" title="Shooting A Ghost"><div class="text astro-DOYHEAPI">This VMK dives into the math required to allow the player to shoot and kill ghosts. Three hot zones are set up on the ghosts head, chest, and hips. These zones are monitored to see if any arrow hits them.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('39')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 39: Shooting A Ghost" title="VMK 39: Shooting A Ghost"></a>
+    
+  </div>
+</div>
+
+<div id="ghost40" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">40: Crosshairs</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_40.jpg" alt="Crosshairs" title="Crosshairs"><div class="text astro-DOYHEAPI">Crosshairs are added to the HUD so that you can see exactly where you are pointing the crossbow weapon before you shoot it.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('40')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 40: Crosshairs" title="VMK 40: Crosshairs"></a>
+    <a href="/download/ghost/Ghost-VMK040-Crosshairs.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 40 Resources" title="Download VMK 40 Resources"></a>
+  </div>
+</div>
+
+<div id="ghost41a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">41a: Switch Weapons</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_41a.jpg" alt="Switch Weapons" title="Switch Weapons"><div class="text astro-DOYHEAPI">The Interpolate3 class is created in this VMK and used to allow the player to switch between the Mace and the Crossbow weapon. You can switch weapons using the keyboard or by using the scroll wheel on the mouse.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('41a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 41a: Switch Weapons" title="VMK 41a: Switch Weapons"></a>
+    
+  </div>
+</div>
+
+<div id="ghost41b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">41b: Weapon Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_41b.jpg" alt="Weapon Class" title="Weapon Class"><div class="text astro-DOYHEAPI">The WeaponCrossbow and WeaponMace classes are simplified in this VMK by inheriting from a general Weapon class that I create in this video.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('41b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 41b: Weapon Class" title="VMK 41b: Weapon Class"></a>
+    
+  </div>
+</div>
+
+<div id="ghost42" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">42: Path1 Class</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_42.jpg" alt="Path1 Class" title="Path1 Class"><div class="text astro-DOYHEAPI">The Path1 class is an extension of the Interpolate1 class created in VMK30. The Interpolate1 class allows you to interpolation a value between two end points. In Path1, you can string together multiple points to form a path, which you can then interpolate across. Each path segment can use either linear or smooth interpolation.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('42')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 42: Path1 Class" title="VMK 42: Path1 Class"></a>
+    
+  </div>
+</div>
+
+<div id="ghost43" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">43: Claw Animation</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_43.jpg" alt="Claw Animation" title="Claw Animation"><div class="text astro-DOYHEAPI">Using the Path1 class developed in the previous VMK, the ghosts left and right arms are put into motion. When the player gets close to a ghost, the ghost will react by clawing at the player.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('43')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 43: Claw Animation" title="VMK 43: Claw Animation"></a>
+    
+  </div>
+</div>
+
+<div id="ghost44" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">44: Moving Ghosts</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_44.jpg" alt="Moving Ghosts" title="Moving Ghosts"><div class="text astro-DOYHEAPI">I show how to make the ghost damage the player in this VMK. I also give the ghost the ability to move around in the level so that they don't just stand in one spot.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('44')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 44: Moving Ghosts" title="VMK 44: Moving Ghosts"></a>
+    
+  </div>
+</div>
+
+<div id="ghost45" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">45: Instructions Screen</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_45.jpg" alt="Instructions Screen" title="Instructions Screen"><div class="text astro-DOYHEAPI">I go back to working with the GUI system in this VMK.  A moving ghost image is placed on the main menu screen, and an instruction screen is displayed after you press the Play menu option.  The initial position of the player and ghosts are also set to be randomly generated.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('45')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 45: Instructions Screen" title="VMK 45: Instructions Screen"></a>
+    <a href="/download/ghost/Ghost-VMK045-Instructions.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 45 Resources" title="Download VMK 45 Resources"></a>
+  </div>
+</div>
+
+<div id="ghost46" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">46: Game Over</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_46.jpg" alt="Game Over" title="Game Over"><div class="text astro-DOYHEAPI">I add a text message to the instruction screen that was made in VMK45, and the Game Over state is added to the game engine. The ability to dynamically fade font is also added in this VMK.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('46')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 46: Game Over" title="VMK 46: Game Over"></a>
+    <a href="/download/ghost/Ghost-VMK046-GameOver.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 46 Resources" title="Download VMK 46 Resources"></a>
+  </div>
+</div>
+
+<div id="ghost47" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">47: Highscore Table</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_47.jpg" alt="Highscore Table" title="Highscore Table"><div class="text astro-DOYHEAPI">When the player's health reaches 0, the game over screen appears. If the player has enough points to be displayed on the high score table, they are asked to input their name and press enter. Their name and score is then stored in a file and the highscore table is updated.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('47')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 47: Highscore Table" title="VMK 47: Highscore Table"></a>
+    
+  </div>
+</div>
+
+<div id="ghost48a" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">48a: Add Audio Manager</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_48a.jpg" alt="Add Audio Manager" title="Add Audio Manager"><div class="text astro-DOYHEAPI">The AudioManager class developed in the 3D Audio Engine VMK series is added to the Ghost Toast game so that we can play sounds.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('48a')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 48a: Add Audio Manager" title="VMK 48a: Add Audio Manager"></a>
+    
+  </div>
+</div>
+
+<div id="ghost48b" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">48b: AudioManager Cleanup</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_48b.jpg" alt="AudioManager Cleanup" title="AudioManager Cleanup"><div class="text astro-DOYHEAPI">The AudioManager class and all supporting classes are updated so that we replace all printf calls. A new function is added to make it easier to get at the AudioManager from anywhere in the source code.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('48b')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 48b: AudioManager Cleanup" title="VMK 48b: AudioManager Cleanup"></a>
+    
+  </div>
+</div>
+
+<div id="ghost49" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">49: Assign Audio</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_49.jpg" alt="Assign Audio" title="Assign Audio"><div class="text astro-DOYHEAPI">A function is added to the AudioManager that allows us to attach an audio sound effect to a gui button.  When the cursor moves over top of the button, the audio file is played automatically.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('49')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 49: Assign Audio" title="VMK 49: Assign Audio"></a>
+    <a href="/download/ghost/Ghost-VMK049a-AssignAudio.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 49 Resources" title="Download VMK 49 Resources"></a>
+  </div>
+</div>
+
+<div id="ghost50" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">50: Heartbeat and Footsteps</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_50.jpg" alt="Heartbeat and Footsteps" title="Heartbeat and Footsteps"><div class="text astro-DOYHEAPI">Two new sound effects are added to Ghost Toast in this VMK.  The heartbeat sound is activated when the players health drops below 20.  Footsteps are heard when the player moves in the game.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('50')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 50: Heartbeat and Footsteps" title="VMK 50: Heartbeat and Footsteps"></a>
+    <a href="/download/ghost/Ghost-VMK050-HeartbeatFootsteps.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 50 Resources" title="Download VMK 50 Resources"></a>
+  </div>
+</div>
+
+<div id="ghost51" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">51: Radar and Pickup Sounds</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_51.jpg" alt="Radar and Pickup Sounds" title="Radar and Pickup Sounds"><div class="text astro-DOYHEAPI">In this VMK six new sound effects are added to Ghost Toast.  Three are used by the radar unit and three are used when picking up health, arrows, and the power cell in the game.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('51')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 51: Radar and Pickup Sounds" title="VMK 51: Radar and Pickup Sounds"></a>
+    <a href="/download/ghost/Ghost-VMK051-RadarAndPickups.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 51 Resources" title="Download VMK 51 Resources"></a>
+  </div>
+</div>
+
+<div id="ghost52" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">52: Attack Sound Effects</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_52.jpg" alt="Attack Sound Effects" title="Attack Sound Effects"><div class="text astro-DOYHEAPI">Four new sounds are added to the game.  Two sounds when you swing the mace, and two sounds when you use the crossbow.  Near the end of the video I also fix a bug when dealing with rendering the crossbow arrow.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('52')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 52: Attack Sound Effects" title="VMK 52: Attack Sound Effects"></a>
+    <a href="/download/ghost/Ghost-VMK052-AttackSFX.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 52 Resources" title="Download VMK 52 Resources"></a>
+  </div>
+</div>
+
+<div id="ghost53" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">53: Ghost Sounds</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_53.jpg" alt="Ghost Sounds" title="Ghost Sounds"><div class="text astro-DOYHEAPI">The sounds that are made by the ghosts are added in this VMK.  Near the end I also add a helper function that you can use to turn all the sounds off.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('53')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 53: Ghost Sounds" title="VMK 53: Ghost Sounds"></a>
+    <a href="/download/ghost/Ghost-VMK053-GhostSounds.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 53 Resources" title="Download VMK 53 Resources"></a>
+  </div>
+</div>
+
+<div id="ghost54" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">54: Stream Game Music</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_54.jpg" alt="Stream Game Music" title="Stream Game Music"><div class="text astro-DOYHEAPI">Four music streams are added to the game in this VMK.  One is used during the intro/splash screen, one is used in the menu, one is used during regular play, and the last is used when the game is over.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('54')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 54: Stream Game Music" title="VMK 54: Stream Game Music"></a>
+    <a href="/download/ghost/Ghost-VMK054-StreamGameMusic.rar" class="astro-DOYHEAPI"><img class="download astro-DOYHEAPI" src="/images/marekKnows/download.png" alt="Download VMK 54 Resources" title="Download VMK 54 Resources"></a>
+  </div>
+</div>
+
+<div id="ghost55" class="card astro-DOYHEAPI">
+  <div class="header astro-DOYHEAPI">55: Wrap Up</div>
+  <div class="info astro-DOYHEAPI"><img class="screenShot astro-DOYHEAPI" src="/images/marekKnows/ghost/ghost_55.jpg" alt="Wrap Up" title="Wrap Up"><div class="text astro-DOYHEAPI">This is the last VMK in the Ghost Toast VMK series.  In this video I present some ideas for expanding and improving the game beyond the things that I have already shown in the VMK series.</div>
+  </div>
+  <div class="buttons astro-DOYHEAPI">
+    
+    <a onclick="unlockVideo('55')" class="astro-DOYHEAPI"><img class="locked astro-DOYHEAPI" src="/images/marekKnows/locked.png" alt="VMK 55: Wrap Up" title="VMK 55: Wrap Up"></a>
+    
+  </div>
+</div>
   
 
 </div>
 
-  <p>More coming soon...</p>
-
-  
+  <p>Continue learning more by doing the <a href="/marekKnows/shader">Shader Engine</a> VMK series next.</p>
 
 
   </div>
